@@ -46,6 +46,3 @@ plugins:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-
-# MathJax for LaTeX rendering
-mathjax: true
