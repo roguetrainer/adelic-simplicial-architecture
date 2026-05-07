@@ -1,0 +1,35 @@
+---
+title: "The Resonance Processing Unit (RPU): Holonomic Hardware Geometries, Triorthogonal Codes, and the 1531-Anvil"
+paper_number: "205"
+doi: "10.5281/zenodo.19743800"
+zenodo_url: "https://zenodo.org/records/19743800"
+portfolio: "C"
+portfolio_desc: "Quantum Hardware"
+tags:
+  - asa
+  - portfolio-c
+  - paper-205
+has_code: false
+status: published
+---
+
+# The Resonance Processing Unit (RPU): Holonomic Hardware Geometries, Triorthogonal Codes, and the 1531-Anvil
+
+**Paper:** 205 | **Portfolio C** — Quantum Hardware
+
+**DOI:** [10.5281/zenodo.19743800](https://zenodo.org/records/19743800)
+
+## Abstract
+
+Specifies the RPU hardware architecture: holonomic quantum gates, triorthogonal code constructions, and the 1531-Anvil geometry for fault-tolerant non-Clifford computation.
+
+## Zenodo
+
+[View on Zenodo](https://zenodo.org/records/19743800)
+
+## Related Papers
+
+- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
+- [[../10.5281-zenodo.19922441/README|10.5281-zenodo.19922441]]
+- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
+
