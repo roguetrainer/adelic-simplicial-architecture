@@ -12,3 +12,4 @@ Short technical notes, clarifications, and worked arguments that are too focused
 | Note | Title |
 |------|-------|
 | [N01](note-n01-hardy-axioms/) | Does the ASA Violate Hardy's Axioms? |
+| [N02](note-n02-lohmiller-slotine/) | Lohmiller-Slotine, Vattay, and the MGE: Classical Paths, the Quantum Potential, and Maslov Dequantisation |
