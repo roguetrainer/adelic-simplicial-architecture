@@ -185,6 +185,15 @@
   },
   "active": "d5811222c91b0eff",
   "lastOpenFiles": [
+    "notes/note-n02-lohmiller-slotine.md",
+    "notes/note-n01-hardy-axioms.md",
+    "notes/index.md",
+    "notes",
+    "glossary.md",
+    "papers/10.5281-zenodo.20076498/README.md",
+    "papers/10.5281-zenodo.20077198/README.md",
+    "papers/10.5281-zenodo.20076498",
+    "papers/10.5281-zenodo.20077198",
     "code/10.5281-zenodo.20076498/README.md",
     "code/10.5281-zenodo.20076498/fano_fisher_proof.py",
     "code/10.5281-zenodo.20076498",
@@ -202,8 +211,6 @@
     "portfolios/portfolio-a.md",
     "portfolios/index.md",
     "portfolios",
-    "index.md",
-    "Gemfile",
-    "_config.yml"
+    "index.md"
   ]
 }
