@@ -23,11 +23,15 @@ The **$[[7,1,3]]$ Steane code** — the smallest topological quantum error corre
 
 **Geometric Code Switching** (Paper 210) addresses the problem of switching between incompatible code families (e.g., surface code and colour code) without a decoding round. The ASA's solution is a projective envelope: embed both codes in a common $\mathrm{PG}(3,2)$ projective space (the Fano plane extended to 3D), perform the gate transversally in the envelope, then project back. This gives a geometric primitive for the transversal CCZ gate, which is otherwise unavailable in the surface code.
 
+**Non-Associative Quantum Error Correction (NA-QEC)** (Paper 257) lifts the code space from stabiliser codes over $\mathbb{F}_2$ to the exceptional Jordan algebra $J_3(\mathbb{O})$. The central result (Theorem 3.2: the Exceptional Jordan–KL Condition) proves that the Knill-Laflamme conditions are satisfied for the Furey projector $P = \mathrm{diag}(1,0,0) \in J_3(\mathbb{O})$ against any error supported on the Peirce-1 subspace: the Jordan triple product $\{P, E_a^\dagger \circ E_b, P\} = c_{ab} \cdot P$ collapses to a scalar multiple of $P$, giving exact error correction by algebraic structure rather than code distance. The paper also proposes an Eastin-Knill evasion conjecture: because $J_3(\mathbb{O})$ is not a matrix algebra, the standard no-go argument does not apply, potentially permitting transversal universal gates.
+
 **The Resonance Processing Unit (RPU)** (Paper 205) is the ASA's proposed hardware architecture: a processor whose native instruction set operates on octonionic registers rather than binary registers. The RPU uses 1531-Anvil holonomic codes — a family of codes derived from the magic square whose code distance scales with the dimension of the exceptional Lie algebra used — to achieve fault tolerance at the hardware level. The RPU is to the Fano plane what a classical CPU is to Boolean logic.
 
 ### AI & Distributed Training
 
-**The Affine Holomorphic Resonance Network (URN)** (Paper 203) addresses the Fine-Tuning Trilemma — the conflict between plasticity (learn new tasks), stability (retain old tasks), and efficiency (no extra parameters). The URN replaces Euclidean parameter spaces with bounded hypercomplex domains governed by Möbius automorphisms, enabling the network to function as a Blum-Shub-Smale machine over $\mathbb{H}$ and $\mathbb{O}$. Its central mechanism is the **Fano-Fisher Topological Immune System**: fine-tuning gradients are projected onto the 10-dimensional Information Valley (the null space of the Fano-Fisher Hessian $\Psi$), while the 4-dimensional Information Ridge ($E_k = 8/3$, the topological skeleton) is geometrically excluded. This is categorical prevention, not soft regularisation: the ridge subspace is structurally inaccessible, giving machine-precision zero drift ($\|\delta_{\mathrm{ridge}}\| = 7 \times 10^{-16}$) with Task A retention of 100% versus 5% for standard SGD.
+**The Unitary Resonance Network (URN)** (Paper 203) addresses the Fine-Tuning Trilemma — the conflict between plasticity (learn new tasks), stability (retain old tasks), and efficiency (no extra parameters). The URN replaces Euclidean parameter spaces with bounded hypercomplex domains governed by Möbius automorphisms, enabling the network to function as a Blum-Shub-Smale machine over $\mathbb{H}$ and $\mathbb{O}$. Its central mechanism is the **Fano-Fisher Topological Immune System**: fine-tuning gradients are projected onto the 10-dimensional Information Valley (the null space of the Fano-Fisher Hessian $\Psi$), while the 4-dimensional Information Ridge ($E_k = 8/3$, the topological skeleton) is geometrically excluded. This is categorical prevention, not soft regularisation: the ridge subspace is structurally inaccessible, giving machine-precision zero drift ($\|\delta_{\mathrm{ridge}}\| = 7 \times 10^{-16}$) with Task A retention of 100% versus 5% for standard SGD.
+
+**Fano Resonance Networks (Fano-RNs)** (Paper 212) are the training-time complement to the URN: while the URN protects an already-trained network during fine-tuning, the Fano-RN addresses how to *train* a network whose forward pass is a genuine octonionic product. Standard backpropagation fails at depth ≥ 2 over $\mathbb{O}$ because the chain rule requires associativity. Paper 212 derives the exact correction — the **Associator Correction Tensor** $T(\delta, W, x) = R_x \circ L_{W_2} - L_{W_2} \circ R_x$ — and proves a convergence theorem for the resulting Associator-Corrected gradient descent in the sub-Fano regime ($\kappa < 1$).
 
 **Papers 218 and 221** (the NAIG cluster) treat distributed LLM training as a non-associative geometry problem. See the dedicated sections on those paper pages for full details.
 
@@ -45,12 +49,14 @@ The **$[[7,1,3]]$ Steane code** — the smallest topological quantum error corre
 | --- | --- |
 | [199](../papers/10.5281-zenodo.20060303/) | The Quaternionic Virtual Machine (Q-VM) |
 | [203](../papers/10.5281-zenodo.20086746/) | The Unitary Resonance Network (URN) |
+| 212 | Fano Resonance Networks (Fano-RNs) — Associator Correction Tensor and Non-Associative Backpropagation |
 | [205](../papers/10.5281-zenodo.19743800/) | The Resonance Processing Unit (RPU) |
 | [206](../papers/10.5281-zenodo.19821692/) | Fibrational Tensor Codes (FTCs) |
 | [210](../papers/10.5281-zenodo.19929360/) | Geometric Interpretation of Code Switching |
 | [213](../papers/10.5281-zenodo.20059019/) | Volume of Thought (VoT) |
 | [214](../papers/10.5281-zenodo.20060285/) | Non-Associative Knowledge Hypergraphs (Fano-RAG) |
 | [217](../papers/10.5281-zenodo.19922441/) | Fibrational Lattice Surgery (LS2.0) |
+| 257 | Non-Associative Quantum Error Correction (NA-QEC) — Exceptional Jordan Algebra as Fault-Tolerant Code Space |
 | [218](../papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG |
 | [221](../papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem |
 | [258](../papers/10.5281-zenodo.19916429/) | The 731 Instruction Set Architecture (Origami ISA) |
