@@ -32,7 +32,7 @@ Specifies the RPU hardware architecture: holonomic quantum gates, triorthogonal 
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
-- [[../10.5281-zenodo.19922441/README|10.5281-zenodo.19922441]]
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
+- [Paper 206](10.5281-zenodo.19821692/)
+- [Paper 217](10.5281-zenodo.19922441/)
+- [Paper 201](10.5281-zenodo.17981393/)
 

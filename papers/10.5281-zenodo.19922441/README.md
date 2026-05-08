@@ -32,7 +32,7 @@ LS2.0 extends lattice surgery to the fibrational setting. The Topological Zipper
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
-- [[../10.5281-zenodo.20060303/README|10.5281-zenodo.20060303]]
-- [[../10.5281-zenodo.20058013/README|10.5281-zenodo.20058013]]
+- [Paper 206](10.5281-zenodo.19821692/)
+- [Paper 199](10.5281-zenodo.20060303/)
+- [Paper 268](10.5281-zenodo.20058013/)
 

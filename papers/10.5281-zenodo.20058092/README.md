@@ -32,7 +32,9 @@ The Fano monogamy paradox is resolved via τ₃>0 (CKW three-tangle). The tripar
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20058083/README|10.5281-zenodo.20058083]]
-- [[../10.5281-zenodo.20058013/README|10.5281-zenodo.20058013]]
-- [[../10.5281-zenodo.20060303/README|10.5281-zenodo.20060303]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.20058092/)
+- [Paper 269](10.5281-zenodo.20058083/)
+- [Paper 268](10.5281-zenodo.20058013/)
+- [Paper 199](10.5281-zenodo.20060303/)
+## Code
+
+[Code for this paper](../../code/10.5281-zenodo.20058092/)

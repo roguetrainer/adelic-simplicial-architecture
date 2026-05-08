@@ -32,7 +32,7 @@ A speculative program connecting the Albert algebra J³(O), Bruhat-Tits building
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20029647/README|10.5281-zenodo.20029647]]
-- [[../10.5281-zenodo.20031913/README|10.5281-zenodo.20031913]]
-- [[../10.5281-zenodo.19928880/README|10.5281-zenodo.19928880]]
+- [Paper 265](10.5281-zenodo.20029647/)
+- [Paper 266](10.5281-zenodo.20031913/)
+- [Paper 263](10.5281-zenodo.19928880/)
 

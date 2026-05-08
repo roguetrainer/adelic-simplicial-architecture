@@ -32,7 +32,9 @@ Introduces the MGE operator: a thermodynamic generalisation of softmax that unde
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19858021/README|10.5281-zenodo.19858021]]
-- [[../10.5281-zenodo.19743800/README|10.5281-zenodo.19743800]]
-- [[../10.5281-zenodo.20059019/README|10.5281-zenodo.20059019]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.17981393/)
+- [Paper 202](10.5281-zenodo.19858021/)
+- [Paper 205](10.5281-zenodo.19743800/)
+- [Paper 213](10.5281-zenodo.20059019/)
+## Code
+
+[Code for this paper](../../code/10.5281-zenodo.17981393/)

@@ -32,7 +32,9 @@ Three spacelike-separated CPTP channels exhibit a non-zero composition associato
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20058083/README|10.5281-zenodo.20058083]]
-- [[../10.5281-zenodo.20058092/README|10.5281-zenodo.20058092]]
-- [[../10.5281-zenodo.20060303/README|10.5281-zenodo.20060303]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.20058013/)
+- [Paper 269](10.5281-zenodo.20058083/)
+- [Paper 270](10.5281-zenodo.20058092/)
+- [Paper 199](10.5281-zenodo.20060303/)
+## Code
+
+[Code for this paper](../../code/10.5281-zenodo.20058013/)

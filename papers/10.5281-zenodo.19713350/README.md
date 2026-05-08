@@ -32,6 +32,6 @@ Develops the magmoidal category-theoretic foundation of the ASA. The 731-calculu
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19916429/README|10.5281-zenodo.19916429]]
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
+- [Paper 258](10.5281-zenodo.19916429/)
+- [Paper 206](10.5281-zenodo.19821692/)
 

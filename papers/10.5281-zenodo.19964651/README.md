@@ -32,6 +32,6 @@ Electron shell capacities (2, 8, 18, 32) and the lanthanide contraction are expl
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19960385/README|10.5281-zenodo.19960385]]
-- [[../10.5281-zenodo.19928880/README|10.5281-zenodo.19928880]]
+- [Paper 245](10.5281-zenodo.19960385/)
+- [Paper 263](10.5281-zenodo.19928880/)
 

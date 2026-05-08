@@ -32,6 +32,6 @@ Proposes that nuclear magic numbers (2, 8, 20, 28, 50, 82, 126) have a geometric
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19964651/README|10.5281-zenodo.19964651]]
-- [[../10.5281-zenodo.19928880/README|10.5281-zenodo.19928880]]
+- [Paper 246](10.5281-zenodo.19964651/)
+- [Paper 263](10.5281-zenodo.19928880/)
 

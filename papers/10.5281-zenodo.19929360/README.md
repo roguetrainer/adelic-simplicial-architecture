@@ -32,7 +32,7 @@ Code switching from the Steane code (PG(2,2)) to the Reed-Muller code (PG(3,2)) 
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19922441/README|10.5281-zenodo.19922441]]
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
-- [[../10.5281-zenodo.20058092/README|10.5281-zenodo.20058092]]
+- [Paper 217](10.5281-zenodo.19922441/)
+- [Paper 206](10.5281-zenodo.19821692/)
+- [Paper 270](10.5281-zenodo.20058092/)
 

@@ -32,7 +32,9 @@ The TRS computational framework: vorton dynamics, symplectic phase evolution, an
 
 ## Related Papers
 
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
-- [[../10.5281-zenodo.19743800/README|10.5281-zenodo.19743800]]
-- [[../10.5281-zenodo.20060303/README|10.5281-zenodo.20060303]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.19858021/)
+- [Paper 201](10.5281-zenodo.17981393/)
+- [Paper 205](10.5281-zenodo.19743800/)
+- [Paper 199](10.5281-zenodo.20060303/)
+## Code
+
+[Code for this paper](../../code/10.5281-zenodo.19858021/)

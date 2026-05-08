@@ -32,6 +32,6 @@ Introduces the Magmoidal Cipher: a cryptographic protocol exploiting non-associa
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19713350/README|10.5281-zenodo.19713350]]
-- [[../10.5281-zenodo.19916429/README|10.5281-zenodo.19916429]]
+- [Paper 207](10.5281-zenodo.19713350/)
+- [Paper 258](10.5281-zenodo.19916429/)
 

@@ -32,6 +32,6 @@ A conceptual overview and invitation to the Adelic Simplicial Architecture. Intr
 
 ## Related Papers
 
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
-- [[../10.5281-zenodo.19869263/README|10.5281-zenodo.19869263]]
+- [Paper 201](10.5281-zenodo.17981393/)
+- [Paper 200](10.5281-zenodo.19869263/)
 

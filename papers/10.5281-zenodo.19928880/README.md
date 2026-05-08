@@ -32,7 +32,7 @@ Shows that the Freudenthal-Tits Magic Square uniquely determines the ASA structu
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19713350/README|10.5281-zenodo.19713350]]
-- [[../10.5281-zenodo.19824028/README|10.5281-zenodo.19824028]]
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
+- [Paper 207](10.5281-zenodo.19713350/)
+- [Paper 240](10.5281-zenodo.19824028/)
+- [Paper 206](10.5281-zenodo.19821692/)
 

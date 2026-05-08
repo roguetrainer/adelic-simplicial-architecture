@@ -32,7 +32,7 @@ Develops the first rigorous calculus for octonions and exceptional algebras: der
 
 ## Related Papers
 
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
-- [[../10.5281-zenodo.19824028/README|10.5281-zenodo.19824028]]
-- [[../10.5281-zenodo.20057808/README|10.5281-zenodo.20057808]]
+- [Paper 201](10.5281-zenodo.17981393/)
+- [Paper 240](10.5281-zenodo.19824028/)
+- [Paper 267](10.5281-zenodo.20057808/)
 

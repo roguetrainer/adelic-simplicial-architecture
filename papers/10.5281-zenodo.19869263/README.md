@@ -32,7 +32,7 @@ Introduces the Fano-Foam Manifold: a simplicial complex built from Fano-line 2-s
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19713350/README|10.5281-zenodo.19713350]]
-- [[../10.5281-zenodo.20060285/README|10.5281-zenodo.20060285]]
-- [[../10.5281-zenodo.20059019/README|10.5281-zenodo.20059019]]
+- [Paper 207](10.5281-zenodo.19713350/)
+- [Paper 214](10.5281-zenodo.20060285/)
+- [Paper 213](10.5281-zenodo.20059019/)
 

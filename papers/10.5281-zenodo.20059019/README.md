@@ -32,7 +32,7 @@ Introduces VoT: a taxonomy of agentic AI reasoning topologies (Chain, Tree, Mesh
 
 ## Related Papers
 
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
-- [[../10.5281-zenodo.20060285/README|10.5281-zenodo.20060285]]
-- [[../10.5281-zenodo.20060303/README|10.5281-zenodo.20060303]]
+- [Paper 201](10.5281-zenodo.17981393/)
+- [Paper 214](10.5281-zenodo.20060285/)
+- [Paper 199](10.5281-zenodo.20060303/)
 

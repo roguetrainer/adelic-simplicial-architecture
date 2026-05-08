@@ -32,6 +32,6 @@ Apéry's polynomial is factored using G₂ geometry. Trilinear associators and F
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20029647/README|10.5281-zenodo.20029647]]
-- [[../10.5281-zenodo.19824028/README|10.5281-zenodo.19824028]]
+- [Paper 265](10.5281-zenodo.20029647/)
+- [Paper 240](10.5281-zenodo.19824028/)
 

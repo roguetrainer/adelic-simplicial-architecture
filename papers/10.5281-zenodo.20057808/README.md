@@ -32,7 +32,9 @@ Restricts the SYK model's random couplings to Fano-line co-associative quadruple
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20058013/README|10.5281-zenodo.20058013]]
-- [[../10.5281-zenodo.20058092/README|10.5281-zenodo.20058092]]
-- [[../10.5281-zenodo.20025384/README|10.5281-zenodo.20025384]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.20057808/)
+- [Paper 268](10.5281-zenodo.20058013/)
+- [Paper 270](10.5281-zenodo.20058092/)
+- [Paper 211](10.5281-zenodo.20025384/)
+## Code
+
+[Code for this paper](../../code/10.5281-zenodo.20057808/)

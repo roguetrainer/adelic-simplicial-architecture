@@ -32,6 +32,6 @@ Conjectures a 4-term recurrence for ζ(21) analogous to Apéry's recurrence for 
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20031913/README|10.5281-zenodo.20031913]]
-- [[../10.5281-zenodo.19824028/README|10.5281-zenodo.19824028]]
+- [Paper 266](10.5281-zenodo.20031913/)
+- [Paper 240](10.5281-zenodo.19824028/)
 

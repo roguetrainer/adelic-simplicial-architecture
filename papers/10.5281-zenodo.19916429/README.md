@@ -32,7 +32,7 @@ Specifies the Origami ISA: a machine-code level instruction set for the topologi
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19713350/README|10.5281-zenodo.19713350]]
-- [[../10.5281-zenodo.19743800/README|10.5281-zenodo.19743800]]
-- [[../10.5281-zenodo.19821692/README|10.5281-zenodo.19821692]]
+- [Paper 207](10.5281-zenodo.19713350/)
+- [Paper 205](10.5281-zenodo.19743800/)
+- [Paper 206](10.5281-zenodo.19821692/)
 

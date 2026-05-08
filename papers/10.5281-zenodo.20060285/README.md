@@ -32,7 +32,7 @@ Fano-RAG stores ternary facts as Fano-line 2-simplices. The octonion associator 
 
 ## Related Papers
 
-- [[../10.5281-zenodo.20059019/README|10.5281-zenodo.20059019]]
-- [[../10.5281-zenodo.17981393/README|10.5281-zenodo.17981393]]
-- [[../10.5281-zenodo.19869263/README|10.5281-zenodo.19869263]]
+- [Paper 213](10.5281-zenodo.20059019/)
+- [Paper 201](10.5281-zenodo.17981393/)
+- [Paper 200](10.5281-zenodo.19869263/)
 

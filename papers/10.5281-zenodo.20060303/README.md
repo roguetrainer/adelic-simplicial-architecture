@@ -32,7 +32,7 @@ The Q-VM is the H-rung routing layer of the R-C-H-O OS. Its Sp(2)≅Spin(5) stru
 
 ## Related Papers
 
-- [[../10.5281-zenodo.19922441/README|10.5281-zenodo.19922441]]
-- [[../10.5281-zenodo.20058013/README|10.5281-zenodo.20058013]]
-- [[../10.5281-zenodo.20059019/README|10.5281-zenodo.20059019]]
+- [Paper 217](10.5281-zenodo.19922441/)
+- [Paper 268](10.5281-zenodo.20058013/)
+- [Paper 213](10.5281-zenodo.20059019/)
 
