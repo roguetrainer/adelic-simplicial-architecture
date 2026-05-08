@@ -5,8 +5,6 @@ parent: Portfolios
 nav_order: 2
 ---
 
-# Portfolio B — Foundational Mathematics
-
 **Primary audience:** Mathematicians — algebraic geometry, category theory, exceptional Lie theory, combinatorics
 
 ---
@@ -30,7 +28,7 @@ The **Magic Square Architecture** (Paper 263) situates the entire ASA within the
 ## Papers
 
 | # | Paper |
-|---|-------|
+| --- | --- |
 | [200](../papers/10.5281-zenodo.19869263/) | The Fano-Foam Manifold and the Excluded Volume Principle |
 | [207](../papers/10.5281-zenodo.19713350/) | The 731-Calculus: Magmoidal Category Theory, Octonionic Spin Foams, and the Architecture of the Topological Processor |
 | [263](../papers/10.5281-zenodo.19928880/) | The Architecture of Inevitability: The Freudenthal-Tits Magic Square as the Blueprint for the ASA |

@@ -5,8 +5,6 @@ parent: Portfolios
 nav_order: 4
 ---
 
-# Portfolio D — Protocols
-
 **Primary audience:** Cryptographers, security engineers, quantum networking researchers
 
 ---
@@ -40,7 +38,7 @@ The Fano Monogamy Paradox (Paper 270, Portfolio F) provides a geometric security
 ## Papers
 
 | # | Paper |
-|---|-------|
+| --- | --- |
 | [208](../papers/10.5281-zenodo.19826357/) | Sequence-Dependent Cryptography (The Magmoidal Cipher): Verifiable Delay Functions, V31-QKD, and Asymmetric Sequential Locks via Non-Associative Fano-Geometry |
 
 ---

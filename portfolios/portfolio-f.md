@@ -5,8 +5,6 @@ parent: Portfolios
 nav_order: 6
 ---
 
-# Portfolio F — Quantum Foundations
-
 **Primary audience:** Quantum information theorists, quantum foundations researchers, quantum logicians
 
 ---
@@ -56,7 +54,7 @@ These three paradoxes are not isolated curiosities. They connect directly to:
 ## Papers
 
 | # | Paper |
-|---|-------|
+| --- | --- |
 | [268](../papers/10.5281-zenodo.20058013/) | The Spacelike Associator Paradox: Sequential Quantum Channels, Non-Associative Measurement Back-Action, and the Causal Firewall of the $G_2$ Vacuum |
 | [269](../papers/10.5281-zenodo.20058083/) | Hardy's Paradox and the Fano Associator: A Geometric Diagnosis of Quantum Contextuality |
 | [270](../papers/10.5281-zenodo.20058092/) | The Fano Monogamy Paradox: Irreducible Three-Body Entanglement and the Tripartite Hardy Impossible Event |

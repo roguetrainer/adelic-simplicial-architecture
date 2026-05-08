@@ -185,6 +185,10 @@
   },
   "active": "d5811222c91b0eff",
   "lastOpenFiles": [
+    "code/10.5281-zenodo.20086746/x203_exp9_topological_immune_system.py",
+    "code/10.5281-zenodo.20086746",
+    "papers/10.5281-zenodo.20086746/README.md",
+    "papers/10.5281-zenodo.20086746",
     "notes/note-n02-lohmiller-slotine.md",
     "notes/note-n01-hardy-axioms.md",
     "notes/index.md",
@@ -201,7 +205,6 @@
     "_includes",
     "assets/images/asa-logo.png",
     "assets/images",
-    "assets",
     "papers/index.md",
     "portfolios/portfolio-f.md",
     "portfolios/portfolio-e.md",
@@ -210,7 +213,6 @@
     "portfolios/portfolio-b.md",
     "portfolios/portfolio-a.md",
     "portfolios/index.md",
-    "portfolios",
     "index.md"
   ]
 }

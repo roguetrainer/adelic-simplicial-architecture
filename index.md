@@ -8,8 +8,6 @@ nav_order: 1
   <img src="/adelic-simplicial-architecture/assets/images/asa-logo.png" alt="ASA logo" width="220">
 </div>
 
-# Adelic Simplicial Architecture
-
 **Author:** Ian R. C. Buckley — [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)
 
 Non-associative computing across the R-C-H-O division algebra ladder. Working papers, experiment code, and numerical results.
@@ -45,12 +43,8 @@ See the [Glossary](glossary/) for definitions of all key terms.
 
 ## Paper Index
 
----
-
-## Paper Index
-
 | # | Title | Portfolio |
-|---|-------|-----------|
+| --- | --- | --- |
 | [000](papers/10.5281-zenodo.19977475/) | An Adelic Invitation | Intro |
 | [199](papers/10.5281-zenodo.20060303/) | The Quaternionic Virtual Machine (Q-VM) | C |
 | [200](papers/10.5281-zenodo.19869263/) | The Fano-Foam Manifold and the Excluded Volume Principle | B |
@@ -62,7 +56,7 @@ See the [Glossary](glossary/) for definitions of all key terms.
 | [208](papers/10.5281-zenodo.19826357/) | Sequence-Dependent Cryptography (Magmoidal Cipher) | D |
 | [210](papers/10.5281-zenodo.19929360/) | Geometric Interpretation of Code Switching | C |
 | [211](papers/10.5281-zenodo.20025384/) | Non-Associative Calculus | A |
-| [203](papers/10.5281-zenodo.20086746/) | The Affine Holomorphic Resonance Network (A-HRN) | C (AI) |
+| [203](papers/10.5281-zenodo.20086746/) | The Unitary Resonance Network (URN) | C (AI) |
 | [218](papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG | C (AI) |
 | [221](papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem | C (AI) |
 | [213](papers/10.5281-zenodo.20059019/) | Volume of Thought (VoT) | C |

@@ -5,8 +5,6 @@ parent: Portfolios
 nav_order: 1
 ---
 
-# Portfolio A — Core Engine
-
 **Primary audience:** AI engineers, ML researchers, optimisation theorists
 
 ---
@@ -34,7 +32,7 @@ where the energies $E_k$ are derived from the Fano-Fisher metric on $G_2$, not f
 ## Papers
 
 | # | Paper |
-|---|-------|
+| --- | --- |
 | [201](../papers/10.5281-zenodo.17981393/) | The Maslov-Gibbs Einsum (MGE): Tropical Crystallization and the Thermodynamic Bridge Between Continuous Optimization and Discrete Logic |
 | [202](../papers/10.5281-zenodo.19858021/) | Topological Resonance Synthesis (TRS): Information Geometry, Holomorphic Relaxation, and the Thermodynamic Engine of the Topological Processor |
 | [211](../papers/10.5281-zenodo.20025384/) | Non-Associative Calculus: Octonionic Path Integrals, Cauchy-Fueter Regularity, and the Fundamental $G_2$ Monopole Field |

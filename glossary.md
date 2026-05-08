@@ -175,7 +175,7 @@ Key phenomena: Thermodynamic Freeze-Out (non-Fano gradients suppressed), Topolog
 The **Resonance Processing Unit (RPU)** (Paper 205) and a standard **Quantum Processing Unit (QPU)** share nearly identical physical hardware — both operate on qubits, use quantum gates, and require cryogenic isolation. The difference is entirely in the *instruction set* and the *logical primitive* that the hardware is asked to implement.
 
 | | QPU (standard) | RPU (ASA) |
-|---|---|---|
+| --- | --- | --- |
 | **Logical primitive** | Unitary rotation on $\mathbb{C}^{2^n}$ | Fano-line selection on $\mathbb{O}$ |
 | **Gate set** | Clifford + T (or native 2-qubit gates) | 731 Fano gates (Pachner moves on $\mathrm{PG}(2,2)$) |
 | **Error correction** | Surface code / stabiliser codes | Fibrational Tensor Codes ($G_2$ holonomy) |
@@ -229,7 +229,7 @@ The complex rung ($v = 1$, a single imaginary unit $i$, no non-trivial associato
 V31 therefore spans the *non-trivial* part of the Hurwitz hierarchy — the rungs at which topology, non-commutativity ($v=3$) and non-associativity ($v=7$) first appear. Every V31 construction has two concrete instantiations, one at each rung:
 
 | V31 instance | $v$ | Rung | Associator | Construction |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 331 | 3 | $\mathbb{H}$ | $\|\mathcal{A}\| = 0$ always | Q-VM (Paper 199) |
 | 731 | 7 | $\mathbb{O}$ | $\|\mathcal{A}\| \in \{0,2\}$ | RPU, 731-Calculus, Origami ISA (Papers 205, 207, 258) |
 
@@ -238,7 +238,7 @@ V31 therefore spans the *non-trivial* part of the Hurwitz hierarchy — the rung
 ### Summary
 
 | Code | Role | $v$ | Primary paper |
-|------|------|-----|---------------|
+| --- | --- | --- | --- |
 | V31 | Umbrella: quaternionic + octonionic family | $v \in \{3,7\}$ | Papers 199–258 family |
 | 331 | Quaternionic instance | $v = 3$ | Paper 199 (Q-VM) |
 | 731 | Octonionic instance | $v = 7$ | Papers 207, 258 |

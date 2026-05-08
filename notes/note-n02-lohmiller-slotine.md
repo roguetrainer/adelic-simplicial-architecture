@@ -67,7 +67,7 @@ More precisely: in the EPR experiment, the correlations that violate Bell's ineq
 ## Summary
 
 | | Lohmiller-Slotine | Vattay | ASA |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Quantum potential | Dropped (error) | Required (correct) | Identified with MGE finite-$\beta$ curvature |
 | Classical limit | Claimed as exact | Actually WKB only | Exact as $\beta \to \infty$ (Maslov dequantisation) |
 | Path integrals | Can be replaced | Not addressed | Must be upgraded to Octonionic PI (Paper 211) |

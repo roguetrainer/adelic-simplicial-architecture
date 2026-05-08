@@ -5,8 +5,6 @@ parent: Portfolios
 nav_order: 5
 ---
 
-# Portfolio E — Grand Challenges
-
 **Primary audience:** Physicists, chemists, biologists, number theorists
 
 ---
@@ -48,7 +46,7 @@ The same non-associative geometry that governs nuclear magic numbers and electro
 ## Papers
 
 | # | Paper |
-|---|-------|
+| --- | --- |
 | [240](../papers/10.5281-zenodo.19824028/) | Structural Observations on $J^3(\mathbb{O})$, the Bruhat-Tits Cospan, and Questions for Automorphic Forms Specialists |
 | [245](../papers/10.5281-zenodo.19960385/) | Nuclear Magic Numbers and Exceptional Lie Algebras |
 | [246](../papers/10.5281-zenodo.19964651/) | Electron Shell Structure and Exceptional Lie Algebras |
