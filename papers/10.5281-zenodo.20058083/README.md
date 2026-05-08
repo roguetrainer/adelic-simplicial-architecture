@@ -30,9 +30,12 @@ The bipartite Hardy paradox is given a geometric diagnosis: the octonion associa
 
 [View on Zenodo](https://zenodo.org/records/20058083)
 
+## Notes
+
+- [N01 — Does the ASA Violate Hardy's Axioms?](../../notes/note-n01-hardy-axioms/) — Explains exactly how the ASA deliberately violates Hardy's Axiom 4 (Composite Systems) and modifies Axiom 5 (Continuity), and why this resolves rather than breaks Hardy's paradox.
+
 ## Related Papers
 
-- [[../10.5281-zenodo.20058092/README|10.5281-zenodo.20058092]]
-- [[../10.5281-zenodo.20058013/README|10.5281-zenodo.20058013]]
-- [[../10.5281-zenodo.19929360/README|10.5281-zenodo.19929360]]
-## Code\n\n[Code for this paper](../../code/10.5281-zenodo.20058083/)
+- [Paper 270 — The Fano Monogamy Paradox](../10.5281-zenodo.20058092/)
+- [Paper 268 — The Spacelike Associator Paradox](../10.5281-zenodo.20058013/)
+- [Paper 210 — Geometric Code Switching](../10.5281-zenodo.19929360/)

@@ -63,6 +63,12 @@ These three paradoxes are not isolated curiosities. They connect directly to:
 
 ---
 
+## Notes
+
+- [N01 — Does the ASA Violate Hardy's Axioms?](../notes/note-n01-hardy-axioms/) — A direct answer to the foundational question: how and why the ASA violates Axiom 4 and modifies Axiom 5, and why this resolves Hardy's paradox rather than merely evading it.
+
+---
+
 ## Key Glossary Terms
 
 [Associator](../glossary/#associator) · [Fano Plane](../glossary/#fano-plane) · [$G_2$](../glossary/#g_2) · [Steane Code / QEC](../glossary/#steane-code--quantum-error-correction-qec) · [BCH Obstruction](../glossary/#bch-obstruction)
