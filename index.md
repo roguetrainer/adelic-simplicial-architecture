@@ -13,6 +13,7 @@ nav_order: 1
 Non-associative computing across the R-C-H-O division algebra ladder. Working papers, experiment code, and numerical results.
 
 [Browse all papers on Zenodo](https://zenodo.org/communities/asa-research/records){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Paradigm Comparison Table](paradigm-comparison/){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/roguetrainer/adelic-simplicial-architecture){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
@@ -65,6 +66,8 @@ See the [Glossary](glossary/) for definitions of all key terms.
 | [240](papers/10.5281-zenodo.19824028/) | Structural Observations on J³(𝕆) | E |
 | [245](papers/10.5281-zenodo.19960385/) | Nuclear Magic Numbers and Exceptional Lie Algebras | E |
 | [246](papers/10.5281-zenodo.19964651/) | Electron Shell Structure and Exceptional Lie Algebras | E |
+| [235](papers/10.5281-zenodo.20100531/) | The Non-Associative No-Cloning Theorem and the Fano-Token | D |
+| [257](papers/10.5281-zenodo.20088536/) | Non-Associative Quantum Error Correction (NA-QEC) | C |
 | [258](papers/10.5281-zenodo.19916429/) | The 731 Instruction Set Architecture (Origami ISA) | C |
 | [263](papers/10.5281-zenodo.19928880/) | The Architecture of Inevitability (Magic Square) | B |
 | [265](papers/10.5281-zenodo.20029647/) | The ζ(21) Apéry Generalization | E |
