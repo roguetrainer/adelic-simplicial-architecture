@@ -185,6 +185,8 @@
   },
   "active": "d5811222c91b0eff",
   "lastOpenFiles": [
+    "_data/papers.json",
+    "_data",
     "explainers.md",
     "papers/10.5281-zenodo.20025384/EXPLAINER.md",
     "papers/10.5281-zenodo.19928880/EXPLAINER.md",
@@ -218,9 +220,7 @@
     "papers/paper-271-placeholder",
     "papers/10.5281-zenodo.20100531/README.md",
     "papers/10.5281-zenodo.20100531",
-    "paradigm-comparison.md",
     "papers/10.5281-zenodo.20088536",
-    "papers/10.5281-zenodo.20088537",
     "assets/images/asa-logo.png"
   ]
 }
