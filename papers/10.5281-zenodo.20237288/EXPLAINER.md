@@ -3,7 +3,8 @@ layout: default
 title: "Thermodynamic Information Routing: A Unified Framework for Gibbs Aggregation Across Economics, Computation, and Knowledge Retrieval"
 parent: Explainers
 nav_exclude: false
-tags: [thermodynamics, information-routing, gibbs-distribution, universal-framework, free-energy]
+tags: [economics, thermodynamics, ai-ml, optimisation]
+portfolio: G
 ---
 
 # Thermodynamic Information Routing: A Unified Framework for Gibbs Aggregation Across Economics, Computation, and Knowledge Retrieval: An Accessible Guide

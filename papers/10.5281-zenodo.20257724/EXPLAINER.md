@@ -3,7 +3,8 @@ layout: default
 title: "Valuation Adjustments as Curvature: XVA in Financial Gauge Theory"
 parent: Explainers
 nav_exclude: false
-tags: [xva, credit-valuation-adjustment, gauge-theory, curvature, derivatives]
+tags: [economics, thermodynamics]
+portfolio: G
 ---
 
 # Valuation Adjustments as Curvature: XVA in Financial Gauge Theory: An Accessible Guide

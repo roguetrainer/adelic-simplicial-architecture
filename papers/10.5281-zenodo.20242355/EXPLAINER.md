@@ -3,7 +3,8 @@ layout: default
 title: "Currency Bundles: Foreign Exchange as Connection Curvature on the Financial Manifold"
 parent: Explainers
 nav_exclude: false
-tags: [foreign-exchange, gauge-theory, connections, curvature, pacioli-manifold]
+tags: [economics, thermodynamics]
+portfolio: G
 ---
 
 # Currency Bundles: Foreign Exchange as Connection Curvature on the Financial Manifold: An Accessible Guide

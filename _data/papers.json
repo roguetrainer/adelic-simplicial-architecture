@@ -4,8 +4,15 @@
     "title": "The Fano-Foam Manifold",
     "doi": "10.5281/zenodo.19869263",
     "slug": "10.5281-zenodo.19869263",
-    "portfolios": ["B"],
-    "tags": ["foundations", "geometry", "fano", "g2"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "g2"
+    ],
     "explainer": true
   },
   {
@@ -13,8 +20,15 @@
     "title": "The Maslov-Gibbs Einsum (MGE)",
     "doi": "10.5281/zenodo.17981393",
     "slug": "10.5281-zenodo.17981393",
-    "portfolios": ["A"],
-    "tags": ["core-engine", "optimisation", "ai-ml", "tropical"],
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "optimisation",
+      "ai-ml",
+      "tropical"
+    ],
     "explainer": true
   },
   {
@@ -22,8 +36,15 @@
     "title": "Topological Resonance Synthesis (TRS)",
     "doi": "10.5281/zenodo.19858021",
     "slug": "10.5281-zenodo.19858021",
-    "portfolios": ["A"],
-    "tags": ["core-engine", "optimisation", "ai-ml", "geometry"],
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "optimisation",
+      "ai-ml",
+      "geometry"
+    ],
     "explainer": true
   },
   {
@@ -31,8 +52,14 @@
     "title": "The Unitary Resonance Network (URN)",
     "doi": "10.5281/zenodo.20086746",
     "slug": "10.5281-zenodo.20086746",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "ai-ml", "continual-learning"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "ai-ml",
+      "continual-learning"
+    ],
     "explainer": true
   },
   {
@@ -40,8 +67,14 @@
     "title": "The Resonance Processing Unit (RPU)",
     "doi": "10.5281/zenodo.19743800",
     "slug": "10.5281-zenodo.19743800",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "qec", "hardware"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "hardware"
+    ],
     "explainer": true
   },
   {
@@ -49,8 +82,15 @@
     "title": "Fibrational Tensor Codes (FTCs)",
     "doi": "10.5281/zenodo.19821692",
     "slug": "10.5281-zenodo.19821692",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "qec", "fano", "g2"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "fano",
+      "g2"
+    ],
     "explainer": true
   },
   {
@@ -58,8 +98,15 @@
     "title": "The 731-Calculus (Part 1)",
     "doi": "10.5281/zenodo.19713350",
     "slug": "10.5281-zenodo.19713350",
-    "portfolios": ["B"],
-    "tags": ["foundations", "geometry", "fano", "category-theory"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "category-theory"
+    ],
     "explainer": true
   },
   {
@@ -67,8 +114,14 @@
     "title": "The Magmoidal Cipher",
     "doi": "10.5281/zenodo.19826357",
     "slug": "10.5281-zenodo.19826357",
-    "portfolios": ["D"],
-    "tags": ["protocols", "cryptography", "post-quantum"],
+    "portfolios": [
+      "D"
+    ],
+    "tags": [
+      "protocols",
+      "cryptography",
+      "post-quantum"
+    ],
     "explainer": false
   },
   {
@@ -76,8 +129,17 @@
     "title": "Non-Associative Calculus",
     "doi": "10.5281/zenodo.20025384",
     "slug": "10.5281-zenodo.20025384",
-    "portfolios": ["A", "B"],
-    "tags": ["foundations", "core-engine", "calculus", "g2", "octonions"],
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "core-engine",
+      "calculus",
+      "g2",
+      "octonions"
+    ],
     "explainer": true
   },
   {
@@ -85,8 +147,14 @@
     "title": "Fibrational Lattice Surgery (FLS)",
     "doi": "10.5281/zenodo.19922441",
     "slug": "10.5281-zenodo.19922441",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "qec", "hardware"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "hardware"
+    ],
     "explainer": true
   },
   {
@@ -94,8 +162,15 @@
     "title": "Thermodynamic Routing of Stale Gradients",
     "doi": "10.5281/zenodo.20077198",
     "slug": "10.5281-zenodo.20077198",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "ai-ml", "optimisation", "distributed"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "ai-ml",
+      "optimisation",
+      "distributed"
+    ],
     "explainer": true
   },
   {
@@ -103,8 +178,15 @@
     "title": "Non-Associative Information Geometry",
     "doi": "10.5281/zenodo.20076498",
     "slug": "10.5281-zenodo.20076498",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "ai-ml", "geometry", "fano"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "ai-ml",
+      "geometry",
+      "fano"
+    ],
     "explainer": false
   },
   {
@@ -112,8 +194,15 @@
     "title": "The Riemann Spectrometer",
     "doi": "10.5281/zenodo.19824028",
     "slug": "10.5281-zenodo.19824028",
-    "portfolios": ["E"],
-    "tags": ["grand-challenges", "number-theory", "riemann", "g2"],
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "riemann",
+      "g2"
+    ],
     "explainer": true
   },
   {
@@ -121,8 +210,15 @@
     "title": "The Origami ISA",
     "doi": "10.5281/zenodo.19916429",
     "slug": "10.5281-zenodo.19916429",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "hardware", "instruction-set", "fano"],
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "hardware",
+      "instruction-set",
+      "fano"
+    ],
     "explainer": true
   },
   {
@@ -130,26 +226,47 @@
     "title": "The Architecture of Inevitability",
     "doi": "10.5281/zenodo.19928880",
     "slug": "10.5281-zenodo.19928880",
-    "portfolios": ["B"],
-    "tags": ["foundations", "geometry", "magic-square", "octonions"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "magic-square",
+      "octonions"
+    ],
     "explainer": true
   },
   {
     "number": 265,
-    "title": "The ζ(21) Apéry Ladder",
+    "title": "The \u03b6(21) Ap\u00e9ry Ladder",
     "doi": "10.5281/zenodo.20029647",
     "slug": "10.5281-zenodo.20029647",
-    "portfolios": ["E"],
-    "tags": ["grand-challenges", "number-theory", "recurrence", "g2"],
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "recurrence",
+      "g2"
+    ],
     "explainer": true
   },
   {
     "number": 266,
-    "title": "Geometric Shadows in Apéry's Polynomial",
+    "title": "Geometric Shadows in Ap\u00e9ry's Polynomial",
     "doi": "10.5281/zenodo.20031913",
     "slug": "10.5281-zenodo.20031913",
-    "portfolios": ["E"],
-    "tags": ["grand-challenges", "number-theory", "recurrence", "g2"],
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "recurrence",
+      "g2"
+    ],
     "explainer": true
   },
   {
@@ -157,8 +274,14 @@
     "title": "The Fano Monogamy Paradox",
     "doi": "10.5281/zenodo.20058092",
     "slug": "10.5281-zenodo.20058092",
-    "portfolios": ["F"],
-    "tags": ["quantum-foundations", "entanglement", "fano"],
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "entanglement",
+      "fano"
+    ],
     "explainer": true
   },
   {
@@ -166,8 +289,15 @@
     "title": "The 731 Frog Calculus (Part 2)",
     "doi": "10.5281/zenodo.20139448",
     "slug": "10.5281-zenodo.20139448",
-    "portfolios": ["B"],
-    "tags": ["foundations", "geometry", "fano", "category-theory"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "category-theory"
+    ],
     "explainer": true
   },
   {
@@ -175,8 +305,15 @@
     "title": "Conserved Computation",
     "doi": "10.5281/zenodo.20127517",
     "slug": "10.5281-zenodo.20127517",
-    "portfolios": ["A"],
-    "tags": ["core-engine", "geometry", "noether", "g2"],
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "geometry",
+      "noether",
+      "g2"
+    ],
     "explainer": true
   },
   {
@@ -184,8 +321,222 @@
     "title": "The Temperature of Rationality: Maslov-Gibbs Ensemble as a Foundation for Heterogeneous-Agent Economics",
     "doi": "10.5281/zenodo.20234841",
     "slug": "10.5281-zenodo.20234841",
-    "portfolios": ["G"],
-    "tags": ["economics", "thermodynamics", "agent-based-models", "ai-ml"],
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "agent-based-models",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 291,
+    "title": "The Topology of Conservation: Double-Entry Accounting as a Discrete Gauge Theory of Macroeconomics",
+    "doi": "10.5281/zenodo.20234853",
+    "slug": "10.5281-zenodo.20234853",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "topology",
+      "thermodynamics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 292,
+    "title": "Beyond DAGs: A Non-Associative Algebra of Policy Interventions",
+    "doi": "10.5281/zenodo.20234870",
+    "slug": "10.5281-zenodo.20234870",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "non-associative-algebra",
+      "causality"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 293,
+    "title": "Thermal Attribution: Differentiable Shapley Values, Latent Bottlenecks, and the Tropical Limit of Cooperative Game Theory",
+    "doi": "10.5281/zenodo.20236870",
+    "slug": "10.5281-zenodo.20236870",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "attribution",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 294,
+    "title": "Thermodynamic Information Routing: A Unified Framework for Gibbs Aggregation Across Economics, Computation, and Knowledge Retrieval",
+    "doi": "10.5281/zenodo.20237288",
+    "slug": "10.5281-zenodo.20237288",
+    "portfolios": [
+      "G",
+      "A"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "information-routing",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 295,
+    "title": "Currency Bundles: Foreign Exchange as Connection Curvature on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20242355",
+    "slug": "10.5281-zenodo.20242355",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "foreign-exchange",
+      "curvature"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 296,
+    "title": "Term Structure Bundles: Interest Rates as Temporal Connections on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20244445",
+    "slug": "10.5281-zenodo.20244445",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "interest-rates",
+      "term-structure"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 297,
+    "title": "The Geometry of the Euler\u2013Mascheroni Constant",
+    "doi": "10.5281/zenodo.20139443",
+    "slug": "10.5281-zenodo.20139443",
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "number-theory",
+      "geometry",
+      "thermodynamics",
+      "holonomy"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 298,
+    "title": "Credit Bundles: Survival Probabilities as Parallel Transport on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20257596",
+    "slug": "10.5281-zenodo.20257596",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "credit-risk",
+      "parallel-transport"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 299,
+    "title": "Valuation Adjustments as Curvature: XVA in Financial Gauge Theory",
+    "doi": "10.5281/zenodo.20257724",
+    "slug": "10.5281-zenodo.20257724",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "xva",
+      "curvature"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 300,
+    "title": "Economic Gauge Theory: Stock-Flow Consistency, Thermodynamic Constraints, and Climate Risk on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20259495",
+    "slug": "10.5281-zenodo.20259495",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "stock-flow-consistency",
+      "climate"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 301,
+    "title": "A Primer on Economic Gauge Theory",
+    "doi": "10.5281/zenodo.20259505",
+    "slug": "10.5281-zenodo.20259505",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "thermodynamics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 305,
+    "title": "Differentiable Agent-Based Macroeconomics: A Gauge-Theoretic Digital Twin on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20261945",
+    "slug": "10.5281-zenodo.20261945",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "agent-based-models",
+      "differentiable-programming",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 306,
+    "title": "The Pacioli Combinator Library: A Universal Domain-Specific Language for Financial and Economic Computation",
+    "doi": "10.5281/zenodo.20262070",
+    "slug": "10.5281-zenodo.20262070",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "dsl",
+      "programming",
+      "gauge-theory"
+    ],
     "explainer": true
   }
 ]

@@ -3,7 +3,8 @@ layout: default
 title: "The Geometry of the Euler–Mascheroni Constant"
 parent: Explainers
 nav_exclude: false
-tags: [number-theory, euler-mascheroni, holonomy, thermodynamics, riemann-hypothesis]
+tags: [number-theory, thermodynamics]
+portfolio: E
 ---
 
 # The Geometry of the Euler–Mascheroni Constant: An Accessible Guide

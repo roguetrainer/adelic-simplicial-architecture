@@ -3,7 +3,8 @@ layout: default
 title: "The Pacioli Combinator Library: A Universal Domain-Specific Language for Financial and Economic Computation on the Pacioli Manifold"
 parent: Explainers
 nav_exclude: false
-tags: [dsl, programming, pacioli-manifold, combinators, financial-computing]
+tags: [economics, thermodynamics, optimisation]
+portfolio: G
 ---
 
 # The Pacioli Combinator Library: A Universal Domain-Specific Language for Financial and Economic Computation on the Pacioli Manifold: An Accessible Guide

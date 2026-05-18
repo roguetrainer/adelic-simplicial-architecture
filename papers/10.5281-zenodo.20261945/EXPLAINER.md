@@ -3,7 +3,8 @@ layout: default
 title: "Differentiable Agent-Based Macroeconomics: A Gauge-Theoretic Digital Twin on the Pacioli Manifold"
 parent: Explainers
 nav_exclude: false
-tags: [agent-based-models, differentiable-programming, macroeconomics, digital-twin, pacioli-manifold]
+tags: [economics, agent-based-models, ai-ml, optimisation]
+portfolio: G
 ---
 
 # Differentiable Agent-Based Macroeconomics: A Gauge-Theoretic Digital Twin on the Pacioli Manifold: An Accessible Guide

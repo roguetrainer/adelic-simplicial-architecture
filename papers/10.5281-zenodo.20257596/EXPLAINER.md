@@ -3,7 +3,8 @@ layout: default
 title: "Credit Bundles: Survival Probabilities as Parallel Transport on the Pacioli Manifold"
 parent: Explainers
 nav_exclude: false
-tags: [credit-risk, gauge-theory, survival-probability, parallel-transport, pacioli-manifold]
+tags: [economics, thermodynamics]
+portfolio: G
 ---
 
 # Credit Bundles: Survival Probabilities as Parallel Transport on the Pacioli Manifold: An Accessible Guide

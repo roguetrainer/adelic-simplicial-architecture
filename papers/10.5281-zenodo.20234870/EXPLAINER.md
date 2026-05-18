@@ -3,7 +3,8 @@ layout: default
 title: "Beyond DAGs: A Non-Associative Algebra of Policy Interventions"
 parent: Explainers
 nav_exclude: false
-tags: [causality, non-associative-algebra, policy, economic-policy]
+tags: [economics, optimisation]
+portfolio: G
 ---
 
 # Beyond DAGs: A Non-Associative Algebra of Policy Interventions: An Accessible Guide

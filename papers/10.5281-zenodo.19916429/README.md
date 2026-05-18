@@ -53,7 +53,7 @@ The self-duality of $G_2$ is encoded directly in the symbols: the coroot isomorp
 
 $$◇ \circ ■ = \mathrm{id}, \qquad ▷ \circ ▲ = \mathrm{id}$$
 
-See [Paper 271](../paper-271-g2-self-duality/) for the full algebraic development.
+See [Paper 271](../10.5281-zenodo.20101634/) for the full algebraic development.
 
 ## Zenodo
 
