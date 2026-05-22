@@ -125,6 +125,37 @@
     "explainer": false
   },
   {
+    "number": 209,
+    "title": "Nuclear Magic Numbers and Exceptional Lie Algebras",
+    "doi": "10.5281/zenodo.19960385",
+    "slug": "10.5281-zenodo.19960385",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "g2",
+      "octonions",
+      "number-theory"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 210,
+    "title": "Electron Shell Structure and Exceptional Lie Algebras: Shell Capacities, the Division Algebra Ladder, and the Lanthanide Contraction as G₂ Rigidity",
+    "doi": "10.5281/zenodo.19964651",
+    "slug": "10.5281-zenodo.19964651",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "g2",
+      "octonions"
+    ],
+    "explainer": false
+  },
+  {
     "number": 211,
     "title": "Non-Associative Calculus",
     "doi": "10.5281/zenodo.20025384",
@@ -141,6 +172,22 @@
       "octonions"
     ],
     "explainer": true
+  },
+  {
+    "number": 212,
+    "title": "Geometric Code Switching: PG(2,2) → PG(3,2) Projective Envelopes, Transversal CCZ, and a Geometric Primitive for Grover's Diffusion Operator",
+    "doi": "10.5281/zenodo.19929360",
+    "slug": "10.5281-zenodo.19929360",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "fano",
+      "hardware"
+    ],
+    "explainer": false
   },
   {
     "number": 217,
@@ -174,6 +221,21 @@
     "explainer": true
   },
   {
+    "number": 219,
+    "title": "An Adelic Invitation: Observations on Non-Associativity, Division Algebras, and the Next Computational Paradigm",
+    "doi": "10.5281/zenodo.19977475",
+    "slug": "10.5281-zenodo.19977475",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "octonions",
+      "calculus"
+    ],
+    "explainer": false
+  },
+  {
     "number": 221,
     "title": "Non-Associative Information Geometry",
     "doi": "10.5281/zenodo.20076498",
@@ -186,6 +248,40 @@
       "ai-ml",
       "geometry",
       "fano"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 222,
+    "title": "Non-Associative Quantum Error Correction (NA-QEC): The Exceptional Jordan-KL Condition and Rank-1 Idempotents in G₂ Topologies",
+    "doi": "10.5281/zenodo.20088536",
+    "slug": "10.5281-zenodo.20088536",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "qec",
+      "quantum-foundations",
+      "g2",
+      "octonions"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 223,
+    "title": "Fano Resonance Networks (Fano-RNs): The Associator Correction Tensor, Malcev Gradients, and a Convergence Theorem for Non-Associative Backpropagation",
+    "doi": "10.5281/zenodo.20088805",
+    "slug": "10.5281-zenodo.20088805",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "ai-ml",
+      "fano",
+      "g2",
+      "optimisation"
     ],
     "explainer": false
   },
@@ -239,7 +335,7 @@
   },
   {
     "number": 265,
-    "title": "The \u03b6(21) Ap\u00e9ry Ladder",
+    "title": "The ζ(21) Apéry Ladder",
     "doi": "10.5281/zenodo.20029647",
     "slug": "10.5281-zenodo.20029647",
     "portfolios": [
@@ -255,7 +351,7 @@
   },
   {
     "number": 266,
-    "title": "Geometric Shadows in Ap\u00e9ry's Polynomial",
+    "title": "Geometric Shadows in Apéry's Polynomial",
     "doi": "10.5281/zenodo.20031913",
     "slug": "10.5281-zenodo.20031913",
     "portfolios": [
@@ -268,6 +364,53 @@
       "g2"
     ],
     "explainer": true
+  },
+  {
+    "number": 267,
+    "title": "The Fano-SYK Model: Bruhat-Tits Buildings, Non-Associative Fermionic Couplings, and the Geometric Impedance of Pre-Thermal Scrambling",
+    "doi": "10.5281/zenodo.20057808",
+    "slug": "10.5281-zenodo.20057808",
+    "portfolios": [
+      "B",
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "g2",
+      "number-theory"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 268,
+    "title": "The Spacelike Associator Paradox: Sequential Quantum Channels, Non-Associative Measurement Back-Action, and the Causal Firewall of the G₂ Vacuum",
+    "doi": "10.5281/zenodo.20058013",
+    "slug": "10.5281-zenodo.20058013",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "g2"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 269,
+    "title": "Hardy's Paradox and the Fano Associator: A Geometric Diagnosis of Quantum Contextuality",
+    "doi": "10.5281/zenodo.20058083",
+    "slug": "10.5281-zenodo.20058083",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "contextuality"
+    ],
+    "explainer": false
   },
   {
     "number": 270,
@@ -285,6 +428,88 @@
     "explainer": true
   },
   {
+    "number": 271,
+    "title": "The Self-Dual G₂ Architecture: Pachner Unitarity, CSS Symmetry, and the Crystal Spectrum Halving",
+    "doi": "10.5281/zenodo.20101634",
+    "slug": "10.5281-zenodo.20101634",
+    "portfolios": [
+      "B",
+      "C"
+    ],
+    "tags": [
+      "foundations",
+      "fano",
+      "g2",
+      "hardware"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 272,
+    "title": "The Non-Associative No-Cloning Theorem and the Fano-Token",
+    "doi": "10.5281/zenodo.20100531",
+    "slug": "10.5281-zenodo.20100531",
+    "portfolios": [
+      "D",
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "cryptography",
+      "fano",
+      "octonions"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 273,
+    "title": "Non-Associative Knowledge Hypergraphs: Fano-Structured RAG, Irreducible Ternary Relations, and Thermodynamic Retrieval via the MGE Router",
+    "doi": "10.5281/zenodo.20060286",
+    "slug": "10.5281-zenodo.20060286",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "ai-ml",
+      "fano",
+      "thermodynamics",
+      "optimisation"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 274,
+    "title": "The Quaternionic Virtual Machine (Q-VM): Quaternionic Chirality, Spinorial Routing, and the Causal Firewall of the R-C-H-O Operating System",
+    "doi": "10.5281/zenodo.20060303",
+    "slug": "10.5281-zenodo.20060303",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "hardware",
+      "octonions"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 275,
+    "title": "Volume of Thought (VoT) and Topological Agentic Swarms: Scaling Multi-Agent AI from Temporal Concurrency to Geometric Contradiction via the MGE Router",
+    "doi": "10.5281/zenodo.20059019",
+    "slug": "10.5281-zenodo.20059019",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "ai-ml",
+      "thermodynamics",
+      "optimisation"
+    ],
+    "explainer": false
+  },
+  {
     "number": 281,
     "title": "The 731 Frog Calculus (Part 2)",
     "doi": "10.5281/zenodo.20139448",
@@ -299,6 +524,22 @@
       "category-theory"
     ],
     "explainer": true
+  },
+  {
+    "number": 285,
+    "title": "G₂-Symmetric Stabilisation of Magnetic Hopfions: A Fano-Constraint Conjecture and Topological Ground State Computation",
+    "doi": "10.5281/zenodo.20127776",
+    "slug": "10.5281-zenodo.20127776",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "fano",
+      "g2",
+      "octonions"
+    ],
+    "explainer": false
   },
   {
     "number": 286,
@@ -430,7 +671,7 @@
   },
   {
     "number": 297,
-    "title": "The Geometry of the Euler\u2013Mascheroni Constant",
+    "title": "The Geometry of the Euler–Mascheroni Constant",
     "doi": "10.5281/zenodo.20139443",
     "slug": "10.5281-zenodo.20139443",
     "portfolios": [
@@ -540,6 +781,38 @@
     "explainer": true
   },
   {
+    "number": 309,
+    "title": "Temperature Without Thermodynamics: The Missing Free Energy Principle in Deep Learning",
+    "doi": "10.5281/zenodo.20269977",
+    "slug": "10.5281-zenodo.20269977",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "ai-ml",
+      "thermodynamics",
+      "optimisation"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 310,
+    "title": "In Praise of Qudits: Why Higher-Dimensional Quantum Systems Deserve Centre Stage",
+    "doi": "10.5281/zenodo.20269991",
+    "slug": "10.5281-zenodo.20269991",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "hardware",
+      "qec"
+    ],
+    "explainer": false
+  },
+  {
     "number": 311,
     "title": "The Climate Hazard Yield Surface: A Geometric Framework for the Economics of Climate Action, with Per-Household Dollar Translation and the Doomsday Clock Isocurve",
     "doi": "10.5281/zenodo.20291646",
@@ -556,22 +829,6 @@
     "explainer": true
   },
   {
-    "number": 313,
-    "title": "Thermal Economics: Implicit Differentiation Through Fixed Points as a Unifying Schema for Differentiable Economics",
-    "doi": "10.5281/zenodo.20318505",
-    "slug": "10.5281-zenodo.20318505",
-    "portfolios": [
-      "G"
-    ],
-    "tags": [
-      "economics",
-      "thermodynamics",
-      "differentiable-programming",
-      "ai-ml"
-    ],
-    "explainer": false
-  },
-  {
     "number": 312,
     "title": "Stochastic Tipping Points and the Option Value of Early Climate Investment",
     "doi": "",
@@ -584,6 +841,22 @@
       "climate",
       "stochastic",
       "real-options"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 313,
+    "title": "Thermal Economics: Implicit Differentiation Through Fixed Points as a Unifying Schema for Differentiable Economics",
+    "doi": "10.5281/zenodo.20318505",
+    "slug": "10.5281-zenodo.20318505",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "differentiable-programming",
+      "ai-ml"
     ],
     "explainer": false
   },
@@ -636,165 +909,19 @@
     "explainer": false
   },
   {
-    "number": 209,
-    "title": "Nuclear Magic Numbers and Exceptional Lie Algebras",
-    "doi": "10.5281/zenodo.19960385",
-    "slug": "10.5281-zenodo.19960385",
-    "portfolios": ["B"],
-    "tags": ["foundations", "g2", "octonions", "number-theory"],
-    "explainer": false
-  },
-  {
-    "number": 210,
-    "title": "Electron Shell Structure and Exceptional Lie Algebras: Shell Capacities, the Division Algebra Ladder, and the Lanthanide Contraction as G₂ Rigidity",
-    "doi": "10.5281/zenodo.19964651",
-    "slug": "10.5281-zenodo.19964651",
-    "portfolios": ["B"],
-    "tags": ["foundations", "g2", "octonions"],
-    "explainer": false
-  },
-  {
-    "number": 212,
-    "title": "Geometric Code Switching: PG(2,2) → PG(3,2) Projective Envelopes, Transversal CCZ, and a Geometric Primitive for Grover's Diffusion Operator",
-    "doi": "10.5281/zenodo.19929360",
-    "slug": "10.5281-zenodo.19929360",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "qec", "fano", "hardware"],
-    "explainer": false
-  },
-  {
-    "number": 219,
-    "title": "An Adelic Invitation: Observations on Non-Associativity, Division Algebras, and the Next Computational Paradigm",
-    "doi": "10.5281/zenodo.19977475",
-    "slug": "10.5281-zenodo.19977475",
-    "portfolios": ["B"],
-    "tags": ["foundations", "octonions", "calculus"],
-    "explainer": false
-  },
-  {
-    "number": 222,
-    "title": "Non-Associative Quantum Error Correction (NA-QEC): The Exceptional Jordan-KL Condition and Rank-1 Idempotents in G₂ Topologies",
-    "doi": "10.5281/zenodo.20088536",
-    "slug": "10.5281-zenodo.20088536",
-    "portfolios": ["C", "F"],
-    "tags": ["qec", "quantum-foundations", "g2", "octonions"],
-    "explainer": false
-  },
-  {
-    "number": 223,
-    "title": "Fano Resonance Networks (Fano-RNs): The Associator Correction Tensor, Malcev Gradients, and a Convergence Theorem for Non-Associative Backpropagation",
-    "doi": "10.5281/zenodo.20088805",
-    "slug": "10.5281-zenodo.20088805",
-    "portfolios": ["A", "C"],
-    "tags": ["ai-ml", "fano", "g2", "optimisation"],
-    "explainer": false
-  },
-  {
-    "number": 267,
-    "title": "The Fano-SYK Model: Bruhat-Tits Buildings, Non-Associative Fermionic Couplings, and the Geometric Impedance of Pre-Thermal Scrambling",
-    "doi": "10.5281/zenodo.20057808",
-    "slug": "10.5281-zenodo.20057808",
-    "portfolios": ["B", "F"],
-    "tags": ["quantum-foundations", "fano", "g2", "number-theory"],
-    "explainer": false
-  },
-  {
-    "number": 268,
-    "title": "The Spacelike Associator Paradox: Sequential Quantum Channels, Non-Associative Measurement Back-Action, and the Causal Firewall of the G₂ Vacuum",
-    "doi": "10.5281/zenodo.20058013",
-    "slug": "10.5281-zenodo.20058013",
-    "portfolios": ["F"],
-    "tags": ["quantum-foundations", "fano", "g2"],
-    "explainer": false
-  },
-  {
-    "number": 269,
-    "title": "Hardy's Paradox and the Fano Associator: A Geometric Diagnosis of Quantum Contextuality",
-    "doi": "10.5281/zenodo.20058083",
-    "slug": "10.5281-zenodo.20058083",
-    "portfolios": ["F"],
-    "tags": ["quantum-foundations", "fano", "contextuality"],
-    "explainer": false
-  },
-  {
-    "number": 271,
-    "title": "The Self-Dual G₂ Architecture: Pachner Unitarity, CSS Symmetry, and the Crystal Spectrum Halving",
-    "doi": "10.5281/zenodo.20101634",
-    "slug": "10.5281-zenodo.20101634",
-    "portfolios": ["B", "C"],
-    "tags": ["foundations", "fano", "g2", "hardware"],
-    "explainer": false
-  },
-  {
-    "number": 272,
-    "title": "The Non-Associative No-Cloning Theorem and the Fano-Token",
-    "doi": "10.5281/zenodo.20100531",
-    "slug": "10.5281-zenodo.20100531",
-    "portfolios": ["D", "F"],
-    "tags": ["quantum-foundations", "cryptography", "fano", "octonions"],
-    "explainer": false
-  },
-  {
-    "number": 273,
-    "title": "Non-Associative Knowledge Hypergraphs: Fano-Structured RAG, Irreducible Ternary Relations, and Thermodynamic Retrieval via the MGE Router",
-    "doi": "10.5281/zenodo.20060286",
-    "slug": "10.5281-zenodo.20060286",
-    "portfolios": ["A", "C"],
-    "tags": ["ai-ml", "fano", "thermodynamics", "optimisation"],
-    "explainer": false
-  },
-  {
-    "number": 274,
-    "title": "The Quaternionic Virtual Machine (Q-VM): Quaternionic Chirality, Spinorial Routing, and the Causal Firewall of the R-C-H-O Operating System",
-    "doi": "10.5281/zenodo.20060303",
-    "slug": "10.5281-zenodo.20060303",
-    "portfolios": ["C"],
-    "tags": ["hardware-ai", "hardware", "octonions"],
-    "explainer": false
-  },
-  {
-    "number": 275,
-    "title": "Volume of Thought (VoT) and Topological Agentic Swarms: Scaling Multi-Agent AI from Temporal Concurrency to Geometric Contradiction via the MGE Router",
-    "doi": "10.5281/zenodo.20059019",
-    "slug": "10.5281-zenodo.20059019",
-    "portfolios": ["A", "C"],
-    "tags": ["ai-ml", "thermodynamics", "optimisation"],
-    "explainer": false
-  },
-  {
-    "number": 285,
-    "title": "G₂-Symmetric Stabilisation of Magnetic Hopfions: A Fano-Constraint Conjecture and Topological Ground State Computation",
-    "doi": "10.5281/zenodo.20127776",
-    "slug": "10.5281-zenodo.20127776",
-    "portfolios": ["B"],
-    "tags": ["foundations", "fano", "g2", "octonions"],
-    "explainer": false
-  },
-  {
-    "number": 309,
-    "title": "Temperature Without Thermodynamics: The Missing Free Energy Principle in Deep Learning",
-    "doi": "10.5281/zenodo.20269977",
-    "slug": "10.5281-zenodo.20269977",
-    "portfolios": ["A", "C"],
-    "tags": ["ai-ml", "thermodynamics", "optimisation"],
-    "explainer": false
-  },
-  {
-    "number": 310,
-    "title": "In Praise of Qudits: Why Higher-Dimensional Quantum Systems Deserve Centre Stage",
-    "doi": "10.5281/zenodo.20269991",
-    "slug": "10.5281-zenodo.20269991",
-    "portfolios": ["F", "C"],
-    "tags": ["quantum-foundations", "hardware", "qec"],
-    "explainer": false
-  },
-  {
     "number": 317,
     "title": "The G₂ Boltzmann Machine: Reviving Thermodynamic Learning via MGE, Fano Couplings, and RSB Memory",
     "doi": "10.5281/zenodo.20319577",
     "slug": "10.5281-zenodo.20319577",
-    "portfolios": ["B"],
-    "tags": ["fano", "g2", "ai-ml", "thermodynamics"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "g2",
+      "ai-ml",
+      "thermodynamics"
+    ],
     "explainer": false
   },
   {
@@ -802,8 +929,15 @@
     "title": "Virtual Monopoles in the FeMo-Cofactor: G₂ Symmetry, Non-Associative Bond Breaking, and Nitrogenase as a Pachner-Move Computer",
     "doi": "10.5281/zenodo.20346650",
     "slug": "10.5281-zenodo.20346650",
-    "portfolios": ["B"],
-    "tags": ["fano", "g2", "octonions", "biophysics"],
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "g2",
+      "octonions",
+      "biophysics"
+    ],
     "explainer": true
   }
 ]
