@@ -538,5 +538,119 @@
       "gauge-theory"
     ],
     "explainer": true
+  },
+  {
+    "number": 311,
+    "title": "The Climate Hazard Yield Surface: A Geometric Framework for the Economics of Climate Action, with Per-Household Dollar Translation and the Doomsday Clock Isocurve",
+    "doi": "10.5281/zenodo.20291646",
+    "slug": "10.5281-zenodo.20291646",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "climate",
+      "policy",
+      "gauge-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 313,
+    "title": "Thermal Economics: Implicit Differentiation Through Fixed Points as a Unifying Schema for Differentiable Economics",
+    "doi": "",
+    "slug": "",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "differentiable-programming",
+      "ai-ml"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 312,
+    "title": "Stochastic Tipping Points and the Option Value of Early Climate Investment",
+    "doi": "",
+    "slug": "",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "climate",
+      "stochastic",
+      "real-options"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 314,
+    "title": "SoftLeontief: Differentiable Input-Output Analysis and Supply-Chain Reverse Stress Testing",
+    "doi": "",
+    "slug": "",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "differentiable-programming",
+      "supply-chain",
+      "leontief"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 315,
+    "title": "Differentiable Nash Equilibria: Quantal Response Equilibrium as Implicit Differentiation Through a Game-Theoretic Fixed Point, with Applications to Coalition Stability and Climate Policy Design",
+    "doi": "",
+    "slug": "",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "game-theory",
+      "differentiable-programming",
+      "climate"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 316,
+    "title": "EconIAC: MONIAC for the 21st Century — Differentiable Macroeconomics via the Gibbs Ensemble",
+    "doi": "10.5281/zenodo.20315689",
+    "slug": "10.5281-zenodo.20315689",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "differentiable-programming",
+      "thermodynamics",
+      "agent-based-models"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 317,
+    "title": "The G₂ Boltzmann Machine: Reviving Thermodynamic Learning via MGE, Fano Couplings, and RSB Memory",
+    "doi": "10.5281/zenodo.20319577",
+    "slug": "10.5281-zenodo.20319577",
+    "portfolios": ["B"],
+    "tags": ["fano", "g2", "ai-ml", "thermodynamics"],
+    "explainer": false
+  },
+  {
+    "number": 318,
+    "title": "Virtual Monopoles in the FeMo-Cofactor: G₂ Symmetry, Non-Associative Bond Breaking, and Nitrogenase as a Pachner-Move Computer",
+    "doi": "10.5281/zenodo.20346650",
+    "slug": "10.5281-zenodo.20346650",
+    "portfolios": ["B"],
+    "tags": ["fano", "g2", "octonions", "biophysics"],
+    "explainer": true
   }
 ]
