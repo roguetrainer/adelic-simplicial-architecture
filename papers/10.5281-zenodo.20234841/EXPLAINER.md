@@ -50,7 +50,7 @@ The $\beta$-ramp — a schedule from $\beta = 0$ to $\beta_{\mathrm{final}}$ —
 
 Two hunters can cooperate to catch a stag (payoff 4 each) or individually chase rabbits (payoff 2 each). Standard game theory gives two Nash equilibria: both stag (Pareto optimal) or both rabbit (risk-dominant). Which one do agents reach?
 
-The MGE answers this with a $\beta$-ramp. At $\beta = 0$, each hunter chooses randomly. As $\beta$ rises, the cooperation equilibrium (stag) emerges first if the ramp is slow enough to let the agents coordinate. If $\beta$ jumps directly to a high value, agents lock in rabbit-rabbit: the risk-dominant equilibrium, not the socially optimal one.
+The Gibbs ensemble answers this with a $\beta$-ramp. At $\beta = 0$, each hunter chooses randomly. As $\beta$ rises, the cooperation equilibrium (stag) emerges first if the ramp is slow enough to let the agents coordinate. If $\beta$ jumps directly to a high value, agents lock in rabbit-rabbit: the risk-dominant equilibrium, not the socially optimal one.
 
 The adiabatic condition quantifies exactly how long coordination takes. Impatient policy (too little time for deliberation) produces the inferior equilibrium; patient policy produces the optimal one.
 
@@ -67,7 +67,7 @@ The formula $\beta J = 1$ is the same critical point as:
 - The **Keynesian beauty contest** fragility threshold (Keynes 1936; Morris-Shin 2002)
 - **Ecological tipping points** — ice-albedo feedback, AMOC disruption, permafrost methane release
 
-All are instances of a diffusive feedback mechanism hitting the same critical temperature. The MGE makes this explicit and computable: the early-warning gradient $\partial\chi/\partial\beta$ diverges before the tipping point, giving a measurable signal of approaching regime change.
+All are instances of a diffusive feedback mechanism hitting the same critical temperature. The Gibbs ensemble makes this explicit and computable: the early-warning gradient $\partial\chi/\partial\beta$ diverges before the tipping point, giving a measurable signal of approaching regime change.
 
 ## The 2008 crisis as a non-adiabatic quench
 
@@ -77,7 +77,7 @@ Tom Hurd's (2013) double cascade model is the paper's primary worked example. Hu
 
 **Liquidity freeze**: when too many institutions try to sell the same asset simultaneously, the market price collapses. This is a tropical (min, +) cascade — the bottleneck is the minimum available liquidity. Modelled in the tropical semiring.
 
-The hybrid — solvency and liquidity interacting — is SoftMin$_\beta$, the MGE acting on both cascades simultaneously. At $\beta \to \infty$, SoftMin collapses to hard min (the tropical limit): a completely frozen market. At finite $\beta$, the market retains some liquidity even under stress.
+The hybrid — solvency and liquidity interacting — is SoftMin$_\beta$, the Gibbs ensemble acting on both cascades simultaneously. At $\beta \to \infty$, SoftMin collapses to hard min (the tropical limit): a completely frozen market. At finite $\beta$, the market retains some liquidity even under stress.
 
 **The 2008 interpretation:** Markets were operating at high $\beta$ (high confidence in pricing models, tight spreads, low perceived volatility). The subprime revelation shifted the utility landscape discontinuously. The system lacked sufficient entropy — $\beta$ was too high to allow smooth reallocation. The result was a non-adiabatic quench: the market froze at a metastable state far from the new equilibrium.
 
@@ -87,25 +87,25 @@ The hybrid — solvency and liquidity interacting — is SoftMin$_\beta$, the MG
 
 Arrow's theorem (1951) states that no social choice function can simultaneously satisfy four reasonable axioms. This result is a source of genuine pessimism in welfare economics.
 
-The MGE escapes it cleanly, by category error. Arrow's theorem applies to functions that map utility profiles to **preference rankings**. The MGE maps utility profiles to a **probability measure** on the space of outcomes. Arrow's four conditions — unrestricted domain, Pareto efficiency, independence of irrelevant alternatives, non-dictatorship — are not well-typed for this object.
+The Gibbs ensemble escapes it cleanly, by category error. Arrow's theorem applies to functions that map utility profiles to **preference rankings**. The Gibbs social-choice function maps utility profiles to a **probability measure** on the space of outcomes. Arrow's four conditions — unrestricted domain, Pareto efficiency, independence of irrelevant alternatives, non-dictatorship — are not well-typed for this object.
 
 The log-partition function $\mathcal{W}$ replaces the welfare ranking with a differentiable scalar. The Condorcet paradox (majority cycles in pairwise voting) cannot form because no pairwise tournament is held: all options coexist simultaneously in the Gibbs distribution.
 
 ## Differentiable agent-based models
 
-Every discrete threshold rule in a standard agent-based model can be replaced by its MGE equivalent — a smooth Gibbs or SoftMin transition parametrised by $\beta$. The result is an end-to-end differentiable model calibratable by gradient descent in PyTorch or JAX.
+Every discrete threshold rule in a standard agent-based model can be replaced by its Gibbs-ensemble equivalent — a smooth Gibbs or SoftMin transition parametrised by $\beta$. The result is an end-to-end differentiable model calibratable by gradient descent in PyTorch or JAX.
 
 Differentiability also moves risk models from passive measurement to active control. The gradient $\partial(\text{systemic risk})/\partial B_i$, computed in a single backward pass, identifies which capital buffer allocation produces the largest systemic risk reduction. This cannot be computed from non-differentiable threshold models.
 
 ## Connection to sustainable economics
 
-The MGE is directly applicable to post-growth macroeconomics and stock-flow consistent (SFC) models. Jackson and Victor's LowGrow model (2019, 2020) — the leading quantitative framework for post-growth macroeconomics — contains a Real Economy module whose agent decisions are exactly the kind of heterogeneous threshold choices the MGE smooths. Ecological tipping points in LowGrow are structurally identical to financial coordination phase transitions: both are $\beta J = 1$ critical points where the social multiplier diverges.
+The Gibbs ensemble is directly applicable to post-growth macroeconomics and stock-flow consistent (SFC) models. Jackson and Victor's LowGrow model (2019, 2020) — the leading quantitative framework for post-growth macroeconomics — contains a Real Economy module whose agent decisions are exactly the kind of heterogeneous threshold choices the Gibbs ensemble smooths. Ecological tipping points in LowGrow are structurally identical to financial coordination phase transitions: both are $\beta J = 1$ critical points where the social multiplier diverges.
 
 The $\beta$-ramp predicts computable early-warning gradients $\partial\chi/\partial\beta$ for climate-economic regime change.
 
 ## What to read next
 
-- [Buckley (2026b) — The Topology of Conservation](https://doi.org/10.5281/zenodo.20234853) — *Double-entry accounting as a discrete gauge theory: the conservation-law space within which MGE dynamics operate.*
+- [Buckley (2026b) — The Topology of Conservation](https://doi.org/10.5281/zenodo.20234853) — *Double-entry accounting as a discrete gauge theory: the conservation-law space within which Gibbs ensemble dynamics operate.*
 - [Buckley (2026c) — Beyond DAGs](https://doi.org/10.5281/zenodo.20234870) — *Non-associative algebra of policy interventions: why the order in which policies are applied changes their effect.*
 - [The Maslov-Gibbs Einsum (MGE)](https://doi.org/10.5281/zenodo.17981393) — *The computational primitive that Paper 289 applies to economics: the same partition function governing tropical optimisation and gradient routing.*
 
