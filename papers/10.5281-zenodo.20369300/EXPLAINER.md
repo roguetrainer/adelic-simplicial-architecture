@@ -34,11 +34,19 @@ extraordinarily rare islands of order in an ocean of chaos.
 
 For most of history, finding these islands required either exceptional luck
 or exhaustive computer search. In 2013, Šuvakov and Dmitrašinović catalogued
-13 choreographic orbits after years of systematic search on conventional
-hardware. Our result is different in kind: we identified the *topological
-structure* that labels entire families of orbits, used that structure to
-predict where new orbits must exist, and then confirmed two previously
-unknown ones.
+13 choreographic orbits. In 2017, Li Xiaoming and Liao Shijun at Shanghai
+Jiao Tong University extended this to over 600 families using their Clean
+Numerical Simulation method on supercomputers, reaching 2,000+ by 2021. All
+of these approaches scan grids of initial conditions without knowing in advance
+where periodic orbits must exist.
+
+Our result is different in kind: we identified the *topological structure* that
+labels entire families of orbits, used that structure to predict where new
+orbits must exist, and then confirmed two previously unknown ones. Cross-
+reference against both catalogues (x323p) confirms our W=11 and W=13 orbits
+are absent from all prior work — they sit outside the T < 30 search range of
+Li & Liao, in basins too narrow (~0.001 in velocity space) for grid search to
+find even if the range were extended.
 
 The same framework — Thermion — that finds three-body orbits also computes
 early-warning signals for financial crises and models energy transfer in
@@ -253,7 +261,16 @@ is not post-hoc — it is the mathematical reason the family exists.
 
 - Šuvakov, M. & Dmitrašinović, V. (2013). Three classes of Newtonian
   three-body planar periodic orbits. *PRL* 110, 114301 —
-  *the catalogue this paper extends*
+  *the 13-orbit catalogue this paper extends*
+
+- Li, X. & Liao, S. (2017). More than six hundred new families of Newtonian
+  periodic planar collisionless three-body orbits. *Science China Physics,
+  Mechanics & Astronomy* 60, 129511 —
+  *SJTU's exhaustive grid search; our W=11 and W=13 are absent from this catalogue*
+
+- Li, X., Jing, Y. & Liao, S. (2021). Over a thousand new periodic orbits of
+  a planar three-body system with unequal masses. *PNAS* 118(36) —
+  *extension to unequal masses; confirms equal-mass high-winding orbits remain unexplored*
 
 ---
 
