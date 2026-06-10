@@ -939,5 +939,458 @@
       "biophysics"
     ],
     "explainer": true
+  },
+  {
+    "number": 319,
+    "title": "The Broken Line: Fano Topology and Passive Quantum Error Correction in Photosynthetic Light-Harvesting",
+    "doi": "10.5281/zenodo.20369283",
+    "slug": "10.5281-zenodo.20369283",
+    "portfolios": [
+      "B",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "biophysics",
+      "qec",
+      "quantum-foundations"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 321,
+    "title": "Evolutionary Quantum Programming: The 731 ISA as a Rosetta Stone for Directed Energy Transfer in Biology",
+    "doi": "10.5281/zenodo.20393465",
+    "slug": "10.5281-zenodo.20393465",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "biophysics",
+      "origami-isa",
+      "evolution"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 323,
+    "title": "Fano-Guided Search for High-Winding Equal-Mass Three-Body Choreographies",
+    "doi": "10.5281/zenodo.20369300",
+    "slug": "10.5281-zenodo.20369300",
+    "portfolios": [
+      "B",
+      "E"
+    ],
+    "tags": [
+      "fano",
+      "three-body",
+      "choreography",
+      "ai-for-science"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 324,
+    "title": "The Decoding Engine: How the Ribosome Reads the Genetic Code as a Topological Error-Correcting Computation",
+    "doi": "10.5281/zenodo.20400652",
+    "slug": "10.5281-zenodo.20400652",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "biophysics",
+      "qec",
+      "origami-isa"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 325,
+    "title": "The Topological Heat Engine: The 6-7 Architecture as a Thermodynamic Diode",
+    "doi": "10.5281/zenodo.20400638",
+    "slug": "10.5281-zenodo.20400638",
+    "portfolios": [
+      "B",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "thermodynamics",
+      "biophysics",
+      "quantum-foundations"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 329,
+    "title": "Three-Body Choreographies as Chladni Resonances on a G₂ Hyperdrum",
+    "doi": "10.5281/zenodo.20625170",
+    "slug": "10.5281-zenodo.20625170",
+    "portfolios": [
+      "B",
+      "E"
+    ],
+    "tags": [
+      "fano",
+      "g2",
+      "three-body",
+      "choreography"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 347,
+    "title": "Spiders for Spectra: An Associative Diagrammatic Calculus for Atomic Structure with the Boundary at the G₂ Wall",
+    "doi": "10.5281/zenodo.20458996",
+    "slug": "10.5281-zenodo.20458996",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "g2",
+      "spectroscopy",
+      "origami-isa"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 348,
+    "title": "Spiders for Nuclei: An Associative Diagrammatic Calculus for Nuclear Spectroscopy with the G₂ Wall at the 1g9/2 Shell",
+    "doi": "10.5281/zenodo.20490046",
+    "slug": "10.5281-zenodo.20490046",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "spectroscopy",
+      "origami-isa",
+      "nuclear-physics"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 349,
+    "title": "The Origami Calculus",
+    "doi": "10.5281/zenodo.20474914",
+    "slug": "10.5281-zenodo.20474914",
+    "portfolios": [
+      "B",
+      "C"
+    ],
+    "tags": [
+      "fano",
+      "origami-isa",
+      "category-theory",
+      "hardware"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 350,
+    "title": "Spiders for Quarkonium: Origami Diagrams for Exotic Meson Spectroscopy",
+    "doi": "10.5281/zenodo.20490294",
+    "slug": "10.5281-zenodo.20490294",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "spectroscopy",
+      "origami-isa",
+      "particle-physics"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 355,
+    "title": "The Origami ISA as a Quantum Error Correction Compiler",
+    "doi": "10.5281/zenodo.20498143",
+    "slug": "10.5281-zenodo.20498143",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "qec",
+      "origami-isa",
+      "hardware",
+      "fano"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 357,
+    "title": "The Origami ISA as a Structural Model for MIP* Verification",
+    "doi": "10.5281/zenodo.20516899",
+    "slug": "10.5281-zenodo.20516899",
+    "portfolios": [
+      "F",
+      "B"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "origami-isa",
+      "complexity"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 359,
+    "title": "The GHZ-Fano Game Is a Complete Self-Test: Linear Robustness from PSL(2-7) Symmetry",
+    "doi": "10.5281/zenodo.20541989",
+    "slug": "10.5281-zenodo.20541989",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "self-test",
+      "qec"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 361,
+    "title": "Fano Orbit Decomposition of Magic: Wigner Negativity as Broken-Line Activation in the 3-Qubit Phase Space",
+    "doi": "10.5281/zenodo.20541583",
+    "slug": "10.5281-zenodo.20541583",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "wigner",
+      "phase-space",
+      "orbit-valence"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 365,
+    "title": "The Fano Magic State Factory: Orbit-Valence Post-Selection Dominates Total-Negativity Post-Selection for Coherent Gate Errors",
+    "doi": "10.5281/zenodo.PENDING",
+    "slug": "10.5281-zenodo.PENDING",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "qec",
+      "hardware",
+      "orbit-valence"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 366,
+    "title": "A Valence Theory of Quantum Magic: Fano Orbit Structure of the 3-Qubit Phase Space and the CS Magic Composition Theorem",
+    "doi": "10.5281/zenodo.20541665",
+    "slug": "10.5281-zenodo.20541665",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "orbit-valence",
+      "wigner",
+      "quantum-foundations"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 367,
+    "title": "Magic-Valence Nonlocal Games: The Fano Line Verification Game and Orbit-Typed Bell Inequalities",
+    "doi": "10.5281/zenodo.20548989",
+    "slug": "10.5281-zenodo.20548989",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "nonlocal-games",
+      "bell",
+      "quantum-foundations"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 370,
+    "title": "The Origami ISA as Nature's Universal Computer: One Instruction Set Twenty Orders of Magnitude",
+    "doi": "10.5281/zenodo.20543454",
+    "slug": "10.5281-zenodo.20543454",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "origami-isa",
+      "fano",
+      "spectroscopy",
+      "universal-computer"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 372,
+    "title": "Magic Flow in the Origami ISA: How Non-Clifford Resources Propagate Through Fano-Structured Circuits",
+    "doi": "10.5281/zenodo.20584547",
+    "slug": "10.5281-zenodo.20584547",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "origami-isa",
+      "orbit-valence",
+      "qec"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 374,
+    "title": "Spectroscopic Circuits Are Small: Origami ISA Programs for Nuclear Recoupling Quarkonium and Molecular Symmetry",
+    "doi": "10.5281/zenodo.20584560",
+    "slug": "10.5281-zenodo.20584560",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "spectroscopy",
+      "origami-isa",
+      "nuclear-physics"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 377,
+    "title": "Three-Body Orbits as Origami ISA Programs: Choreographic Solutions via Fano-Structured Phase Space",
+    "doi": "10.5281/zenodo.20586817",
+    "slug": "10.5281-zenodo.20586817",
+    "portfolios": [
+      "B",
+      "E"
+    ],
+    "tags": [
+      "fano",
+      "three-body",
+      "origami-isa",
+      "choreography"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 383,
+    "title": "The Inverse Bohr Problem: Spectroscopic Circuits as Quantum Simulations of Atomic Structure",
+    "doi": "10.5281/zenodo.20586821",
+    "slug": "10.5281-zenodo.20586821",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "spectroscopy",
+      "origami-isa",
+      "atomic-physics"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 385,
+    "title": "The SQU TriQ and SevenQ: Standard Hardware Registers for the Origami ISA",
+    "doi": "10.5281/zenodo.20581486",
+    "slug": "10.5281-zenodo.20581486",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "fano",
+      "hardware",
+      "origami-isa",
+      "qec",
+      "orbit-valence"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 386,
+    "title": "In Praise of Tetrahedra: The Minimal Non-Trivial Simplex as the Atom of Computation",
+    "doi": "10.5281/zenodo.20581484",
+    "slug": "10.5281-zenodo.20581484",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "foundations",
+      "geometry",
+      "category-theory"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 387,
+    "title": "Beyond Gottesman-Knill: Orbit Valence as a Finer Simulability Boundary",
+    "doi": "10.5281/zenodo.20581492",
+    "slug": "10.5281-zenodo.20581492",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "gottesman-knill",
+      "simulability",
+      "orbit-valence"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 388,
+    "title": "Three Routes to Zero-Overhead Non-Clifford Gates: Gauge Selection Gauge Injection and Gauge Distillation",
+    "doi": "10.5281/zenodo.20581494",
+    "slug": "10.5281-zenodo.20581494",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "qec",
+      "hardware",
+      "eastin-knill"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 390,
+    "title": "Spooky Action Revisited: Bell Non-Locality as Fano-Line Incompatibility in the 3-Qubit Phase Space",
+    "doi": "10.5281/zenodo.20581496",
+    "slug": "10.5281-zenodo.20581496",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "bell",
+      "nonlocality",
+      "quantum-foundations",
+      "phase-space"
+    ],
+    "explainer": false
   }
 ]
