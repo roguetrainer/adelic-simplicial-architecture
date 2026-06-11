@@ -1412,5 +1412,27 @@
       "brody-hughston"
     ],
     "explainer": true
+  },
+  {
+    "number": 396,
+    "title": "The 6j Symbol as H¹: Sheaf Cohomology of Interaction Diagrams and the Unhedgeable Residual",
+    "doi": "10.5281/zenodo.20635479",
+    "slug": "10.5281-zenodo.20635479",
+    "portfolios": [
+      "F",
+      "G",
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "sheaf-cohomology",
+      "6j-symbol",
+      "quantum-foundations",
+      "economics",
+      "gauge-theory",
+      "category-theory",
+      "origami-isa"
+    ],
+    "explainer": false
   }
 ]
