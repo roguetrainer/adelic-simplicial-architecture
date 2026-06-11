@@ -28,6 +28,8 @@ The **S** is four things at once:
 
 The **A** is *Architecture*: a unified instruction set (the Origami ISA) that compiles all four S-structures into the same five opcodes — SPLIT, SPLAT, TWIST, FLIP, FLOP — executable on quantum hardware, classical GPUs, or financial risk engines.
 
+*The framework grew from non-associative computing across the ℝ→ℂ→ℍ→𝕆 division algebra ladder. The associative sector (regime 2 of the ISA) now dominates the application papers, but the non-associative residual — the 0.32% of 3NF that lives in the G₂ sector, the F₄ conjecture on J³(𝕆), the octonion calculus — remains an active frontier.*
+
 ---
 
 ## The five opcodes
