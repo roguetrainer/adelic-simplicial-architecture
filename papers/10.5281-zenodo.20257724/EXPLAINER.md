@@ -3,11 +3,9 @@ layout: default
 title: "Valuation Adjustments as Curvature: XVA in Financial Gauge Theory"
 parent: Explainers
 nav_exclude: false
-tags: [economics, thermodynamics]
-portfolio: G
+tags: [economics, gauge-theory, xva, cva, fva, sheaf-cohomology, triangular-risk, bilateral-risk, origami-isa]
+portfolio: G|B
 ---
-
-# Valuation Adjustments as Curvature: XVA in Financial Gauge Theory: An Accessible Guide
 
 *Plain-language explainer for [doi:10.5281/zenodo.20257724](https://doi.org/10.5281/zenodo.20257724) (#299)*
 
@@ -32,6 +30,7 @@ The standard industry approach computes each XVA separately and adds them. This 
 ## Each adjustment is a curvature component
 
 The Pacioli manifold, for a bilateral derivative trade, has three relevant directions:
+
 - **Time** ($T$): the time axis, with discount connection $P(0,t)$.
 - **Credit** ($C$): the counterparty's survival probability, with hazard rate connection $\lambda_C(t)$.
 - **Funding** ($F$): the funding spread, with funding discount connection $B(0,t)$.
@@ -88,11 +87,27 @@ In FGT, $K(t)$ is determined by the curvature of the credit and market risk conn
 
 MVA is the cost of posting initial margin. Under EMIR and UMR (Uncleared Margin Rules), bilateral trades above a notional threshold must exchange IM calculated using ISDA SIMM. SIMM is a sensitivity-based risk measure — it uses the Greeks of the derivative with respect to market risk factors. In FGT, SIMM is a curvature integral: it integrates the squared curvature of the market risk connections over the trade's risk factor exposure.
 
+## The deeper reason: XVA as cohomology
+
+This paper establishes that XVA adjustments are curvature of a connection on the Pacioli manifold. A subsequent paper ([Paper 399](https://doi.org/10.5281/zenodo.20645695)) shows the deeper reason *why* curvature is the right object: the SPLIT opcode of the Origami ISA is the Čech coboundary map, and XVA is the $H^1$ cohomology class of the credit/funding sheaf.
+
+This reframes the gauge curvature picture as follows:
+
+- **CVA, DVA, FVA, MVA** are triangular risk ($H^1$): they arise from the failure of bilateral credit/funding spreads to compose consistently around triangles of three counterparties. They are computable model-free from observable market prices of liquid triangular instruments — without any Gaussian copula.
+- **Wrong-way risk** is systemic risk ($H^2$): it is the mutual inconsistency of the CVA, DVA, and FVA triangular risks in the XVA tetrahedron. It cannot be computed at the desk level regardless of model sophistication.
+- **The Gaussian copula** — the industry standard since 2000 — is the $H^0$ approximation to the exact $H^1$ computation. This is why it systematically mispriced CDO tranches before 2008: it modelled an $H^1$ object as if it were $H^0$.
+
+The flatness condition developed in this paper (the no-double-counting condition $\mathcal{F} = 0$) is the finance instance of the Pentagon identity $d^2 = 0$ that governs the full cohomological framework.
+
+---
+
 ## What to read next
 
-- [Buckley (2026) — A Primer on Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259505) — *Connections, curvature, and Wilson loops: the vocabulary this paper uses throughout.*
-- [Buckley (2026) — Credit Bundles](https://doi.org/10.5281/zenodo.20257596) — *Survival probabilities as credit connections: the CVA geometry in detail.*
-- [Buckley (2026) — Term Structure Bundles](https://doi.org/10.5281/zenodo.20244445) — *The risk-free time connection: the discount factor geometry underlying all XVA calculations.*
-- [Buckley (2026) — Currency Bundles](https://doi.org/10.5281/zenodo.20242355) — *FX connections: extending XVA to cross-currency trades.*
+- [The Origami ISA as Financial Middleware](https://doi.org/10.5281/zenodo.20645695) — *SPLIT = coboundary map = model-free XVA; the Gaussian copula as $H^0$ approximation; Pentagon as runtime monitor.* **Read this next.**
+- [The 6j Symbol as $H^1$](https://doi.org/10.5281/zenodo.20635479) — *the unhedgeability theorem: CVA/FVA/MVA are triangular risk; wrong-way risk is systemic risk.*
+- [Systemic Risk as $H^2$](https://doi.org/10.5281/zenodo.20642908) — *wrong-way risk as $H^2$; why desk-level models cannot compute it; the SIFI theorem.*
+- [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) — *plain-language introduction including the XVA classification table.*
+- [Buckley (2026) — Credit Bundles](https://doi.org/10.5281/zenodo.20257596) — *survival probabilities as credit connections: the CVA geometry in detail.*
+- [Buckley (2026) — Term Structure Bundles](https://doi.org/10.5281/zenodo.20244445) — *the risk-free time connection underlying all XVA calculations.*
 
 *For the full technical treatment, see [doi:10.5281/zenodo.20257724](https://doi.org/10.5281/zenodo.20257724)*

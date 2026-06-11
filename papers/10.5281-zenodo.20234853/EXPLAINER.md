@@ -3,11 +3,9 @@ layout: default
 title: "The Topology of Conservation: Double-Entry Accounting as a Discrete Gauge Theory of Macroeconomics"
 parent: Explainers
 nav_exclude: false
-tags: [economics, thermodynamics, gauge-theory]
-portfolio: G
+tags: [economics, gauge-theory, pacioli-manifold, double-entry, stock-flow-consistency, sheaf-cohomology, bilateral-risk]
+portfolio: G|B
 ---
-
-# The Topology of Conservation: Double-Entry Accounting as a Discrete Gauge Theory of Macroeconomics: An Accessible Guide
 
 *Plain-language explainer for [doi:10.5281/zenodo.20234853](https://doi.org/10.5281/zenodo.20234853) (#291)*
 
@@ -79,11 +77,26 @@ The balance of payments identity states that the current account plus the capita
 
 When policymakers report a "discrepancy" in the balance of payments, they are reporting the measurement error in estimating the flows — not a violation of the topological identity, which is exact.
 
+## The Pacioli manifold as the foundation for risk
+
+The Pacioli manifold is not just a foundation for macroeconomic models — it is the state space on which financial risk lives. Once you have the manifold, the natural next question is: what structure does risk have on this space?
+
+The answer, developed in the cohomological papers in this series, is that financial risk decomposes into three levels:
+
+- **Bilateral risk** ($H^0$): risk between two parties — a spot rate, a discount factor, a credit spread. Perfectly hedgeable with forwards and swaps. This is the risk that the Pacioli manifold's $\partial^2 = 0$ identity governs: bilateral prices must compose consistently.
+- **Triangular risk** ($H^1$): risk that only appears when three parties interact — convexity, basis, correlation, CVA, FVA. Structurally unhedgeable with bilateral instruments. This is the first cohomological obstruction on the Pacioli manifold: the failure of bilateral prices to compose consistently around a triangle.
+- **Systemic risk** ($H^2$): the mutual inconsistency of institutions' triangular risks — wrong-way risk, contagion, cascade. This is the second cohomological obstruction: the failure of triangular risks to be jointly consistent at the system level.
+
+The Pacioli identity ($\partial^2 = 0$) that this paper establishes is the $H^0$ foundation. The $H^1$ and $H^2$ structures — and their financial implications — are developed in Papers 396 and 397.
+
+---
+
 ## What to read next
 
-- [Buckley (2026) — The Temperature of Rationality](https://doi.org/10.5281/zenodo.20234841) — *MGE economic dynamics on the Pacioli manifold: how agents optimise within the conservation structure.*
-- [Buckley (2026) — A Primer on Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259505) — *Connections and curvature: the next level of Pacioli manifold geometry.*
-- [Buckley (2026) — Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259495) — *The full EGT framework with Noether's theorem applied to SFC macroeconomics.*
-- [Buckley (2026) — Beyond DAGs](https://doi.org/10.5281/zenodo.20234870) — *Non-associative policy interventions on the Pacioli manifold.*
+- [The 6j Symbol as $H^1$](https://doi.org/10.5281/zenodo.20635479) — *the unhedgeability theorem: why convexity, basis, and correlation are structurally unhedgeable with bilateral instruments; why options exist.*
+- [Systemic Risk as $H^2$](https://doi.org/10.5281/zenodo.20642908) — *the cohomological stress test; the SIFI theorem; why the 2008 crisis was a topological event.*
+- [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) — *plain-language introduction to the full three-tier framework; no prior mathematics required.*
+- [Buckley (2026) — The Temperature of Rationality](https://doi.org/10.5281/zenodo.20234841) — *Gibbs ensemble economic dynamics on the Pacioli manifold.*
+- [Buckley (2026) — A Primer on Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259505) — *connections and curvature on the Pacioli manifold.*
 
 *For the full technical treatment, see [doi:10.5281/zenodo.20234853](https://doi.org/10.5281/zenodo.20234853)*
