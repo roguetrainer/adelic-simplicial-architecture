@@ -1434,5 +1434,71 @@
       "origami-isa"
     ],
     "explainer": true
+  },
+  {
+    "number": 397,
+    "title": "Systemic Risk as H²: Cohomological Stress Testing the Unhedgeable Residual and Why the 2008 Crisis Was a Topological Event",
+    "doi": "10.5281/zenodo.20642908",
+    "slug": "10.5281-zenodo.20642908",
+    "portfolios": [
+      "G",
+      "B"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "systemic-risk",
+      "xva",
+      "wrong-way-risk",
+      "sifi",
+      "contagion",
+      "pentagon",
+      "stress-testing",
+      "econiac"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 398,
+    "title": "The Topology of Risk: A Primer on Cohomology for Financial Practitioners",
+    "doi": "10.5281/zenodo.20642983",
+    "slug": "10.5281-zenodo.20642983",
+    "portfolios": [
+      "G",
+      "B"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "primer",
+      "bilateral-risk",
+      "triangular-risk",
+      "systemic-risk",
+      "xva",
+      "2008-crisis",
+      "econiac",
+      "tutorial"
+    ],
+    "explainer": false
+  },
+  {
+    "number": 399,
+    "title": "The Origami ISA as Financial Middleware: SPLIT and SPLAT as the Cech Coboundary Model-Free XVA and the Unification of Four Computational Paradigms",
+    "doi": "10.5281/zenodo.20645695",
+    "slug": "10.5281-zenodo.20645695",
+    "portfolios": [
+      "F",
+      "G",
+      "B"
+    ],
+    "tags": [
+      "origami-isa",
+      "cech-cohomology",
+      "xva",
+      "model-free",
+      "pentagon",
+      "financial-middleware",
+      "econiac",
+      "sheaf-cohomology"
+    ],
+    "explainer": false
   }
 ]
