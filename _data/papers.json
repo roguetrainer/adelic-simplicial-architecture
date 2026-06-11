@@ -1433,6 +1433,6 @@
       "category-theory",
       "origami-isa"
     ],
-    "explainer": false
+    "explainer": true
   }
 ]
