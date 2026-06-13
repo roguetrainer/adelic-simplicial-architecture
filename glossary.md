@@ -378,6 +378,38 @@ This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.205415
 
 ---
 
+## Triality
+
+**Triality** is the order-3 outer automorphism of $\mathrm{Spin}(8)$ that cyclically permutes its three 8-dimensional irreducible representations:
+
+$$8_v \;\xrightarrow{\;\sigma\;}\; 8_s \;\xrightarrow{\;\sigma\;}\; 8_c \;\xrightarrow{\;\sigma\;}\; 8_v$$
+
+where $8_v$ is the vector representation and $8_s$, $8_c$ are the two half-spinor representations. Triality is unique to $\mathrm{Spin}(8)$: no other Spin group has an outer automorphism of order 3. It is made visible by the octonions via the trilinear form:
+
+$$t(x, \psi, \phi) = \mathrm{Re}(x \cdot (\psi\phi))$$
+
+which is invariant under simultaneous $\mathrm{Spin}(8)$ action on all three slots.
+
+**$G_2$ as the triality-fixed subgroup.** The subgroup of $\mathrm{Spin}(8)$ that fixes a chosen triality decomposition is exactly $G_2 = \mathrm{Aut}(\mathbb{O})$:
+
+$$G_2 = \mathrm{Fix}(\text{triality in } \mathrm{Spin}(8))$$
+
+This is why $G_2$ is the symmetry group of any computation that respects the Fano geometry: it is the group of symmetries that survive when one slot of the triality form is held fixed.
+
+**The inclusion tower.**
+$$\mathrm{PSL}(2,7) \;\hookrightarrow\; G_2 \;\hookrightarrow\; \mathrm{Spin}(8)$$
+where $\mathrm{PSL}(2,7) = \mathrm{Aut}(\mathrm{PG}(2,2))$ is the automorphism group of the Fano plane (order 168) and the minimal group whose non-abelian StateHSP requires triality.
+
+**Triality in the 731 ISA.** The SPIN opcode *is* triality: it is the generator of the $\mathbb{Z}_3$ triality action restricted to $G_2$, implemented on the SevenQ as one of the 56 order-3 elements of $\mathrm{PSL}(2,7)$ (verified: x411b). As a Fano-point permutation, SPIN costs 12 CNOTs exactly. The phase component ($i\sqrt{7}/2$ in the $\chi_3$ representation) is not a root of unity and requires native $G_2$-symmetric hardware or Solovay-Kitaev approximation.
+
+**The TriQ register and triality.** The TriQ (3 qudits of dimension $d=3$) instantiates the three *slots* of the triality form at the minimal prime-power level. The three qudits correspond to $8_v$, $8_s$, $8_c$ restricted to the smallest non-trivial discrete setting.
+
+**Why Clifford algebra hides triality.** In $\mathrm{Cl}(8,0)$, the vector space $V$ is singled out as primary by construction, breaking the triality symmetry. The Origami ISA (regime 2) inherits this asymmetry: it can implement $\mathrm{SU}(2)$ and $\mathrm{SL}(2,\mathbb{C})$ gates but not the triality outer automorphism. The 731 ISA (regime 3) restores triality via the SPIN opcode. This is the precise sense in which the 731 ISA is strictly more powerful than the Origami ISA: it is *triality-complete*.
+
+*Defined:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680634/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/)
+
+---
+
 ## Tropical Limit / Crystallisation
 
 As $\beta \to \infty$ in the MGE, the softmax collapses to the **tropical** $(\max,+)$ semiring: the BOIL phase explores continuously; the SNAP phase crystallises to a discrete logical output.
