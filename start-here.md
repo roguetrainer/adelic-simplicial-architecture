@@ -1,0 +1,102 @@
+---
+layout: default
+title: Start Here
+nav_order: 2
+description: "Entry points into the ASA project by reader type — quantum computing, economics, mathematics, or general interest."
+---
+
+# Start Here
+{: .no_toc }
+
+The ASA project spans quantum computing, financial risk, spectroscopy, climate economics, and pure mathematics — all unified by the same five-opcode instruction set. This page maps the shortest path to the core ideas for each reader type.
+{: .fs-5 .fw-300 }
+
+---
+
+## For everyone first
+
+These two papers require no specialist background. Start with one of them regardless of your field.
+
+**[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386)
+The simplest possible non-trivial simplex — four objects, six edges, four faces — encodes the Ponzano–Regge amplitude, the 6j symbol, the Wigner tetrahedron, and the fundamental unit of the Origami ISA. This is the geometric seed from which everything else grows.
+
+**[An Adelic Invitation](https://doi.org/10.5281/zenodo.19977475)** (Paper 219)
+The founding thesis: why the division algebra ladder **ℝ → ℂ → ℍ → 𝕆** is the right organisational principle for a unified theory of physics, computation, and economics. Accessible to anyone comfortable with complex numbers.
+
+---
+
+## For quantum computing researchers
+
+*Prerequisite: stabiliser states, the Clifford group, T-gates.*
+
+1. **[Projective Geometry as the Mother Tongue of Quantum Mechanics](https://doi.org/10.5281/zenodo.20634729)** (Paper 393)
+   The 3-qubit Pauli group is secretly the Fano plane. Brody & Hughston's CP^n formalism meets the Fano orbit decomposition of magic states.
+
+2. **[The Fano Plane is the Right Way to Think About Qubits](https://doi.org/10.5281/zenodo.20667176)** (Paper 408)
+   The practitioner primer. Stabiliser states → Origami ISA → three levels of quantum resource (stabiliser / standard magic / associamancy). No octonion knowledge required.
+
+3. **[The Origami ISA as Nature's Universal Computer](https://doi.org/10.5281/zenodo.20543454)** (Paper 370)
+   One instruction set across twenty orders of magnitude: nuclear spectroscopy, GPU matrix multiplication, quantum error correction, and financial XVA are all the same five-opcode programme.
+
+**Then, for the deeper results:**
+
+- [Fano Geometry as a Unifying Language for QEC](https://doi.org/10.5281/zenodo.20541595) (Paper 363) — GHZ generates Steane; orbit decomposition of magic; Fano self-test with C = 7/8
+- [Non-Associative Hardware is Necessary for the Non-Abelian StateHSP](https://doi.org/10.5281/zenodo.20667170) (Paper 405) — PSL(2,7) solved; why associative hardware provably fails
+- [Associamancy: A Resource Theory of Non-Associative Quantum Magic](https://doi.org/10.5281/zenodo.20667174) (Paper 407) — the Schur boundary; ν₂ = 0; Freudenthal ladder
+
+---
+
+## For economists and financial practitioners
+
+*Prerequisite: familiarity with credit exposure, derivatives, or macroeconomic models.*
+
+1. **[EconIAC: A Differentiable Economics Engine — Overview and Reading Guide](https://doi.org/10.5281/zenodo.20679006)** (Paper 409)
+   What EconIAC is, why the mathematics matters, and where to start. Maps all 19 published economics papers with hyperlinked DOIs. Read this first.
+
+2. **[The Topology of Risk: A Primer on Cohomology for Financial Practitioners](https://doi.org/10.5281/zenodo.20642983)** (Paper 398)
+   Teaches H⁰/H¹/H² from scratch using the 2008 crisis as the running example. No mathematical prerequisites beyond knowing what a credit exposure is.
+
+3. **[A Primer on Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259505)** (Paper 301)
+   Why double-entry accounting is a gauge theory; why arbitrage is curvature; why the Pacioli identity is a conservation law. For economists and policy audiences.
+
+**Then, for specific applications:**
+
+- [Systemic Risk as H²](https://doi.org/10.5281/zenodo.20642908) (Paper 397) — the 2008 crisis as a topological event; stress-testing framework
+- [Tipping Points Are Topological](https://doi.org/10.5281/zenodo.20653285) (Paper 403) — climate tipping cascades; H¹-corrected social cost of carbon
+- [The Origami ISA as Financial Middleware](https://doi.org/10.5281/zenodo.20645695) (Paper 399) — SPLIT and SPLAT as Čech coboundary; model-free XVA
+
+---
+
+## For mathematicians
+
+*Prerequisite: comfortable with representation theory or category theory.*
+
+1. **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349)
+   A diagrammatic framework for the representation theory of compact groups, grounded in the Ponzano–Regge tetrahedron. The mathematical foundation for all ISA opcodes.
+
+2. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
+   Why d > 2 quantum systems are natural: the TriQ (d=3) and SevenQ (d=7) registers as the minimal hardware for qudit stabiliser learning and PSL(2,7) Fourier sampling.
+
+3. **[The 6j Symbol as H¹](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
+   The 6j symbol is the H¹ obstruction of the representation sheaf over an interaction diagram. Connects angular momentum recoupling, XVA, and sheaf cohomology.
+
+**Then, for the frontier:**
+
+- [Associamancy](https://doi.org/10.5281/zenodo.20667174) (Paper 407) — Frobenius-Schur indicators; q ≡ 3 (mod 4) criterion; Freudenthal magic square
+- [Non-Abelian StateHSP](https://doi.org/10.5281/zenodo.20667170) (Paper 405) — proof that i√7/2 requires non-associative hardware; Gauss sum identity
+
+---
+
+## The complete paper index
+
+All published papers are indexed in the
+[Zenodo ASA Research community](https://zenodo.org/communities/asa-research/records)
+and organised by portfolio on the [Portfolios](/adelic-simplicial-architecture/portfolios/) page.
+
+| Portfolio | Theme |
+|-----------|-------|
+| [A — Core Engine](/adelic-simplicial-architecture/portfolios/portfolio-a) | MGE, TRS, non-associative calculus |
+| [B — Foundations](/adelic-simplicial-architecture/portfolios/portfolio-b) | Algebra, topology, category theory |
+| [C — Hardware & AI](/adelic-simplicial-architecture/portfolios/portfolio-c) | Origami ISA, registers, QEC |
+| [F — Quantum Foundations](/adelic-simplicial-architecture/portfolios/portfolio-f) | Magic, self-tests, paradoxes |
+| [G — Finance & Economics](/adelic-simplicial-architecture/portfolios/portfolio-g) | EconIAC, gauge theory, risk |
