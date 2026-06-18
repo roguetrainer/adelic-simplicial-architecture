@@ -104,7 +104,7 @@ The flatness condition developed in this paper (the no-double-counting condition
 ## What to read next
 
 - [The Origami ISA as Financial Middleware](https://doi.org/10.5281/zenodo.20645695) — *SPLIT = coboundary map = model-free XVA; the Gaussian copula as $H^0$ approximation; Pentagon as runtime monitor.* **Read this next.**
-- [The 6j Symbol as $H^1$](https://doi.org/10.5281/zenodo.20635479) — *the unhedgeability theorem: CVA/FVA/MVA are triangular risk; wrong-way risk is systemic risk.*
+- [The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479) — *CVA/FVA/MVA are triangular risk; wrong-way risk is systemic risk.*
 - [Systemic Risk as $H^2$](https://doi.org/10.5281/zenodo.20642908) — *wrong-way risk as $H^2$; why desk-level models cannot compute it; the SIFI theorem.*
 - [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) — *plain-language introduction including the XVA classification table.*
 - [Buckley (2026) — Credit Bundles](https://doi.org/10.5281/zenodo.20257596) — *survival probabilities as credit connections: the CVA geometry in detail.*

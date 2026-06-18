@@ -65,7 +65,7 @@ the HJM no-arbitrage condition · the Biedenharn–Elliott identity · the MIP\*
 | 370 | [The Origami ISA as Nature's Universal Computer](papers/10.5281-zenodo.20543454/README.md) | [20543454](https://zenodo.org/records/20543454) |
 | 386 | [In Praise of Tetrahedra](https://zenodo.org/records/20581484) | [20581484](https://zenodo.org/records/20581484) |
 | 393 | [Projective Geometry as the Mother Tongue of QM](papers/10.5281-zenodo.20634729/README.md) | [20634729](https://zenodo.org/records/20634729) |
-| 396 | [The 6j Symbol as H¹](papers/10.5281-zenodo.20635479/README.md) | [20635479](https://zenodo.org/records/20635479) |
+| 396 | [The Unhedgeability Theorem](papers/10.5281-zenodo.20635479/README.md) | [20635479](https://zenodo.org/records/20635479) |
 
 ### Quantum Hardware & AI (Portfolio C)
 
@@ -131,7 +131,7 @@ the HJM no-arbitrage condition · the Biedenharn–Elliott identity · the MIP\*
 | 313 | [Thermal Economics](https://zenodo.org/records/20318505) | [20318505](https://zenodo.org/records/20318505) |
 | 315 | [Differentiable Nash Equilibria](https://zenodo.org/records/20318527) | [20318527](https://zenodo.org/records/20318527) |
 | 316 | [EconIAC / MONIAC](https://zenodo.org/records/20315689) | [20315689](https://zenodo.org/records/20315689) |
-| 396 | [The 6j Symbol as H¹ *(finance bridge)*](papers/10.5281-zenodo.20635479/README.md) | [20635479](https://zenodo.org/records/20635479) |
+| 396 | [The Unhedgeability Theorem](papers/10.5281-zenodo.20635479/README.md) | [20635479](https://zenodo.org/records/20635479) |
 | 397 | [Systemic Risk as H²](papers/10.5281-zenodo.20642908/README.md) | [20642908](https://zenodo.org/records/20642908) |
 | 398 | [The Topology of Risk: A Primer](papers/10.5281-zenodo.20642983/README.md) | [20642983](https://zenodo.org/records/20642983) |
 | 399 | [The Origami ISA as Financial Middleware](papers/10.5281-zenodo.20645695/README.md) | [20645695](https://zenodo.org/records/20645695) |

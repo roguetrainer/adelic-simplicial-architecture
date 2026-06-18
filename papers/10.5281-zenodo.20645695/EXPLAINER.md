@@ -140,7 +140,7 @@ Finance is the sixth instance of the same theorem. The reason the Gaussian copul
 - [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) —
   plain-language introduction to $H^0$/$H^1$/$H^2$ for practitioners; no prior mathematics required
 
-- [The 6j Symbol as $H^1$](https://doi.org/10.5281/zenodo.20635479) —
+- [The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479) —
   the mathematical foundation: unhedgeability theorem, five-instance table, Pentagon = $d^2 = 0$
 
 - [Systemic Risk as $H^2$](https://doi.org/10.5281/zenodo.20642908) —

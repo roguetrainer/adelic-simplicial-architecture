@@ -105,8 +105,8 @@ The core claim: every molecular machine that processes angular momentum — a ri
 2. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
    Why d > 2 quantum systems are natural: the TriQ (d=3) and SevenQ (d=7) registers as the minimal hardware for qudit stabiliser learning and PSL(2,7) Fourier sampling.
 
-3. **[The 6j Symbol as H¹](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
-   The 6j symbol is the H¹ obstruction of the representation sheaf over an interaction diagram. Connects angular momentum recoupling, XVA, and sheaf cohomology.
+3. **[The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
+   A financial risk is hedgeable with bilateral instruments iff its class is trivial in H¹ of the pricing sheaf over an interaction diagram. Convexity, basis risk, and XVA are all H¹ classes — proved directly from the Čech complex, no representation theory required.
 
 **Then, for the frontier:**
 

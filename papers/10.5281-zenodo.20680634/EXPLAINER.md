@@ -88,7 +88,7 @@ This is the precise sense in which the $G_2$ extension adds genuinely new physic
 ## What to read next
 
 - [In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484) (#386) — the 6j symbol in the simplest possible setting
-- [The 6j Symbol as H¹](https://doi.org/10.5281/zenodo.20635479) (#396) — why the 6j symbol appears everywhere
+- [The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479) (#396) — the abelian/financial instance of the same Čech-cohomology pattern (no literal 6j symbol)
 - [Associamancy](https://doi.org/10.5281/zenodo.20667174) (#407) — the resource theory underlying the $G_2$ extension
 - [Origami ISA Pulse Sequences](https://doi.org/10.5281/zenodo.20680609) (#411) — the hardware side of implementing the SPIN opcode
 

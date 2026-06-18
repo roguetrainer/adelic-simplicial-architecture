@@ -77,7 +77,7 @@ The unification immediately suggests importing techniques across domains:
 ## What to read next
 
 - [Hodge Theory is the Smooth Limit](https://doi.org/10.5281/zenodo.20684838) (#417) — the continuous version: parallel transport as optimal execution
-- [The 6j Symbol as H¹](https://doi.org/10.5281/zenodo.20635479) (#396) — the special case where the sheaf is a representation sheaf and H¹ is a 6j symbol
+- [The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479) (#396) — the abelian/financial instance; contrast with the representation-sheaf case where H¹ is a 6j symbol
 - [The Topological Heat Engine](https://doi.org/10.5281/zenodo.20400638) (#325) — where the β* formula first appeared
 
 *For the full technical treatment, see [doi:10.5281/zenodo.20684509](https://doi.org/10.5281/zenodo.20684509)*

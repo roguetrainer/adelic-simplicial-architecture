@@ -266,7 +266,7 @@ It is the single unifying equation of the Origami ISA and appears as:
 
 The **Ponzano-Regge amplitude** for a tetrahedron with edge spins $j_1,\ldots,j_6$ is the $6j$ symbol evaluated at those spins — the SPLAT opcode of the Origami ISA. The Ponzano-Regge model (1968) evaluates quantum gravity path integrals as products of $6j$ symbols over the triangulation of a 3-manifold. Invariance under Pachner moves (the Pentagon identity) guarantees topological invariance.
 
-The same $6j$ symbol appears in nuclear spectroscopy (Racah coefficients), representation theory (Clebsch-Gordan recoupling), and financial interaction diagrams (the $H^1$ obstruction of [Paper 396](papers/10.5281-zenodo.20635479/)).
+The same $6j$ symbol appears in nuclear spectroscopy (Racah coefficients) and representation theory (Clebsch-Gordan recoupling). [Paper 396](papers/10.5281-zenodo.20635479/) identifies the structurally analogous $H^1$ obstruction in finance — convexity, basis, and CDO correlation risk — but the financial gauge group $(\mathbb{R}_{>0},\times)$ is abelian, so this is the abelian/generic instance of the same Čech-cohomology pattern, not a literal $6j$ symbol.
 
 *Central to:* [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581484/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/)
 

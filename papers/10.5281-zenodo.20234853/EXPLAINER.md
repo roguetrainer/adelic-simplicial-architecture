@@ -93,7 +93,7 @@ The Pacioli identity ($\partial^2 = 0$) that this paper establishes is the $H^0$
 
 ## What to read next
 
-- [The 6j Symbol as $H^1$](https://doi.org/10.5281/zenodo.20635479) — *the unhedgeability theorem: why convexity, basis, and correlation are structurally unhedgeable with bilateral instruments; why options exist.*
+- [The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479) — *why convexity, basis, and correlation are structurally unhedgeable with bilateral instruments; why options exist.*
 - [Systemic Risk as $H^2$](https://doi.org/10.5281/zenodo.20642908) — *the cohomological stress test; the SIFI theorem; why the 2008 crisis was a topological event.*
 - [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) — *plain-language introduction to the full three-tier framework; no prior mathematics required.*
 - [Buckley (2026) — The Temperature of Rationality](https://doi.org/10.5281/zenodo.20234841) — *Gibbs ensemble economic dynamics on the Pacioli manifold.*

@@ -95,7 +95,7 @@ Papers are grouped by portfolio. The full index is in [README.md](README.md).
 | 258 | [The Origami ISA](papers/10.5281-zenodo.19916429/) | [19916429](https://zenodo.org/records/19916429) |
 | 370 | [The Origami ISA as Nature's Universal Computer](papers/10.5281-zenodo.20543454/) | [20543454](https://zenodo.org/records/20543454) |
 | 393 | [Projective Geometry as the Mother Tongue of QM](papers/10.5281-zenodo.20634729/) | [20634729](https://zenodo.org/records/20634729) |
-| 396 | [The 6j Symbol as H¹](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
+| 396 | [The Unhedgeability Theorem](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
 
 **Quantum Hardware & AI (C)**
 
@@ -132,7 +132,7 @@ Papers are grouped by portfolio. The full index is in [README.md](README.md).
 |---|-------|-----|
 | 291 | [Pacioli Homology](https://zenodo.org/records/20234853) | [20234853](https://zenodo.org/records/20234853) |
 | 299 | [XVA as Gauge Curvature](https://zenodo.org/records/20257724) | [20257724](https://zenodo.org/records/20257724) |
-| 396 | [The 6j Symbol as H¹ *(finance bridge)*](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
+| 396 | [The Unhedgeability Theorem](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
 | 397 | [Systemic Risk as H²](papers/10.5281-zenodo.20642908/) | [20642908](https://zenodo.org/records/20642908) |
 | 398 | [The Topology of Risk: A Primer](papers/10.5281-zenodo.20642983/) | [20642983](https://zenodo.org/records/20642983) |
 | 399 | [The Origami ISA as Financial Middleware](papers/10.5281-zenodo.20645695/) | [20645695](https://zenodo.org/records/20645695) |
