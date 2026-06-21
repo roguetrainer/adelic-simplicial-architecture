@@ -67,6 +67,23 @@ Eight independent mathematical communities have each, working separately, been f
 
 *→ Papers [258](https://zenodo.org/records/19916429), [419](https://doi.org/10.5281/zenodo.20694527), [454](https://doi.org/10.5281/zenodo.20773563), [455](https://doi.org/10.5281/zenodo.20774076)*
 
+### The 731-ISA: beyond the Pentagon
+
+The three-ISA trilogy operates within the **associative** world — the Pentagon identity SPLAT∘SPLIT = 0 holds throughout. There is a fourth ISA that breaks this:
+
+| ISA | Adds | Breaks | Algebraic home |
+|-----|------|--------|---------------|
+| Origami / Forge / Meld | — | — | ℝ, ℂ (associative) |
+| **731-ISA** | BIND, SPIN | Pentagon identity | 𝕆 (octonions, non-associative) |
+
+**BIND** is the frog vertex — the non-abelian fusion that requires G₂ symmetry and implements the Fano associator obstruction. At j=½ it is the T-gate; at higher spin it accesses genuinely non-associative territory inaccessible to any standard quantum gate set. **SPIN** is the G₂ triality automorphism — the order-3 outer automorphism of Spin(8) that cyclically permutes its three 8-dimensional representations.
+
+A gate set is **triality-complete** if it contains SPIN. The 731-ISA is triality-complete; the Origami/Forge/Meld trilogy is not.
+
+The 731-ISA is the computational realisation of the bottom-right cell of the **Freudenthal-Tits magic square** — the 4×4 table of exceptional Lie algebras built from pairs of division algebras (ℝ, ℂ, ℍ, 𝕆). The diagonal of that table is the division algebra ladder expressed as Lie algebras: G₂, F₄, E₆, E₈. The full non-associative frontier is described in the [Non-Associative Frontier explainer](non-associative-frontier.md).
+
+*→ Papers [207](https://zenodo.org/records/19713350), [258](https://zenodo.org/records/19916429), [263](https://zenodo.org/records/19928880), [407](https://doi.org/10.5281/zenodo.20667174), [405](https://doi.org/10.5281/zenodo.20667170)*
+
 ---
 
 ## Layer 4 — The H^k Complexity Ladder
