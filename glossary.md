@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary
-nav_order: 5
+nav_order: 6
 ---
 
 # Glossary
@@ -259,21 +259,12 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 ## Origami ISA (Origami Instruction Set Architecture)
 
-The **Origami ISA** is a five-opcode instruction set in which every opcode is a Pachner move on a triangulated simplicial complex. It is the associative (regime 2) subset of the 731 ISA.
+The **Origami ISA** is the $\mathbb{R}$-arithmetic tier of a universal instruction set for topological quantum systems. Its seven opcodes — SPLIT, SPLAT, TWIST, FLIP, FLOP, LABEL, BIND — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
 
-| Opcode | Pachner move | Mathematical role | QC instance |
-|--------|-------------|-------------------|-------------|
-| SPLIT  | $1\to4$     | Coboundary $\delta^0$ | Prepare entangled resource |
-| SPLAT  | $4\to1$     | Fibre integration | Measure (character POVM); evaluate 6j symbol |
-| TWIST  | gauge       | Gauge transformation | Phase gate; feed-forward |
-| FLIP   | $1\to3$     | Sheaf dual | Time reversal |
-| FLOP   | $3\to1$     | Trace / Born rule | Expectation value |
+The same seven opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. See the [dedicated opcodes page](opcodes.md) for string diagrams, Pachner moves, and cross-domain tables.
 
-The **Pentagon identity** $\mathrm{SPLAT}\circ\mathrm{SPLIT} = 0$ ($d^2 = 0$) is the unifying constraint — simultaneously the Biedenharn-Elliott identity of angular momentum theory, the no-arbitrage condition in finance, and the topological invariance condition for Ponzano-Regge spin foam amplitudes.
-
-The Origami ISA compiles nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, and loop quantum gravity spin foam programmes into the same five opcodes.
-
-*Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543454/)
+*Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543454/)  
+*Full opcode reference:* [The ISA Opcodes](opcodes.md)
 
 ---
 
