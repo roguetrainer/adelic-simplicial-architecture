@@ -75,7 +75,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 | **String diagram** | Comultiplication $\Delta: A \to A \otimes A$ — one wire splitting into two |
 | **Pachner move** | $1 \to 4$ (one tetrahedron replaced by four sharing a central vertex) |
 | **Category theory** | Coproduct / comultiplication of a bialgebra or Hopf algebra |
-| **Algebra** | Coproduct $\Delta(E) = E \otimes K + 1 \otimes E$ in quantum group $U_q(\mathfrak{sl}_2)$ |
+| **Algebra** | Coproduct $\Delta(E) = E \otimes K + 1 \otimes E$ in quantum group $U\_q(\mathfrak{sl}\_2)$ |
 
 **Where SPLIT appears:**
 
@@ -151,26 +151,26 @@ condition in finance, and the topological invariance of Ponzano-Regge amplitudes
 
 | | |
 |---|---|
-| **String diagram** | Ribbon element $\theta_V: V \to V$ — a wire looping through a full $2\pi$ twist (a curl) |
+| **String diagram** | Ribbon element $\theta\_V: V \to V$ — a wire looping through a full $2\pi$ twist (a curl) |
 | **Pachner move** | Gauge move (no change in triangulation topology; changes the phase of the amplitude) |
 | **Category theory** | The ribbon element / twist morphism of a ribbon category; the natural isomorphism implementing the topological spin |
-| **Algebra** | $\theta_j = q^{j(j+1)}$ (topological spin of a spin-$j$ anyon in $\mathrm{SU}(2)_q$) |
+| **Algebra** | $\theta\_j = q^{j(j+1)}$ (topological spin of a spin-$j$ anyon in $\mathrm{SU}(2)\_q$) |
 
 **Where TWIST appears:**
 
 | Domain | Instance | What acquires the phase |
 |--------|----------|------------------------|
 | Topological phases | Berry phase / Chern number | Wavefunction under adiabatic loop |
-| Anyons | Topological spin $\theta_a = e^{2\pi i h_a}$ | Anyon under $2\pi$ rotation |
-| Phase transitions | BKT / TWIST failure at $\beta^* = \tfrac{1}{2}$ | Quantum dimension $d_{1/2}(\beta) \to 0$ |
+| Anyons | Topological spin $\theta\_a = e^{2\pi i h\_a}$ | Anyon under $2\pi$ rotation |
+| Phase transitions | BKT / TWIST failure at $\beta^* = \tfrac{1}{2}$ | Quantum dimension $d\_{1/2}(\beta) \to 0$ |
 | AZ classification | Chiral zero mode (S symmetry) | Edge state phase |
 | Langlands programme | Monodromy of a local system | Parallel transport around a loop on the curve |
 | Weil conjectures | Riemann hypothesis (zero-free region) | Zeta function zeros stay off the critical line |
 
 **Key role:** TWIST is the *gap / topology check* — it encodes whether the system
 is in a topologically non-trivial phase. **TWIST failure** (the amplitude
-$d_{1/2}(\beta)$ reaching zero) is the universal signature of a phase
-transition across all models in the $\mathrm{SU}(2)_q$ family. See
+$d\_{1/2}(\beta)$ reaching zero) is the universal signature of a phase
+transition across all models in the $\mathrm{SU}(2)\_q$ family. See
 [BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)
 for the full treatment.
 
@@ -205,7 +205,7 @@ for the full treatment.
 | ZX-calculus | Wire reversal (upward ↔ downward arrow) | Computational direction |
 
 **FLIP fixed points** (self-dual groups where FLIP = identity):
-$GL_n$, $G_2$, $F_4$, $E_8$. The self-duality of $G_2$ under FLIP is the
+$GL\_n$, $G\_2$, $F\_4$, $E\_8$. The self-duality of $G\_2$ under FLIP is the
 731 theorem ([Paper 271](papers/10.5281-zenodo.20139443/)). In the Langlands
 programme, these self-dual groups are the most symmetric — and the hardest — cases.
 
@@ -242,12 +242,12 @@ of the Baez threefold way.
 | 1D quantum models | Jordan-Wigner transform | Spin chain ↔ fermion chain |
 | Quantum gravity | Trace / inner product in LQG | Spin network state → amplitude |
 | Finance | Born rule / expectation value | Density matrix → portfolio expectation |
-| Langlands (abelian) | Class field theory / $GL_1$ reciprocity | Hecke character → Galois character |
+| Langlands (abelian) | Class field theory / $GL\_1$ reciprocity | Hecke character → Galois character |
 
 **FLOP and the division algebra ladder:**
-- FLOP producing a **Majorana co-unit** ($C^2=+1$): lives at the $\mathbb{R}$-rung (Origami ISA, GOE, Dyson $\beta_D=1$)
-- FLOP producing a **complex fermion co-unit** ($C^2=-1$): lives at the $\mathbb{H}$-rung (Meld ISA, GSE, Dyson $\beta_D=4$)
-- No FLOP: lives at the $\mathbb{C}$-rung (Forge/Meld ISA, GUE, Dyson $\beta_D=2$)
+- FLOP producing a **Majorana co-unit** ($C^2=+1$): lives at the $\mathbb{R}$-rung (Origami ISA, GOE, Dyson $\beta\_D=1$)
+- FLOP producing a **complex fermion co-unit** ($C^2=-1$): lives at the $\mathbb{H}$-rung (Meld ISA, GSE, Dyson $\beta\_D=4$)
+- No FLOP: lives at the $\mathbb{C}$-rung (Forge/Meld ISA, GUE, Dyson $\beta\_D=2$)
 
 **Key role:** FLOP is the *fermionisation / Born rule* opcode. It is present in
 every model where particle statistics matter. Its sign ($C^2=\pm1$) is the
@@ -313,20 +313,20 @@ assignment is a LABEL.
 
 | | |
 |---|---|
-| **String diagram** | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$ — three wires, non-trivial crossing structure; or the trivalent vertex of a fusion category |
+| **String diagram** | Associator $\alpha\_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$ — three wires, non-trivial crossing structure; or the trivalent vertex of a fusion category |
 | **Pachner move** | Not a standard Pachner move — it is the *obstruction* to Pachner invariance; its presence signals non-associativity |
 | **Category theory** | The associator of a monoidal category; non-trivial when the category is only quasi-monoidal (quasi-Hopf algebra, braided fusion category with non-trivial $F$-matrices) |
-| **Algebra** | Octonion associator $[e_i, e_j, e_k] = (e_i e_j)e_k - e_i(e_j e_k)$; the $F$-matrix of a fusion category; the 4-Majorana coupling $\gamma_i\gamma_j\gamma_k\gamma_l$ |
+| **Algebra** | Octonion associator $[e\_i, e\_j, e\_k] = (e\_i e\_j)e\_k - e\_i(e\_j e\_k)$; the $F$-matrix of a fusion category; the 4-Majorana coupling $\gamma\_i\gamma\_j\gamma\_k\gamma\_l$ |
 
 **Where BIND appears:**
 
 | Domain | Instance | What fails to associate |
 |--------|----------|------------------------|
 | Non-Abelian anyons | $F$-matrix / recoupling coefficient | $(a \times b) \times c \neq a \times (b \times c)$ in fusion |
-| Octonions / $G_2$ | Octonion associator; Furey's ladder operators | $e_i(e_j e_k) \neq (e_i e_j)e_k$ |
-| Topological phases | Fidkowski-Kitaev $\mathbb{Z} \to \mathbb{Z}_8$ collapse | 4-Majorana interaction |
+| Octonions / $G\_2$ | Octonion associator; Furey's ladder operators | $e\_i(e\_j e\_k) \neq (e\_i e\_j)e\_k$ |
+| Topological phases | Fidkowski-Kitaev $\mathbb{Z} \to \mathbb{Z}\_8$ collapse | 4-Majorana interaction |
 | Interacting fermions | SYK four-body coupling | Non-factorising 4-fermion vertex |
-| Langlands (non-Abelian) | Non-commuting Hecke operators at different primes | $[T_p, T_q] \neq 0$ for $GL_n$, $n \geq 2$ |
+| Langlands (non-Abelian) | Non-commuting Hecke operators at different primes | $[T\_p, T\_q] \neq 0$ for $GL\_n$, $n \geq 2$ |
 | p-adic Langlands | Pentagon failure in p-adic Hodge theory | Non-associative p-adic completions |
 
 **BIND theorem** (*The Opcode Rosetta Stone*, Paper 447): A gapped topological phase
@@ -335,13 +335,13 @@ BIND. Associative phases are BIND-free; non-associative phases require BIND.
 
 **BIND and the division algebra ladder:**
 - No BIND: associative computation — $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$ rung
-- BIND with Pentagon identity holding: quasi-associative — $\mathbb{O}$-rung (Fibonacci anyons, $G_2$, $E_8$)
+- BIND with Pentagon identity holding: quasi-associative — $\mathbb{O}$-rung (Fibonacci anyons, $G\_2$, $E\_8$)
 - BIND with Pentagon identity **failing**: fully non-associative — 731-ISA regime; Furey's octonionic Standard Model programme
 
-**The Fidkowski-Kitaev collapse** ($\mathbb{Z} \to \mathbb{Z}_8$) is BIND insertion:
+**The Fidkowski-Kitaev collapse** ($\mathbb{Z} \to \mathbb{Z}\_8$) is BIND insertion:
 promoting a FLOP-only programme (free Majorana chain, $\mathbb{C}$-rung) to a
 FLOP+BIND programme ($\mathbb{O}$-rung) collapses the integer winding-number
-classification to $\mathbb{Z}_8$, because $8$ is the Cayley-Dickson period at
+classification to $\mathbb{Z}\_8$, because $8$ is the Cayley-Dickson period at
 the octonion rung.
 
 **Key role:** BIND is the *non-associative* opcode. Its presence or absence is
@@ -358,11 +358,11 @@ most powerful: systems with BIND can encode computations that BIND-free
 |--------|---------------|--------------|-------------|-----------------|-----------|
 | SPLIT | $\Delta: A \to A \otimes A$ (split) | $1 \to 4$ | — | All rungs | Hecke eigendecomposition |
 | SPLAT | $\varepsilon: A \to k$ (cap/cup) | $4 \to 1$ | — | All rungs | L-function evaluation |
-| TWIST | $\theta_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
+| TWIST | $\theta\_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
 | FLIP | $(-)^\dagger$ (wire reversal) | $1 \to 3$ | $T$ (time reversal) | $\mathbb{R}$ / $\mathbb{H}$ | Langlands duality $G \leftrightarrow G^\vee$ |
-| FLOP | $\mathrm{tr}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL_1$) |
+| FLOP | $\mathrm{tr}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
 | LABEL | $e^2 = e$ (projector) | Colouring | — (parity in PT) | All rungs | Automorphic representation $\pi$ |
-| BIND | Associator $\alpha_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
+| BIND | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
 
 ---
 
@@ -376,9 +376,9 @@ This is a syntactic test: inspect the Hamiltonian for three-body terms that cann
 be factored into products of two-body operators.
 
 **Theorem 2 — Universal Phase Boundary** (*Paper 447*): For any model in the
-$\mathrm{SU}(2)_q$ family at $q = e^{i\pi\beta}$, the quantum phase transition is
+$\mathrm{SU}(2)\_{q}$ family at $q = e^{i\pi\beta}$, the quantum phase transition is
 a TWIST failure at $\beta = \tfrac{1}{2}$, where the quantum dimension
-$d_{1/2}(\beta) = 2\cos(\pi\beta) = 0$ exactly.
+$d\_{1/2}(\beta) = 2\cos(\pi\beta) = 0$ exactly.
 
 ---
 
@@ -387,7 +387,7 @@ $d_{1/2}(\beta) = 2\cos(\pi\beta) = 0$ exactly.
 The three ISAs in the trilogy differ only in which *number system* their opcodes
 run over:
 
-| ISA | Arithmetic | Dyson $\beta_D$ | Random matrix | AZ classes |
+| ISA | Arithmetic | Dyson $\beta\_D$ | Random matrix | AZ classes |
 |-----|-----------|-----------------|---------------|-----------|
 | Origami | $\mathbb{R}$ (reals) | $1$ (GOE) | Time-reversal symmetric | AI, BDI, D, CI, DIII |
 | Forge | $\mathbb{C}$ (complex) | $2$ (GUE) | No time reversal | A, AIII |
@@ -395,7 +395,7 @@ run over:
 
 This is Baez's threefold way (2013): exactly three associative normed division
 algebras (Hurwitz's theorem), exactly three consistent quantum-mechanical
-inner-product structures, exactly three Dyson $\beta_D$ values, exactly three ISA
+inner-product structures, exactly three Dyson $\beta\_D$ values, exactly three ISA
 columns. The opcodes are the same in all three; only the number system changes.
 
 The **731-ISA** extends beyond all three to the $\mathbb{O}$ (octonion) rung,
