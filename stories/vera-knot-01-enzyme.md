@@ -99,7 +99,7 @@ Marina had been a biophysicist for long enough to find this irritating. "So you'
 
 ### What Otto thinks about all this
 
-At some point during the preceding exchange, Otto had refilled his thermos and moved to the front row.
+At some point during the preceding exchange, Otto had refilled his thermos — chaga tea, brewed from the fungus that grows on birch trees, dark and slightly bitter — and moved to the front row. Marina noticed the smell: earthy, faintly resinous, nothing like coffee.
 
 "The part I find interesting," he said, "is the temperature."
 
@@ -111,7 +111,13 @@ $$\beta \cdot \Delta E_\text{TWIST} \approx 1 \quad \text{at } T = 310\text{ K}$
 
 "At zero temperature, the TWIST opcode cannot fire — the spin-state change is thermally inaccessible. At very high temperature, all opcodes fire equally and the programme has no directionality." He looked up. "The enzyme operates in the sweet spot where the topology *and* the thermodynamics align. The programme is allowed by the selection rules, and it is accessible by the Boltzmann weights."
 
-"That's the Forge layer," Vera said. "β is the parameter that connects topology to kinetics."
+Marina looked at the thermos. "Why would you sum over all possible states rather than just finding the best one?"
+
+Otto picked up the thermos and held it for a moment. "Because the best one is not always typical." He poured. "This is chaga. It is better than any of its individual components. You cannot understand it by finding the dominant ingredient and ignoring the rest. You have to sum." He set the cup down. "That is what a partition function is. A weighted sum over everything that could happen, which tells you what *will* happen on average. The enzyme is not in its lowest-energy state. It is in its typical state. The two are not the same."
+
+"That," said Vera, without looking up from her string, "is the most thermodynamic thing I have ever heard anyone say about tea."
+
+"That's the Forge layer," Vera added, looking up now. "β is the parameter that connects topology to kinetics."
 
 "I call it the inverse temperature," Otto said. "But yes."
 
