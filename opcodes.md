@@ -16,20 +16,25 @@ full Meld.*
 
 **Graphical calculus legend:** 🕷️ present in ZX calculus · 🕷️\* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
 
-**Opcode symbols** (used in the LaTeX papers): the symbols follow a strict logic — *filled = creation operator, hollow = annihilation operator; 4-sided = stellar Pachner move, 3-sided = bistellar Pachner move.*
+**Opcode symbols** (used in the LaTeX papers): the symbols follow a strict logic — *filled = creation operator, hollow = annihilation operator; 4-sided = stellar Pachner move, 3-sided = bistellar Pachner move. Opcodes outside the Pachner families (TWIST, SPIN, LABEL, BIND, ORBIT, MELD, FORK, SUPERPOSE, ENTANGLE) use distinct non-polygonal glyphs.*
 
-| Opcode | Symbol | Mnemonic |
-|--------|--------|----------|
-| SPLIT | ■ (filled square) | 4-sided, creation: one tetrahedron → four |
-| SPLAT | ◇ (hollow diamond) | 4-sided, annihilation: four → one |
-| FLIP | ▲ (filled triangle) | 3-sided, creation: one triangle → three |
-| FLOP | △ rotated −90° | 3-sided, annihilation: three → one |
-| TWIST | ↻ (clockwise arrow) | Phase rotation |
-| SPIN | ⊛ (circled asterisk) | Triality gauge: V → S⁺ → S⁻ → V |
-| LABEL | (projector box) | Idempotent sector selection |
-| BIND | (trivalent vertex) | Non-associative fusion |
+| Opcode | Symbol | Categorical morphism | Mnemonic |
+|--------|--------|---------------------|----------|
+| SPLIT | ■ | Comultiplication $\Delta: A \to A \otimes A$ (Frobenius/bialgebra) | 4-sided, creation: 1→4 stellar move |
+| SPLAT | ◇ | Counit $\varepsilon: A \to k$ (Frobenius); evaluation map | 4-sided, annihilation: 4→1 stellar move |
+| FLIP | ▲ | Dagger functor $(-)^\dagger$; pivotal structure $V \cong V^{**}$ | 3-sided, creation: 1→3 bistellar move |
+| FLOP | △ | Trace $\mathrm{Tr}: \mathrm{End}(V) \to k$; cup in compact closed category | 3-sided, annihilation: 3→1 bistellar move |
+| TWIST | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | Phase rotation; curl in string diagram |
+| SPIN | ⊛ | $\mathbb{Z}_3$ gauge automorphism; triality $V \to S^+ \to S^- \to V$ | Triality gauge at $\mathbb{O}$-rung |
+| LABEL | ▪ | Idempotent $e: A \to A$, $e^2 = e$; augmentation $\varepsilon: \mathcal{H} \to \mathbb{C}$ | Small square: sector selection, fixed point |
+| BIND | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Bowtie = trivalent vertex; non-associative fusion |
+| ORBIT | ○ | Trace in a traced monoidal category $\mathrm{Tr}^U_{A,B}: \mathcal{C}(A \otimes U, B \otimes U) \to \mathcal{C}(A,B)$ | Hollow circle = closed loop; self-dual ($\sigma(\circ)=\circ$) |
+| MELD | ● | Handle operator in TQFT; filled circle = topological class creation | Filled circle: deepest fusion; dual of ORBIT |
+| FORK | ⑂ | Copairing / comonoid comultiplication $\delta: A \to A \otimes A$ (asymmetric) | Y-node: directed 1→2 branching (H¹ coboundary) |
+| SUPERPOSE | ⊕ | Biproduct $A \oplus B$; direct sum in Ab-enriched category | Standard ⊕; linear superposition |
+| ENTANGLE | ⊗ | Tensor product $A \otimes B$; non-local correlation in compact closed category | Standard ⊗; made physical |
 
-The dagger map σ swaps creation ↔ annihilation within each family: σ(■) = ◇ and σ(▲) = △. The Frobenius identities become ◇∘■ = △∘▲ = id.
+The dagger map σ swaps creation ↔ annihilation within the Pachner families: σ(■) = ◇ and σ(▲) = △. The Frobenius identities are ◇∘■ = △∘▲ = id. Outside the Pachner families, σ(○) = ● (ORBIT ↔ MELD) and σ(⊕) = ⊗ (SUPERPOSE ↔ ENTANGLE).
 
 ---
 
