@@ -432,18 +432,29 @@ $d\_{1/2}(\beta) = 2\cos(\pi\beta) = 0$ exactly.
 ## The ISA trilogy and the Baez threefold way
 
 The three ISAs in the trilogy differ only in which *number system* their opcodes
-run over:
+run over, and in the value of the inverse-temperature parameter $\beta$:
 
-| ISA | Arithmetic | Dyson $\beta\_D$ | Random matrix | AZ classes |
-|-----|-----------|-----------------|---------------|-----------|
-| Origami | $\mathbb{R}$ (reals) | $1$ (GOE) | Time-reversal symmetric | AI, BDI, D, CI, DIII |
-| Forge | $\mathbb{C}$ (complex) | $2$ (GUE) | No time reversal | A, AIII |
-| Meld | $\mathbb{H}$ (quaternions) | $4$ (GSE) | Kramers-degenerate | AII, CII, C, CI |
+| ISA | $\beta$ | Arithmetic | Dyson $\beta\_D$ | Random matrix | AZ classes |
+|-----|---------|-----------|-----------------|---------------|-----------|
+| Origami | $\beta \to \infty$ | Tropical $(\max,+)$ | $1$ (GOE) | Time-reversal symmetric | AI, BDI, D, CI, DIII |
+| Forge | $0 < \beta < \infty$ | Real Gibbs | $2$ (GUE) | No time reversal | A, AIII |
+| Meld | $\beta = it$ | Complex amplitudes ($\hbar$) | $4$ (GSE) | Kramers-degenerate | AII, CII, C, CI |
+
+The opcodes are the same in all three; only the number system and $\beta$ change.
+As $\beta \to \infty$ the Gibbs softmax collapses to a tropical argmax — discrete,
+classical computation. At finite $\beta$ it is a smooth Gibbs distribution — the
+Forge ISA, the statistical/thermodynamic regime. The Wick rotation $\beta \to it$
+turns real Boltzmann weights into complex amplitudes — that is quantum mechanics,
+the Meld ISA. The snap threshold $\beta^*$ marks where the Forge ISA transitions
+from exploratory (H¹) to crystallised (H⁰) behaviour.
 
 This is Baez's threefold way (2013): exactly three associative normed division
 algebras (Hurwitz's theorem), exactly three consistent quantum-mechanical
 inner-product structures, exactly three Dyson $\beta\_D$ values, exactly three ISA
-columns. The opcodes are the same in all three; only the number system changes.
+columns.
+
+**For a full treatment of $\beta$, the snap threshold, and how Forge and Meld work
+in detail:** see [The Forge and Meld ISAs](forge-meld.md).
 
 The **731-ISA** extends beyond all three to the $\mathbb{O}$ (octonion) rung,
 adding BIND and SPIN. See [The Non-Associative Frontier](non-associative-frontier.md).
@@ -498,6 +509,7 @@ different hardware.
 
 **The H^k computational tower:**
 
+- **[The Forge and Meld ISAs](forge-meld.md)** — full treatment of β, the snap threshold β*, the Wick rotation β → it, vortons, and how the same opcodes run over tropical / Gibbs / complex arithmetic
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic; TWIST failure as phase boundary; β* snap threshold
 - **[BIND at the octonion rung](non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
 - **[BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)** — TWIST in depth; quantum dimension, $d_{1/2}(\beta)=0$ at $\beta=1/2$
