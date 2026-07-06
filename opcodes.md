@@ -2,37 +2,44 @@
 layout: default
 title: "The ISA Opcodes"
 nav_order: 4
-description: "The seven opcodes of the Origami/Forge/Meld ISA: what each one does, its string diagram, its Pachner move, and where it appears across physics, mathematics, and economics."
-tags: [isa, opcodes, flip, flop, split, splat, twist, label, bind, category-theory, string-diagrams]
+description: "The twelve opcodes of the Origami/Forge/Meld ISA: what each one does, its string diagram, its Pachner move, and where it appears across physics, mathematics, and economics."
+tags: [isa, opcodes, flip, flop, split, splat, twist, label, bind, orbit, fork, superpose, entangle, meld, category-theory, string-diagrams, completeness]
 portfolio: B
 ---
 
 # The ISA Opcodes
 {: .no_toc }
 
-*Seven operations. One language for quantum physics, topological phases, the Langlands programme, and more.*
+*Twelve operations. One language for quantum physics, topological phases, molecular
+computing, the Langlands programme, and more — from classical Turing machines to the
+full Meld.*
 
 ---
 
-## Why seven opcodes, and why these seven?
+## Why twelve opcodes, and why these twelve?
 
-The Origami ISA is not an arbitrary instruction set. It is the **finitely presented
-fragment of the free symmetric monoidal category** on seven generators, with the
-relations imposed by the ribbon Frobenius structure. In plain terms: it is the
-minimal set of operations needed to express any computation that can be composed
-in parallel and in sequence, together with a notion of orientation, duality, and
-curvature.
+The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
+extension of the free traced symmetric monoidal category (TSMC)** — the smallest
+opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except BIND
+is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). BIND is
+the unique opcode that requires a magmoidal extension: it encodes a non-trivial
+associator, realised physically as G₂/octonion symmetry.
+
+The twelve opcodes form a **completeness hierarchy**: each new opcode lifts the ISA to
+the next level of the cohomological (H^k) computational tower, and no opcode at level
+k can be simulated by any combination of opcodes at level k−1.
 
 Monoidal categories underlie all of mathematical physics for the same reason: any
 system in which operations compose in parallel and in sequence — quantum circuits,
 Feynman diagrams, tensor networks, representation theory, the Langlands
-correspondence — is an object in some monoidal category. The seven opcodes are the
-**universal generating morphisms** of that structure.
+correspondence — is an object in some monoidal category. The twelve opcodes are the
+**universal generating morphisms** of that structure, extended to include the
+non-associative (magmoidal) and non-local (compact closed) regimes.
 
-This is why the same seven operations appear in nuclear spectroscopy, topological
-quantum computing, loop quantum gravity, financial XVA, and the geometric Langlands
-programme. They are not analogies. They are the same categorical morphisms, running
-on different physical hardware.
+This is why the same operations appear in nuclear spectroscopy, topological quantum
+computing, loop quantum gravity, financial XVA, the geometric Langlands programme,
+protein folding, and the ribosome. They are not analogies. They are the same
+categorical morphisms, running on different physical hardware.
 
 ---
 
