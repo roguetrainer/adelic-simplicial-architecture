@@ -2,19 +2,19 @@
 layout: default
 title: "The Forge and Meld ISAs"
 nav_order: 5
-description: "How β interpolates between classical, statistical, and quantum computation — the Forge ISA at finite β, the Meld ISA at β = it, and the snap threshold β*."
-tags: [isa, forge, meld, beta, snap, mge, gibbs, wick-rotation, complexity]
+description: "How β interpolates between the smooth Meld (β → 0), the statistical Forge (finite β), and the classical Origami (β → ∞) — and the snap threshold β* that separates them."
+tags: [isa, forge, meld, beta, snap, mge, gibbs, tropical, complexity]
 portfolio: B
 ---
 
 # The Forge and Meld ISAs
 {: .no_toc }
 
-*The Origami ISA runs at β → ∞ (zero temperature, classical logic). Turn up the
-temperature — lower β — and you get the Forge ISA: statistical, thermodynamic
-computation. Rotate β into the complex plane and you get the Meld ISA — quantum
-mechanics. The same twelve opcodes run in all three regimes; only the arithmetic
-changes.*
+*The Meld ISA is the smooth, continuous, hot limit (β → 0): maximum entropy, Hodge
+theory, differentiable manifolds. The Origami ISA is its tropical shadow — the
+frozen, discrete, cold limit (β → ∞). The Forge ISA is the thermodynamic engine
+between them, operating at finite β. The same twelve opcodes run in all three
+regimes; only the arithmetic changes.*
 {: .fs-5 .fw-300 }
 
 ---
@@ -39,15 +39,18 @@ framework. At different values of β it realises different computational paradig
 
 | β | Regime | Arithmetic | ISA | Computation |
 |---|--------|-----------|-----|-------------|
-| $\beta \to \infty$ | Frozen / classical | Tropical $(\max,+)$ | Origami | Hard argmax; discrete logic |
+| $\beta \to 0$ | Hot / smooth | Uniform; smooth Hodge | Meld | Continuous manifold; maximum entropy |
 | $0 < \beta < \infty$ | Finite temperature | Real Gibbs ($\mathbb{R}$) | Forge | Soft decisions; statistical inference |
-| $\beta = 0$ | Infinite temperature | Uniform distribution | — | Maximum entropy; no preference |
-| $\beta = it$ | Quantum (Wick rotation) | Complex amplitudes ($\mathbb{C}$) | Meld | Interference; superposition |
+| $\beta \to \infty$ | Frozen / classical | Tropical $(\max,+)$ | Origami | Hard argmax; discrete logic |
 
 The three ISAs are not three different instruction sets. They are the same opcodes
 evaluated over three different semirings. SPLIT at β → ∞ is a tropical fan-out;
-SPLIT at finite β is a Gibbs fan-out; SPLIT at β = it is a unitary fan-out (the
-quantum Fourier transform). The opcode is the same morphism in all three cases.
+SPLIT at finite β is a Gibbs fan-out; SPLIT at β → 0 is a smooth fan-out over the
+full manifold. The opcode is the same morphism in all three cases.
+
+The Origami ISA is the **tropical shadow** of the Meld: every discrete algorithm is
+a degeneration of a smooth manifold problem as β → ∞ collapses the Gibbs measure to
+an argmax. The Forge ISA is the thermodynamic engine that mediates the two extremes.
 
 ---
 
@@ -82,7 +85,8 @@ regime of the ISA trilogy. Its key features:
 topological excitations that carry angular momentum and persist as metastable states
 at finite temperature. A vorton is a TWIST-stabilised excitation: it exists because
 the ribbon element θ_V has nonzero amplitude at finite β. At β → ∞ (Origami), vortons
-freeze into classical spin states. At β = it (Meld), they become quantum anyons.
+freeze into classical spin states. At β → 0 (Meld), they dissolve into the smooth
+manifold background — the high-entropy limit where all paths are equally weighted.
 
 **The snap event.** As β rises through the threshold β*, the MGE undergoes a
 spontaneous **phase transition** — a *snap* — from exploratory (soft) to crystallised
@@ -121,56 +125,59 @@ and the rational-to-irrational transition in economic agent models.
 
 ---
 
-## The Meld ISA: β = it
+## The Meld ISA: β → 0
 
-The **Wick rotation** $\beta \to it$ replaces real Boltzmann weights with complex
-amplitudes:
+As β → 0 the Gibbs weights become uniform — every path has equal weight. This is the
+**maximum entropy limit**: a smooth, hot, undifferentiated manifold in which all
+discrete structure has melted away. The **Meld ISA**
+([Paper 454](https://doi.org/10.5281/zenodo.20773563)) operates in this regime.
 
-$$e^{-\beta E_k} \xrightarrow{\;\beta = it\;} e^{-itE_k}$$
+The key insight is the direction of the relationship: the Origami ISA is the
+**tropical shadow** of the Meld, not the other way around. Every discrete algorithm —
+every spectral decomposition, every shortest path, every argmax — is the β → ∞
+degeneration of a smooth problem that lives naturally in the Meld. The piecewise-
+linear structure of tropical geometry is what survives when a smooth manifold is
+frozen to zero temperature.
 
-This is the Schrödinger equation. Statistical mechanics becomes quantum mechanics.
-The Forge ISA becomes the **Meld ISA** ([Paper 454](https://doi.org/10.5281/zenodo.20773563)).
+**What the Meld is:** a smooth, differentiable manifold in which the ISA opcodes
+act as Hodge-theoretic operations — SPLIT is the exterior derivative d, SPLAT is
+its adjoint d*, TWIST is the Hodge star ⋆, FLIP is complex conjugation on forms,
+FLOP is integration (the global inner product). The H^k cohomology of this manifold
+is the Forge/Origami H^k ladder in the frozen limit.
 
-The Wick rotation is not an analogy — it is an exact algebraic substitution. Every
-Forge ISA programme has a Meld version obtained by replacing β with it everywhere.
-The MGE becomes a unitary time-evolution operator; the snap threshold β* becomes the
-Planck scale (the point where quantum and thermal fluctuations are equal); the
-vorton becomes a quantum anyon.
+**What the Meld is not:** it is not a quantum ISA in the sense of unitary circuits.
+Quantum mechanics (complex amplitudes, interference, the Born rule) is a separate
+extension — the Wick rotation β → it — that runs *across* the Forge regime, not at
+its hot limit. That extension is real and important, but it is not what "Meld" means
+in the trilogy naming.
 
-**What the Wick rotation does to each opcode:**
+**What the Meld is for:** any computation where you want to work with smooth
+functions on the full state space before committing to a discrete answer. Gradient
+flow, optimal transport, diffusion models, Hodge decomposition of networks — all
+Meld-regime computations that sharpen into Forge and then Origami as β rises.
 
-| Opcode | Forge (real β) | Meld (β = it) |
-|--------|---------------|---------------|
-| SPLIT | Gibbs fan-out; soft copy | Unitary fan-out; QFT mode splitting |
-| SPLAT | Gibbs projection; soft measurement | Born rule measurement |
-| TWIST | Thermal phase $e^{-\beta\theta}$ | Quantum phase $e^{-it\theta}$; Berry phase |
-| FLIP | Real time-reversal | Anti-unitary time-reversal; Kramers |
-| FLOP | Partition function trace | Quantum trace; path integral |
-| BIND | Thermal recoupling | Unitary $F$-matrix; non-Abelian anyon braiding |
-
-**The T-gate as Wick obstruction.** The Meld ISA requires complex arithmetic. The
-T-gate — the gate that generates universal quantum computation beyond the Clifford
-group — is the opcode that cannot be expressed as a real Gibbs weight at any β. It
-is the BIND opcode at the octonion rung, and its non-trivial phase $e^{i\pi/4}$
-is precisely what the Wick rotation introduces. This is why T-gate simulation is
-classically hard: it requires arithmetic that has no real (Forge) counterpart.
+**What the Forge adds over the Meld:** the snap. At β → 0 nothing is decided; the
+system is maximally undecided. As β rises from 0, the Gibbs measure begins to
+concentrate. At β* it snaps — the H¹ exploratory phase collapses to the H⁰
+crystallised phase. The Forge ISA is precisely the regime where this snap can be
+controlled and exploited. The Meld has no snap; the Origami has already snapped.
 
 ---
 
 ## The trilogy as a single diagram
 
-The three ISAs are three slices through a single parameter space:
+The three ISAs are three regimes along the real β axis:
 
 ```
-β = it ──── Meld ISA (quantum, ℂ amplitudes)
+β → 0 ──── Meld ISA   (smooth, hot, maximum entropy; Hodge theory)
     │
-    │   Wick rotation
+    │   β rises; Gibbs concentrates
     │
-β real ─── Forge ISA (statistical, ℝ Gibbs weights)
+0 < β < ∞ ─ Forge ISA  (statistical, thermodynamic; snap at β*)
     │
-    │   β → ∞
+    │   β → ∞; Gibbs → argmax
     │
-β = ∞ ──── Origami ISA (classical, tropical ℝ)
+β → ∞ ──── Origami ISA (classical, frozen, tropical; discrete logic)
 ```
 
 The 731-ISA extends the diagram sideways — not along the β axis, but along the
@@ -181,22 +188,21 @@ algebra ladder. See [The Non-Associative Frontier](non-associative-frontier.md).
 
 ## Where each ISA appears
 
-| Domain | Origami (β → ∞) | Forge (0 < β < ∞) | Meld (β = it) |
-|--------|----------------|------------------|---------------|
-| Computation | Classical logic; discrete optimisation | Probabilistic inference; annealing | Quantum circuits; BQP |
-| Physics | Spectroscopy; nuclear structure | Statistical mechanics; phase transitions | Quantum field theory; anyons |
+| Domain | Origami (β → ∞) | Forge (0 < β < ∞) | Meld (β → 0) |
+|--------|----------------|------------------|--------------|
+| Computation | Classical logic; discrete optimisation | Probabilistic inference; annealing | Continuous optimisation; gradient flow |
+| Physics | Spectroscopy; nuclear structure | Statistical mechanics; phase transitions | Hodge theory; smooth field theory |
 | Biology | Protein structure (Ramachandran) | Kinetic proofreading; chaperones | Photosynthetic coherence (FMO) |
-| Finance | Arbitrage-free pricing (H¹ = 0) | Risk hedging at finite volatility | — |
-| Information | Tropical codes; max-plus automata | Gibbs sampling; belief propagation | Stabiliser QEC; magic state distillation |
+| Finance | Arbitrage-free pricing (H¹ = 0) | Risk hedging at finite volatility | Continuous-time stochastic calculus |
+| Information | Tropical codes; max-plus automata | Gibbs sampling; belief propagation | Diffusion models; optimal transport |
 
 ---
 
 ## Key papers
 
-- **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — the statistical ISA; snap event; vorton architecture; thermodynamic computation
-- **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — the quantum ISA; T-gate as BIND; Shor's algorithm as Origami/Meld/Origami programme
+- **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — the statistical ISA; snap event; vorton architecture; thermodynamic computation; defines the trilogy as Origami (β→∞) / Forge (finite β) / Meld (β→0)
+- **[The Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — the classical β → ∞ ISA; the opcode definitions
 - **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — six equations from six fields are all the same MGE at different β; the fastest entry point
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰/H¹/H² as β regimes; TWIST failure as phase boundary; β* snap threshold
-- **[The Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — the classical β → ∞ ISA; the opcode definitions
 
 *See also:* [BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure) · [Maslov-Gibbs Einsum](glossary.md#maslov-gibbs-einsum-mge) · [The Opcodes](opcodes.md)
