@@ -11,30 +11,47 @@ portfolio: B
 {: .no_toc }
 
 *Twelve operations. One language for quantum physics, topological phases, molecular
-computing, the Langlands programme, and more — from classical Turing machines to the
+computing, the geometric Langlands programme, and more — from classical Turing machines to the
 full Meld.*
 
 **Graphical calculus legend:** 🕷️ present in ZX calculus · 🕷️\* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
 
-**Opcode symbols** (used in the LaTeX papers): the symbols follow a strict logic — *filled = creation operator, hollow = annihilation operator; 4-sided = stellar Pachner move, 3-sided = bistellar Pachner move. Opcodes outside the Pachner families (TWIST, SPIN, LABEL, BIND, ORBIT, MELD, FORK, SUPERPOSE, ENTANGLE) use distinct non-polygonal glyphs.*
+**Opcode symbols** (used in the LaTeX papers): filled = creation, hollow = annihilation. The symbol *shape* encodes the abstract arity — how many wires in, how many out. The Pachner move counts (1→4, 3→1, etc.) are the *3-manifold incarnation* of this arity, not its definition; the same opcodes appear with different in/out counts in spectroscopy, finance, and quantum information. See the [incarnations table](#opcode-incarnations-across-domains) below.
 
-| Opcode | Symbol | Categorical morphism | Mnemonic |
-|--------|--------|---------------------|----------|
-| SPLIT | ■ | Comultiplication $\Delta: A \to A \otimes A$ (Frobenius/bialgebra) | 4-sided, creation: 1→4 stellar move |
-| SPLAT | ◇ | Counit $\varepsilon: A \to k$ (Frobenius); evaluation map | 4-sided, annihilation: 4→1 stellar move |
-| FLIP | ▲ | Dagger functor $(-)^\dagger$; pivotal structure $V \cong V^{**}$ | 3-sided, creation: 1→3 bistellar move |
-| FLOP | △ | Trace $\mathrm{Tr}: \mathrm{End}(V) \to k$; cup in compact closed category | 3-sided, annihilation: 3→1 bistellar move |
-| TWIST | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | Phase rotation; curl in string diagram |
-| SPIN | ⊛ | $\mathbb{Z}_3$ gauge automorphism; triality $V \to S^+ \to S^- \to V$ | Triality gauge at $\mathbb{O}$-rung |
-| LABEL | ▪ | Idempotent $e: A \to A$, $e^2 = e$; augmentation $\varepsilon: \mathcal{H} \to \mathbb{C}$ | Small square: sector selection, fixed point |
-| BIND | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Bowtie = trivalent vertex; non-associative fusion |
-| ORBIT | ○ | Trace in a traced monoidal category $\mathrm{Tr}^U_{A,B}: \mathcal{C}(A \otimes U, B \otimes U) \to \mathcal{C}(A,B)$ | Hollow circle = closed loop; self-dual ($\sigma(\circ)=\circ$) |
-| MELD | ● | Handle operator in TQFT; filled circle = topological class creation | Filled circle: deepest fusion; dual of ORBIT |
-| FORK | ⑂ | Copairing / comonoid comultiplication $\delta: A \to A \otimes A$ (asymmetric) | Y-node: directed 1→2 branching (H¹ coboundary) |
-| SUPERPOSE | ⊕ | Biproduct $A \oplus B$; direct sum in Ab-enriched category | Standard ⊕; linear superposition |
-| ENTANGLE | ⊗ | Tensor product $A \otimes B$; non-local correlation in compact closed category | Standard ⊗; made physical |
+| Opcode | Symbol | Categorical morphism | Abstract role |
+|--------|--------|---------------------|---------------|
+| SPLIT | ■ | Comultiplication $\Delta: A \to A \otimes A$ (Frobenius/bialgebra) | 1-to-many; any diagonalisation or fan-out |
+| SPLAT | ◇ | Counit $\varepsilon: A \to k$ (Frobenius); evaluation map | many-to-1; any projection or evaluation |
+| FLIP | ▲ | Dagger functor $(-)^\dagger$; pivotal structure $V \cong V^{**}$ | orientation reversal; duality |
+| FLOP | △ | Trace $\mathrm{Tr}: \mathrm{End}(V) \to k$; cup in compact closed category | closure; trace; Born rule |
+| TWIST | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | phase / monodromy; 1-to-1 with memory |
+| SPIN | ⊛ | $\mathbb{Z}_3$ gauge automorphism; triality $V \to S^+ \to S^- \to V$ | order-3 cycling; triality gauge |
+| LABEL | ▪ | Idempotent $e: A \to A$, $e^2 = e$; augmentation $\varepsilon: \mathcal{H} \to \mathbb{C}$ | sector selection; idempotent projection |
+| BIND | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | non-associative fusion; recoupling |
+| ORBIT | ○ | Trace in a traced monoidal category $\mathrm{Tr}^U_{A,B}: \mathcal{C}(A \otimes U, B \otimes U) \to \mathcal{C}(A,B)$ | feedback loop; G-set walk; closed orbit |
+| MELD | ● | Handle operator in TQFT; filled circle = topological class creation | deepest fusion; handle attachment |
+| FORK | ⑂ | Copairing / comonoid comultiplication $\delta: A \to A \otimes A$ (asymmetric) | directed 1-to-2 branching; coboundary |
+| SUPERPOSE | ⊕ | Biproduct $A \oplus B$; direct sum in Ab-enriched category | linear superposition; direct sum |
+| ENTANGLE | ⊗ | Tensor product $A \otimes B$; non-local correlation in compact closed category | non-local correlation; tensor product |
 
-The dagger map σ swaps creation ↔ annihilation within the Pachner families: σ(■) = ◇ and σ(▲) = △. The Frobenius identities are ◇∘■ = △∘▲ = id. Outside the Pachner families, σ(○) = ● (ORBIT ↔ MELD) and σ(⊕) = ⊗ (SUPERPOSE ↔ ENTANGLE).
+The dagger map σ swaps creation ↔ annihilation: σ(■) = ◇, σ(▲) = △, σ(○) = ●, σ(⊕) = ⊗. The Frobenius identities are ◇∘■ = △∘▲ = id.
+
+---
+
+## Opcode incarnations across domains
+
+The same abstract opcode appears with different in/out counts depending on the domain. The Pachner move is the 3-manifold instance; spectroscopy, quantum information, and finance each have their own realisation.
+
+| Opcode | 3-manifold (Pachner) | Spectroscopy / rep theory | Quantum information | Finance |
+|--------|---------------------|--------------------------|---------------------|---------|
+| SPLIT | 1 tet → 4 tets | 1 rep → CG sum of irreps | 1 qubit → entangled register | 1 exposure → risk factor legs |
+| SPLAT | 4 tets → 1 tet | CG sum → 1 rep (6j evaluation) | many states → 1 measurement outcome | risk factor legs → net P&L |
+| FLIP | 1 tri → 3 tris | coupling ↑ by one j (raising) | dagger / time-reversal | long ↔ short position |
+| FLOP | 3 tris → 1 tri | coupling ↓ by one j (lowering) | cup / partial trace | born rule on exposure |
+| TWIST | Dehn twist | Clebsch–Gordan phase $(-1)^{j}$ | Berry phase / ribbon element | convexity correction; drift |
+| BIND | non-Pachner; obstruction | Racah recoupling ($6j → 9j$) | $F$-matrix; non-Abelian anyon | correlation regime change (H²) |
+| ORBIT | closed triangulation loop | closed G-orbit on weight lattice | feedback in quantum circuit | closed risk cycle |
+| LABEL | face/edge colouring | quantum number assignment | stabiliser projection | scenario / regime selection |
 
 ---
 
