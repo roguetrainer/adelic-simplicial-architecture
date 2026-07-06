@@ -23,9 +23,6 @@ Six famous equations from six different fields — Schrödinger, Black-Scholes, 
 **[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386)
 The simplest possible non-trivial simplex — four objects, six edges, four faces — encodes the Ponzano–Regge amplitude, the 6j symbol, the Wigner tetrahedron, and the fundamental unit of the Origami ISA. This is the geometric seed from which everything else grows.
 
-**[An Adelic Invitation](https://doi.org/10.5281/zenodo.19977475)** (Paper 219)
-The founding thesis: why the division algebra ladder **ℝ → ℂ → ℍ → 𝕆** is the right organisational principle for a unified theory of physics, computation, and economics. Accessible to anyone comfortable with complex numbers.
-
 ---
 
 ## For quantum computing researchers
@@ -129,6 +126,8 @@ The core claim: every molecular machine that processes angular momentum — a ri
 - [The 731 Frog Calculus Part 2](https://doi.org/10.5281/zenodo.20139448) (Paper 281) — G₂ spin foams; octonion diagram rewriting rules; the non-associative Pachner moves
 
 **Or start with the overview:** [The Non-Associative Frontier](non-associative-frontier.md) — a single page covering the division algebra ladder (ℝ→ℂ→ℍ→𝕆), the Freudenthal-Tits magic square, and how the 731-ISA is the computational realisation of the E₈ cell.
+
+**For the historical and philosophical motivation:** [An Adelic Invitation](https://doi.org/10.5281/zenodo.19977475) (Paper 000) — the founding essay asking why the division algebra ladder **ℝ → ℂ → ℍ → 𝕆** is the right organisational principle for a unified theory of physics, computation, and economics. Written before the ISA opcode vocabulary settled; best read after Paper 455 to understand where the framework came from and why.
 
 **If you know complex analysis:** the Cauchy-Riemann conditions are the oldest instance of the H¹=0 pattern in the ASA programme.
 The condition $\bar\partial f = 0$ is the Pentagon identity SPLAT∘SPLIT = 0 for the $\bar\partial$ operator.
