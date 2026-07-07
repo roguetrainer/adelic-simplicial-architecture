@@ -29,21 +29,23 @@ So what exactly does quantum computation have that classical computation lacks, 
 
 ---
 
-## The Meld and its three shadows
+## Three restrictions of one structure
 
-The answer requires understanding all three as projections of a common source.
+The answer requires understanding all three as restrictions of a common source.
 
-The **Meld** is the full mathematical structure: a complex deformation parameter $\beta \in \mathbb{C}$, arbitrary phases (including irrational and transcendental multiples of $\pi$), and the complete octonion/Fano geometry underlying the 731-ISA. You can think of the Meld as the "theory of everything" for computation — a rich analytic object that contains classical, quantum, and beyond-quantum computation as special cases.
+The **Ambient** (β → 0) is the smooth harmonic manifold from which all the operative ISAs precipitate as β rises. It is the true containing object — the object that casts the shadows. As β increases from zero it passes through the Forge ISA (real Gibbs arithmetic), reaches the Meld at β = it (complex unitary arithmetic), and continues to the Origami ISA at β → ∞ (tropical arithmetic). Classical, Clifford, and magic computation all live inside the Meld tier (β = it); the Ambient contains the Meld, not the other way around.
 
-Each type of computation arises by restricting the Meld's phase structure:
+Within the Meld (β = it), each type of computation arises by restricting which phases are allowed:
 
-**Classical computation** ($\beta \to \infty$, the Maslov/tropical limit): All phases are discarded. Amplitudes become real weights; addition becomes maximisation; the arithmetic system is the tropical semiring $(\mathbb{R} \cup \{-\infty\}, \max, +)$. The ISA opcodes reduce to their classical shadows: FLIP is a bit-flip (not a Hadamard), FLOP is a deterministic routing step, no TWIST.
+**Classical computation** (phases discarded entirely, β → ∞ tropical limit of the Meld): Amplitudes become real weights; addition becomes maximisation; the arithmetic system is the tropical semiring $(\mathbb{R} \cup \{-\infty\}, \max, +)$. The ISA opcodes reduce to their classical shadows: FLIP is a bit-flip (not a Hadamard), FLOP is a deterministic routing step, no TWIST. This is the Origami ISA regime — a restriction of the Meld reached by taking β real and large.
 
 **Clifford computation** (phases restricted to $\{1, i, -1, -i\}$, fourth roots of unity): Phases are retained but confined to a finite lattice. Superposition, entanglement, and interference all survive. The Wigner function remains non-negative. The Gottesman-Knill theorem says these circuits can be efficiently classically simulated — yet Shor's algorithm lives here and is not efficiently classically simulable. The ISA opcodes FLIP(Hadamard), SPLIT, SPLAT, SWAP are all available; no TWIST.
 
 **Magic computation** (phases algebraic irrational, e.g. $e^{i\pi/4}$ for the T gate): The phase lattice is no longer finite. Wigner-function negativity appears. The TWIST opcode fires. Non-abelian Fourier transforms become possible. This tier is necessary for universal fault-tolerant quantum computation.
 
-$$\underbrace{\text{Classical}}_{\beta \to \infty,\; \text{no phases}} \;\subset\; \underbrace{\text{Clifford}}_{\text{4th roots of unity}} \;\subset\; \underbrace{\text{Magic}}_{\text{algebraic irrational}} \;\subset\; \underbrace{\text{The Meld}}_{\text{transcendental, full Fano}}$$
+**The full Meld** (β = it, transcendental phases, complete Fano/octonion geometry): the unitary tier in its entirety, containing all three above as restrictions.
+
+$$\underbrace{\text{Classical}}_{\text{no phases}} \;\subset\; \underbrace{\text{Clifford}}_{\text{4th roots of unity}} \;\subset\; \underbrace{\text{Magic}}_{\text{algebraic irrational}} \;\subset\; \underbrace{\text{The Meld}}_{\beta = it,\;\text{transcendental}} \;\subset\; \underbrace{\text{The Ambient}}_{\beta \to 0,\;\text{all ISAs}}$$
 
 ---
 
@@ -78,7 +80,10 @@ The Origami ISA makes this hierarchy concrete:
 | Classical ($C_1$) | Black | LABEL, FLIP(X), FLOP | None ($\beta \to \infty$) | None |
 | Clifford ($C_2$) | Blue | + FLIP(H), SPLIT, SPLAT, SWAP | Rational (4th roots of unity) | Abelian |
 | Magic ($C_3$) | Red | + TWIST | Algebraic irrational (8th roots+) | Non-abelian |
-| The Meld | Gold | + BIND, SPIN | Transcendental | Full $G_2$/octonion |
+| The Meld ($\beta = it$) | Gold | + BIND, SPIN | Transcendental | Full $G_2$/octonion |
+| The Ambient ($\beta \to 0$) | — | $d, d^\star, \Delta, \star$ (Hodge) | Continuous/harmonic | Global (not local) |
+
+*The Ambient is the smooth containing manifold; the Meld and Origami ISAs are its β → 0⁺ and β → ∞ limits. Classical, Clifford, and Magic are phase restrictions within the Meld.*
 
 The colour of a circuit's ISA opcode sequence is a compile-time certificate of its computational tier. The TWIST opcode count — how many times TWIST fires in the ISA programme — is the magic resource counter.
 
