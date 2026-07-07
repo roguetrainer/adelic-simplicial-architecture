@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Core Ideas"
+nav_order: 3
+has_children: true
+description: "The five to eight most significant discoveries of the TRS/ASA programme — each spanning a family of papers, stated as a claim, with the evidence behind it."
+tags: [overview, discoveries, magic, chemistry, biology, complexity, fano, isa]
+---
+
+# Core Ideas
+{: .no_toc }
+
+*Each page here states one significant claim — something we believe is new to the
+literature — and lays out the papers, experiments, and open questions behind it.
+These are not summaries of individual papers; they are the ideas that span
+families of papers.*
+{: .fs-5 .fw-300 }
+
+---
+
+The TRS/ASA programme has produced a number of results we believe are
+genuinely novel. The pages below present the most significant of them, one
+claim per page, written for a reader who wants the idea first and the
+machinery second.
+
+Each page follows the same structure:
+
+1. **The claim** — one or two sentences, as precisely as possible
+2. **Why it matters** — what changes if the claim is true
+3. **The evidence** — the papers and experiments that support it
+4. **What would falsify it** — the prediction that would prove us wrong
+5. **Open questions** — what we do not yet know
+
+---
+
+## The claims, in brief
+
+| # | Claim | Key papers |
+| --- | --- | --- |
+| [1](core-ideas/magic-structure.md) | **Magic has a periodic table.** Quantum non-classicality is not binary — it has orbits, valences, and dark states invisible to standard measures. | 365, 366, 467, 469, 470 |
+| [2](core-ideas/molecular-computation.md) | **Every molecule is already running a programme.** Enzyme catalysis, nitrogen fixation, and spin-state switching are ISA programmes readable in the group-orbit language. | 488, 489, 490, 491, 509 |
+| [3](core-ideas/fano-crystal.md) | **The Fano crystal is universal.** Whether an orbit is closed or open — the same binary — governs stability from quark confinement to financial contagion to photosynthetic efficiency. | 317, 319, 325, 357, 545 |
+| [4](core-ideas/cohomological-complexity.md) | **Quantum speedup has a cohomological address.** H⁰, H¹, and H² classify which computational problems admit which kinds of speedup — and why some problems are hard at every level. | 420, 421, 472, 473 |
+| [5](core-ideas/biological-qec.md) | **Biology runs quantum error correction.** Kinetic proofreading, protein chaperones, and the ribosome implement H⁰ × H¹ × H² QEC — the same three-tier structure as fault-tolerant quantum computing. | 510, 511, 515, 324 |
+
+---
+
+*More claims are in preparation. The ISA semiring-polymorphism claim (same
+programme, different arithmetic, different physics) is treated in
+[The Operative and Harmonic ISAs](forge-meld.md) and [The ISA Opcodes](opcodes.md)
+rather than here, since those pages already give it a full treatment.*
