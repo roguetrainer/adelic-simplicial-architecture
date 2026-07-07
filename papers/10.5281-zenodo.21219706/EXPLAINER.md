@@ -37,13 +37,13 @@ The **Meld** is the full mathematical structure: a complex deformation parameter
 
 Each type of computation arises by restricting the Meld's phase structure:
 
-**Classical computation** ($\beta \to 0$, the Maslov/tropical limit): All phases are discarded. Amplitudes become real weights; addition becomes maximisation; the arithmetic system is the tropical semiring $(\mathbb{R} \cup \{-\infty\}, \max, +)$. The ISA opcodes reduce to their classical shadows: FLIP is a bit-flip (not a Hadamard), FLOP is a deterministic routing step, no TWIST.
+**Classical computation** ($\beta \to \infty$, the Maslov/tropical limit): All phases are discarded. Amplitudes become real weights; addition becomes maximisation; the arithmetic system is the tropical semiring $(\mathbb{R} \cup \{-\infty\}, \max, +)$. The ISA opcodes reduce to their classical shadows: FLIP is a bit-flip (not a Hadamard), FLOP is a deterministic routing step, no TWIST.
 
 **Clifford computation** (phases restricted to $\{1, i, -1, -i\}$, fourth roots of unity): Phases are retained but confined to a finite lattice. Superposition, entanglement, and interference all survive. The Wigner function remains non-negative. The Gottesman-Knill theorem says these circuits can be efficiently classically simulated — yet Shor's algorithm lives here and is not efficiently classically simulable. The ISA opcodes FLIP(Hadamard), SPLIT, SPLAT, SWAP are all available; no TWIST.
 
 **Magic computation** (phases algebraic irrational, e.g. $e^{i\pi/4}$ for the T gate): The phase lattice is no longer finite. Wigner-function negativity appears. The TWIST opcode fires. Non-abelian Fourier transforms become possible. This tier is necessary for universal fault-tolerant quantum computation.
 
-$$\underbrace{\text{Classical}}_{\beta \to 0,\; \text{no phases}} \;\subset\; \underbrace{\text{Clifford}}_{\text{4th roots of unity}} \;\subset\; \underbrace{\text{Magic}}_{\text{algebraic irrational}} \;\subset\; \underbrace{\text{The Meld}}_{\text{transcendental, full Fano}}$$
+$$\underbrace{\text{Classical}}_{\beta \to \infty,\; \text{no phases}} \;\subset\; \underbrace{\text{Clifford}}_{\text{4th roots of unity}} \;\subset\; \underbrace{\text{Magic}}_{\text{algebraic irrational}} \;\subset\; \underbrace{\text{The Meld}}_{\text{transcendental, full Fano}}$$
 
 ---
 
@@ -75,7 +75,7 @@ The Origami ISA makes this hierarchy concrete:
 
 | Tier | ISA colour | Available opcodes | Phase structure | Interference type |
 |---|---|---|---|---|
-| Classical ($C_1$) | Black | LABEL, FLIP(X), FLOP | None ($\beta = 0$) | None |
+| Classical ($C_1$) | Black | LABEL, FLIP(X), FLOP | None ($\beta \to \infty$) | None |
 | Clifford ($C_2$) | Blue | + FLIP(H), SPLIT, SPLAT, SWAP | Rational (4th roots of unity) | Abelian |
 | Magic ($C_3$) | Red | + TWIST | Algebraic irrational (8th roots+) | Non-abelian |
 | The Meld | Gold | + BIND, SPIN | Transcendental | Full $G_2$/octonion |
