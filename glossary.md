@@ -27,13 +27,21 @@ In the ASA, the adelic structure appears in the routing of gradient updates: the
 
 The precise condition: a quantum state possesses associamancy if and only if its hidden symmetry group contains an irreducible representation with **Frobenius-Schur indicator** $\nu_2 = 0$ (see *Schur Boundary*). This is the condition that the representation is realisable over $\mathbb{C}$ but not over $\mathbb{R}$ or $\mathbb{H}$.
 
-The three-level resource hierarchy:
+The four-level resource hierarchy:
 
 | Level | Name | Condition | Required hardware |
 |-------|------|-----------|------------------|
-| 0 | Stabiliser | Wigner function $\geq 0$ | Any qubit |
-| 1 | Standard magic | Wigner function $< 0$, $\nu_2 \neq 0$ | Qubit + T-gate |
+| 0 | Stabiliser | Wigner function $\geq 0$; TV $= 1$ | Any qubit |
+| 1a | Dark magic | Wigner $< 0$; TV $= 1$ | Qubit + Clifford |
+| 1b | Genuine magic | Wigner $< 0$; TV $< 1$ | Qubit + T-gate |
 | 2 | **Associamancy** | $\nu_2 = 0$ (complex irrep) | 731 ISA (SPIN opcode) |
+
+TV is the total variation of the discrete Wigner function — the correct discriminant
+between dark and genuine magic ([Paper 470](papers/10.5281-zenodo.21219700/)).
+Associamancy (Level 2) sits strictly above both sub-tiers: $S_\mathrm{Schur}$ is
+independent of TV and Wigner negativity. A state can have genuine magic (TV $< 1$)
+and zero Schur entropy; and a state can have $S_\mathrm{Schur} = \log 2$ at either
+dark or genuine magic level.
 
 The minimal group exhibiting associamancy is $\mathrm{PSL}(2,7)$ (order 168). The number-theoretic criterion: $\mathrm{PSL}(2,q)$ has associamancy if and only if $q \equiv 3 \pmod{4}$.
 
@@ -260,9 +268,12 @@ The **Langlands Program** is a vast network connecting number theory, representa
 
 A **magic state** is any quantum state that cannot be prepared by Clifford circuits and stabiliser state inputs alone — equivalently, any state with non-zero Wigner function negativity. Magic states are the fuel for universal quantum computation: injecting a magic state into a Clifford circuit promotes it from BPP-level to BQP-level.
 
-The ASA organises magic into two levels (see *Associamancy*):
-- **Level 1 (standard magic):** Wigner negativity $> 0$, Frobenius-Schur indicator $\nu_2 \neq 0$. Accessible to the Origami ISA via T-gates and Fano measurement.
-- **Level 2 (associamancy):** additionally requires $\nu_2 = 0$ irreps of the hidden symmetry group. Requires the SPIN opcode of the 731 ISA.
+The ASA organises magic into four levels (see *Associamancy*):
+
+- **Level 1a (dark magic):** Wigner negative, TV $= 1$. Clifford-simulable under reframing.
+- **Level 1b (genuine magic):** Wigner negative, TV $< 1$. T-gate resource; drives quantum advantage.
+- **Level 2 (associamancy):** $\nu_2 = 0$ irreps of the hidden symmetry group,
+  independent of Levels 1a/1b. Requires the SPIN opcode of the 731 ISA.
 
 The **orbit decomposition** of magic: $\mathrm{PG}(5,2)\setminus\mathrm{PG}(2,2) = \bigsqcup_{L=0}^6\mathcal{O}_L$ gives 7 orbits of 8 phase-space points, each labelled by a Fano line. The **magic label** $\{p_L\}$ is a new Clifford-invariant that refines Wigner negativity into 7 independent channels.
 
@@ -356,7 +367,10 @@ The **Resonance Processing Unit (RPU)** and a standard **Quantum Processing Unit
 
 ## Schur Boundary
 
-The **Schur boundary** is the precise algebraic condition separating Level 1 (standard magic) from Level 2 (associamancy). A quantum state crosses the Schur boundary when its hidden symmetry group contains an irrep with Frobenius-Schur indicator $\nu_2 = 0$.
+The **Schur boundary** is the precise algebraic condition separating Levels 1a/1b
+(dark and genuine magic) from Level 2 (associamancy). A quantum state crosses the
+Schur boundary when its hidden symmetry group contains an irrep with Frobenius-Schur
+indicator $\nu_2 = 0$.
 
 Three equivalent characterisations (Paper 407):
 1. **Algebraic:** $\nu_2(V_\lambda) = 0$ for some irrep $V_\lambda$
