@@ -75,7 +75,7 @@ This is not an analogy. The toric code *is* a cohomological encoding. The manifo
 
 ---
 
-## The $H^k$ classification and the $\beta^*$ threshold
+## The H^k classification and the beta-star threshold
 
 Fitting QEC into the broader $H^k$ framework:
 
@@ -85,7 +85,7 @@ Fitting QEC into the broader $H^k$ framework:
 
 **$H^2$ codes** are topological codes that require non-Clifford operations for universal quantum computing. The chain complex has a non-trivial second cohomology; the logical operations that complete the universal gate set require genuine magic — quantum resources outside the Clifford group. The toric code is $H^1$ for error *correction*, but needs $H^2$ resources (magic state distillation or a code switch) to perform universal *computation*.
 
-The **$\beta^*$ threshold** is the phase transition separating correctable from uncorrectable operation. At high temperature (small $\beta$), thermal noise generates errors faster than syndromes can be measured and corrected. Below $\beta^*$, errors are sparse enough that the syndrome pattern is dominated by boundaries (correctable) rather than non-trivial cycles (uncorrectable). The threshold theorem of fault-tolerant quantum computing — the fact that error rates below roughly $10^{-2}$ to $10^{-3}$ allow arbitrarily long computation — is the statement that $\beta^*$ exists and is positive.
+The **beta-star threshold** $\beta^*$ is the phase transition separating correctable from uncorrectable operation. At high temperature (small $\beta$), thermal noise generates errors faster than syndromes can be measured and corrected. Below $\beta^*$, errors are sparse enough that the syndrome pattern is dominated by boundaries (correctable) rather than non-trivial cycles (uncorrectable). The threshold theorem of fault-tolerant quantum computing — the fact that error rates below roughly $10^{-2}$ to $10^{-3}$ allow arbitrarily long computation — is the statement that $\beta^*$ exists and is positive.
 
 ---
 
