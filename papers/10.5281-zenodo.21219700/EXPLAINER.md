@@ -26,7 +26,7 @@ The textbook picture of quantum computational resources has two tiers:
 - **Clifford gates** (S, H, CNOT, CZ, ...): can be simulated classically in polynomial time by the Gottesman-Knill theorem. These are "free" resources.
 - **Magic gates** (T, CCZ, ...): cannot be simulated classically. These are the scarce resource, obtained via magic state distillation.
 
-The discriminant is the **Wigner function** $W(\cdot)$: a state is Clifford-simulable if and only if $W \geq 0$ everywhere (Hudson's theorem for discrete Wigner functions, Gross 2006). Wigner negativity $N = \sum_{W<0} |W(u)|$ measures how non-classical a state is.
+The discriminant is the **Wigner function** $W(\cdot)$: a state is Clifford-simulable if and only if $W \geq 0$ everywhere (Hudson's theorem for discrete Wigner functions, Gross 2006). Wigner negativity $N = \sum_{W<0} \lvert W(u)\rvert$ measures how non-classical a state is.
 
 The gap: $N > 0$ does not imply the state is a genuine magic resource. There exist states with $N > 0$ that are nonetheless free — they cannot be used to implement non-Clifford gates even with unlimited Clifford assistance. These are the **dark-magic states**.
 
@@ -42,7 +42,7 @@ Hot Logic establishes three tiers:
 | Dark magic | $= 1$ | $< 0$ somewhere | Not simulable | Not usable as resource |
 | Genuine magic | $> 1$ | $< 0$ somewhere | Not simulable | Required / usable |
 
-**Total variation** $\mathrm{TV} = \sum_u |W(u)|$ is the key discriminant. For stabiliser states and dark-magic states, $\mathrm{TV} = 1$. For genuine magic states, $\mathrm{TV} > 1$. This is why $N$ fails: it conflates dark magic (TV=1) with genuine magic (TV>1) by measuring only the negative part of $W$, not the full variation.
+**Total variation** $\mathrm{TV} = \sum_u \lvert W(u)\rvert$ is the key discriminant. For stabiliser states and dark-magic states, $\mathrm{TV} = 1$. For genuine magic states, $\mathrm{TV} > 1$. This is why $N$ fails: it conflates dark magic (TV=1) with genuine magic (TV>1) by measuring only the negative part of $W$, not the full variation.
 
 ---
 
@@ -55,7 +55,7 @@ TV satisfies the four properties required of a resource monotone:
 3. **Additivity:** TV of a tensor product equals the product of TVs (up to normalisation), making it composable across circuit layers.
 4. **Computability:** TV is a finite sum over the discrete phase space, directly computable from the Wigner representation.
 
-The **$N$-independence result** (proved in full in [doi:10.5281/zenodo.21219702](https://doi.org/10.5281/zenodo.21219702)) strengthens this: the total Wigner mass and TV of a canonical dark-magic state $|ψ_N\rangle = \mathrm{CZ}_{01}(T \otimes I^{\otimes N-1})|{+}^{\otimes N}\rangle$ are independent of $N$. Dark magic does not accumulate with qubit count — it is a fixed, non-growing resource.
+The **$N$-independence result** (proved in full in [doi:10.5281/zenodo.21219702](https://doi.org/10.5281/zenodo.21219702)) strengthens this: the total Wigner mass and TV of a canonical dark-magic state $\lvert\psi_N\rangle = \mathrm{CZ}_{01}(T \otimes I^{\otimes N-1})\lvert{+}^{\otimes N}\rangle$ are independent of $N$. Dark magic does not accumulate with qubit count — it is a fixed, non-growing resource.
 
 ---
 

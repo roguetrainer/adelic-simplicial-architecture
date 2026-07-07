@@ -90,7 +90,7 @@ Quantum speedup — why Shor's algorithm factors integers exponentially faster t
 
 ## The negative real axis: population inversion
 
-Going left along the real axis — negative β — the Boltzmann weight becomes $e^{+|\beta| E_k}$. Now higher-energy states are favoured. This is a **population inversion**: more of the system is in the excited state than the ground state.
+Going left along the real axis — negative β — the Boltzmann weight becomes $e^{+\lvert\beta\rvert E_k}$. Now higher-energy states are favoured. This is a **population inversion**: more of the system is in the excited state than the ground state.
 
 This is not an abstraction. It is the operating principle of the laser. A gain medium (the lasing material) is pumped into a population inversion; stimulated emission then avalanches because the excited state is more probable than the ground state. Purcell and Pound demonstrated population inversion in nuclear spin systems in 1951 — the first experimental realisation of negative temperature.
 
@@ -104,10 +104,10 @@ Between the real and imaginary axes lies the full complex plane. A value $\beta 
 
 This is exactly the setting of **PT-symmetric quantum mechanics**, pioneered by Carl Bender and Stefan Boettcher (1998). A PT-symmetric system has balanced gain and loss — the gain at one part of the system exactly compensates the loss at another. Such systems can have entirely real energy spectra despite having non-Hermitian Hamiltonians, as long as the gain-loss balance holds.
 
-On the β-plane, PT-symmetric systems live in the band around the imaginary axis where $|\sigma|$ is small. There is a phase transition — the **PT phase transition** — at a critical value $\sigma^\star$:
+On the β-plane, PT-symmetric systems live in the band around the imaginary axis where $\lvert\sigma\rvert$ is small. There is a phase transition — the **PT phase transition** — at a critical value $\sigma^\star$:
 
-- **PT-unbroken** ($|\sigma| < \sigma^\star$): gain and loss balance; real energy spectrum; computation is stable
-- **PT-broken** ($|\sigma| > \sigma^\star$): gain overwhelms loss; eigenvalues come in complex conjugate pairs; the system amplifies without bound
+- **PT-unbroken** ($\lvert\sigma\rvert < \sigma^\star$): gain and loss balance; real energy spectrum; computation is stable
+- **PT-broken** ($\lvert\sigma\rvert > \sigma^\star$): gain overwhelms loss; eigenvalues come in complex conjugate pairs; the system amplifies without bound
 
 At the PT phase transition itself, two eigenvalues coalesce — their eigenvectors become parallel — at an **exceptional point**. Exceptional points are branch points of the eigenvalue surface, and encircling one in parameter space applies a Berry phase that swaps the two coalescing modes. In ISA language: the exceptional point is the β-plane analogue of the snap threshold $\beta^\star$, and encircling it is a TWIST opcode — a topological phase correction.
 

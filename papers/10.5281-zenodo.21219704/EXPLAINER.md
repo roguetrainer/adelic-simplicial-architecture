@@ -77,7 +77,7 @@ A sweep over $D_N$ for $N \in \{2, 3, 4, 5, 6, 8\}$ confirms the pattern: only $
 
 For non-dyadic groups (those whose order is not a power of 2), the standard Wigner-function mana gives padding artefacts when the state is embedded in a qubit Hilbert space. The paper proposes the **eigenphase spectrum** of the NAQFT gate as the basis-independent replacement:
 
-$$\text{non-Clifford fraction} = \frac{|\{\theta \in \text{spec}(\text{NAQFT}) : \theta \notin \{0, \pi/2, \pi, 3\pi/2\}\}|}{|\text{spec}(\text{NAQFT})|}$$
+$$\text{non-Clifford fraction} = \frac{\lvert\{\theta \in \text{spec}(\text{NAQFT}) : \theta \notin \{0, \pi/2, \pi, 3\pi/2\}\}\rvert}{\lvert\text{spec}(\text{NAQFT})\rvert}$$
 
 This is zero for abelian groups (all eigenphases are rational multiples of $\pi$, hence Clifford), and strictly positive for any $D_N$ with $N \geq 3$. Unlike T-count, the eigenphase spectrum is an invariant of the group $G$ itself, independent of gate decomposition or qubit embedding.
 
