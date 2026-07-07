@@ -9,7 +9,7 @@ portfolio: A
 
 ## Every Computational Model Lives at One Point on the Same Map
 
-*Plain-language explainer for [doi:10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD) (#543)*
+*Plain-language explainer for [doi:10.5281/zenodo.21245459](https://doi.org/10.5281/zenodo.21245459) (#543)*
 
 ---
 
@@ -170,4 +170,4 @@ The remarkable fact is not that these models are all related — it is that they
 - [The Projective Hierarchy](https://doi.org/10.5281/zenodo.21219706) (#473) — classical/Clifford/magic as phase restrictions within the Meld
 - [Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384) (#443) — ℏ = 1/β; the β-deformation semiring
 
-*For the full technical treatment, see [doi:10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD)*
+*For the full technical treatment, see [doi:10.5281/zenodo.21245459](https://doi.org/10.5281/zenodo.21245459)*
