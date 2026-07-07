@@ -29,11 +29,22 @@ The ASA grew in layers, each one built on the last. They are not synonyms.
 
 The single operation at the heart of everything:
 
-$$\pi_k = \frac{e^{-\beta E_k}}{\sum_j e^{-\beta E_j}}$$
+$$\pi_k(\beta) = \frac{e^{-\beta E_k}}{\sum_j e^{-\beta E_j}}$$
 
-At β → ∞ this is the tropical (min, +) semiring — hard, discrete selection. At finite β it is a smooth Gibbs distribution. The MGE is what makes any discrete model differentiable: replace argmin with this, and gradients flow everywhere.
+The domain of β is the full **adèlic β-plane** — real, imaginary, negative, complex, and p-adic values each give a different computational regime:
 
-*→ [Paper 201](https://zenodo.org/records/17981393)*
+| β | Regime | What it computes |
+|---|--------|-----------------|
+| 0 | The Ambient | Uniform weights; smooth Hodge theory |
+| real, finite | Forge ISA | Gibbs distribution; statistical mechanics |
+| real → ∞ | Origami ISA | Tropical (min, +) semiring; hard discrete selection |
+| imaginary ($it$) | Meld ISA | Quantum amplitudes; Wick rotation |
+| negative | Population inversion | Lasers; anti-Boltzmann weighting |
+| p-adic | Ultrametric | p-adic computation; attaches at β = 0 |
+
+Ostrowski's theorem closes the map: every non-trivial absolute value on ℚ is either Archimedean (giving ℝ) or p-adic (giving ℚ_p), so the adèlic β-plane is the *complete* parameter space for the MGE. The MGE is what makes any discrete model differentiable: replace argmin with this, and gradients flow everywhere.
+
+*→ Papers [201](https://zenodo.org/records/17981393) (MGE), [543](https://doi.org/10.5281/zenodo.21245459) (adèlic β-plane)*
 
 ---
 
@@ -53,15 +64,18 @@ TRS is *not* the same as the ISA trilogy, not the same as the H^k ladder, and no
 
 ## Layer 3 — The ISA Trilogy
 
-Three instruction sets, one for each temperature regime:
+Four temperature regimes, three operative ISAs:
 
-| ISA | β | Arithmetic | Complexity | Paper |
-|-----|---|------------|------------|-------|
-| **Origami** | β → ∞ | Tropical (min, +) | H⁰ | 258 |
-| **Forge** | 0 < β < ∞ | Real Gibbs | H¹ | 419 |
-| **Meld** | β = it | Complex amplitudes | H² | 454 |
+| ISA | β | Arithmetic | Paper |
+|-----|---|------------|-------|
+| **Ambient** | 0 | Uniform / Hodge theory | 417 |
+| **Origami** | β → ∞ | Tropical (min, +) | 258 |
+| **Forge** | 0 < β < ∞ | Real Gibbs | 419 |
+| **Meld** | β = it | Complex amplitudes | 454 |
 
-Each ISA has the same five opcodes — SPLIT, SPLAT, FLIP, FLOP, TWIST — running at a different temperature. The β → it substitution (Wick rotation) turns the Forge ISA into the Meld ISA and turns statistical mechanics into quantum mechanics.
+Each operative ISA (Origami, Forge, Meld) uses the same five opcodes — SPLIT, SPLAT, FLIP, FLOP, TWIST — running at a different temperature. The β → it substitution (Wick rotation) turns the Forge ISA into the Meld ISA and turns statistical mechanics into quantum mechanics.
+
+The ISAs are not the same as the H^k ladder (Layer 4). The H^k ladder classifies *problem type* by the cohomological obstruction that makes it hard; any ISA can in principle compute any H^k problem, but at different cost. The Origami ISA naturally handles H⁰ problems; the Forge ISA excels at H¹; the Meld ISA is required for H² (quantum) problems. But the correspondence is one of natural fit, not restriction.
 
 Eight independent mathematical communities have each, working separately, been forced to the same five opcodes. [Paper 455](https://doi.org/10.5281/zenodo.20774076) explains why: Shum's theorem (1994) identifies the free ribbon pivotal category on one self-dual object, whose generators are forced by the topology of framed tangles.
 
@@ -76,7 +90,7 @@ The three-ISA trilogy operates within the **associative** world — the Pentagon
 | Origami / Forge / Meld | — | — | ℝ, ℂ (associative) |
 | **731-ISA** | BIND, SPIN | Pentagon identity | 𝕆 (octonions, non-associative) |
 
-**BIND** is the frog vertex — the non-abelian fusion that requires G₂ symmetry and implements the Fano associator obstruction. At j=½ it is the T-gate; at higher spin it accesses genuinely non-associative territory inaccessible to any standard quantum gate set. **SPIN** is the G₂ triality automorphism — the order-3 outer automorphism of Spin(8) that cyclically permutes its three 8-dimensional representations.
+**BIND** is the frog vertex — the non-abelian fusion that requires G₂ symmetry and implements the Fano associator obstruction. At j=½ it is the T-gate; at higher spin it accesses genuinely non-associative territory inaccessible to any standard quantum gate set. **SPIN** is the G₂ triality automorphism — the order-3 outer automorphism of Spin(8) that cyclically permutes its three 8-dimensional representations — and is the elementary injection gate for *associamancy* (the fourth level of the quantum resource hierarchy; see [Paper 407](https://doi.org/10.5281/zenodo.20667174)).
 
 A gate set is **triality-complete** if it contains SPIN. The 731-ISA is triality-complete; the Origami/Forge/Meld trilogy is not.
 
@@ -116,7 +130,7 @@ The full research programme: all five layers plus their applications across quan
 | [F — Quantum Foundations](/adelic-simplicial-architecture/portfolios/portfolio-f) | Magic, self-tests, paradoxes |
 | [G — Finance & Economics](/adelic-simplicial-architecture/portfolios/portfolio-g) | EconIAC, gauge theory, risk |
 
-The adelic structure — using all completions of ℚ simultaneously (real + p-adic) — appears in the routing of gradient updates: the real component flows continuously, the p-adic component crystallises discretely.
+The adelic structure — using all completions of ℚ simultaneously (real + p-adic) — is captured by the adèlic β-plane ([Paper 543](https://doi.org/10.5281/zenodo.21245459)): the real axis governs the Origami/Forge/Meld ISA trilogy, while the p-adic completions attach at β = 0 (the Ambient). Ostrowski's theorem guarantees this is the complete picture.
 
 *→ [Paper 219](https://zenodo.org/records/19977475) (An Adelic Invitation)*
 
@@ -138,8 +152,10 @@ The adelic structure — using all completions of ℚ simultaneously (real + p-a
 
 New to the framework? Start here:
 
-1. **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — the ⊕_β semiring in one paper; no prerequisites
-2. **[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386) — the geometric seed; accessible to anyone
-3. **[Eight Derivations](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — why the five opcodes are inevitable
+1. **[The Maslov-Gibbs Einsum](https://doi.org/10.5281/zenodo.17981393)** (Paper 201) — the single equation; the dodecagon of twelve unified constructs; Turing completeness as a corollary
+2. **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — the six classical dualities as β-deformations; no prerequisites
+3. **[The Adèlic β-Plane](https://doi.org/10.5281/zenodo.21245459)** (Paper 543) — the complete parameter space: why ℏ, viscosity, volatility, and quantum amplitudes are all the same coordinate
+4. **[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386) — the geometric seed; accessible to anyone
+5. **[Eight Derivations](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — why the five opcodes are inevitable
 
 Then follow the [Start Here](start-here.md) routing page for your field.
