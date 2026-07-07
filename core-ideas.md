@@ -42,6 +42,7 @@ Each page follows the same structure:
 | [3](core-ideas/fano-crystal.md) | **The Fano crystal is universal.** Whether an orbit is closed or open — the same binary — governs stability from quark confinement to financial contagion to photosynthetic efficiency. | 317, 319, 325, 357, 545 |
 | [4](core-ideas/cohomological-complexity.md) | **Quantum speedup has a cohomological address.** H⁰, H¹, and H² classify which computational problems admit which kinds of speedup — and why some problems are hard at every level. | 420, 421, 472, 473 |
 | [5](core-ideas/biological-qec.md) | **Biology runs quantum error correction.** Kinetic proofreading, protein chaperones, and the ribosome implement H⁰ × H¹ × H² QEC — the same three-tier structure as fault-tolerant quantum computing. | 510, 511, 515, 324 |
+| [6](core-ideas/beta-plane.md) | **β is a coordinate.** Planck's constant, viscosity, volatility, and temperature are all the same object — coordinates on the adèlic β-plane — and Ostrowski's theorem proves the map is complete. | 201, 443, 419, 454, 543 |
 
 ---
 
