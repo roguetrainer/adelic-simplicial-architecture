@@ -21,7 +21,7 @@ The algebra of quantum error correction — parity checks, syndromes, logical op
 
 ## The error correction problem
 
-Physical qubits are fragile. A stray electromagnetic field, a vibration, or a cosmic ray can flip a qubit from $|0\rangle$ to $|1\rangle$, or rotate its phase from $+1$ to $-1$, or do both simultaneously. Any useful quantum computation runs long enough that errors accumulate and overwhelm the signal.
+Physical qubits are fragile. A stray electromagnetic field, a vibration, or a cosmic ray can flip a qubit from $\lvert 0\rangle$ to $\lvert 1\rangle$, or rotate its phase from $+1$ to $-1$, or do both simultaneously. Any useful quantum computation runs long enough that errors accumulate and overwhelm the signal.
 
 Quantum error correction (QEC) is the answer: encode one *logical* qubit — the one you care about — across many *physical* qubits, in such a way that small errors on individual physical qubits can be detected and undone before they propagate.
 
