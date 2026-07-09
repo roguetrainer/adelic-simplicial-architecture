@@ -41,7 +41,9 @@ This gives a purely geometric definition of code distance: it's a distance on a 
 
 The Knill-Laflamme (KL) conditions are the necessary and sufficient conditions for a code to be able to correct all errors in a set E: for all correctable error operators Eₐ, Eb and all codewords i, j:
 
-$$\langle i | E_a^\dagger E_b | j \rangle = C_{ab} \delta_{ij}$$
+$$
+\langle i | E_a^\dagger E_b | j \rangle = C_{ab} \delta_{ij}
+$$
 
 The matrix C_ab must be independent of the codeword index (i, j). In Grassmannian language: the code point p_C must sit at the **centre** of a metric ball containing all correctable error images. The KL matrix C_ab is the metric tensor on that ball.
 

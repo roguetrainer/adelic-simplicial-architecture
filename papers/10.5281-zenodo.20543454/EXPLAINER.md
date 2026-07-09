@@ -67,7 +67,9 @@ For the Fano group $\mathbb{Z}_2^3$, the 6j symbol takes values in $\{+1/\sqrt{2
 
 **1. The Pandya transformation (nuclear physics, 1956)**
 The Pandya transformation relates two-body matrix elements in different coupling schemes:
-$$\langle (j_a j_d) J | V | (j_b j_c) J \rangle_{\text{particle-hole}} = -(2J+1) \sum_{J'} (2J'+1) \begin{Bmatrix} j_a & j_b & J \\ j_c & j_d & J' \end{Bmatrix} \langle (j_a j_b) J' | V | (j_c j_d) J' \rangle$$
+$$
+\langle (j_a j_d) J | V | (j_b j_c) J \rangle_{\text{particle-hole}} = -(2J+1) \sum_{J'} (2J'+1) \begin{Bmatrix} j_a & j_b & J \\ j_c & j_d & J' \end{Bmatrix} \langle (j_a j_b) J' | V | (j_c j_d) J' \rangle
+$$
 
 For the specific 3-qubit configuration matching the Fano triangle, the 6j evaluates to $-1/3$.
 

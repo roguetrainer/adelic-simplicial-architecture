@@ -45,7 +45,9 @@ The thermal Shapley value is differentiable in $\beta$. Its derivative $\partial
 
 The **latent bottleneck index** $\Lambda_i$ is defined as:
 
-$$\Lambda_i = \left|\frac{\partial \phi_i(\beta)}{\partial \beta}\right|_{\beta = 0}.$$
+$$
+\Lambda_i = \left|\frac{\partial \phi_i(\beta)}{\partial \beta}\right|_{\beta = 0}.
+$$
 
 This measures how sensitive player $i$'s attribution is to temperature. A high $\Lambda_i$ means that $i$'s share changes dramatically as $\beta$ increases: $i$ is much more (or less) important in high-value orderings than in low-value ones. A low $\Lambda_i$ means $i$'s contribution is similar across all orderings.
 

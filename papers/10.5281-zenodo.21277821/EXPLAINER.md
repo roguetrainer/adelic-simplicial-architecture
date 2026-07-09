@@ -31,7 +31,9 @@ This paper provides the referee: the **Schmidt decomposition of the configuratio
 
 The quantum state of a molecule's electrons can be written as a matrix C whose rows label one set of electron configurations and whose columns label another. Singular-value decomposition (SVD) of C gives:
 
-$$|\Psi\rangle = \sigma_0\,|\alpha_0\rangle|\beta_0\rangle + \sigma_1\,|\alpha_1\rangle|\beta_1\rangle + \cdots$$
+$$
+|\Psi\rangle = \sigma_0\,|\alpha_0\rangle|\beta_0\rangle + \sigma_1\,|\alpha_1\rangle|\beta_1\rangle + \cdots
+$$
 
 This is the **Schmidt decomposition**. The singular values σ₀ ≥ σ₁ ≥ ... tell you how much each pair of orbital configurations contributes. The space of all possible configurations — all possible k-dimensional subspaces of orbital space — is the Grassmannian Gr(k, n).
 
@@ -71,7 +73,9 @@ Agreement with experiment across nine systems: within 0.15 of a bond order unit,
 
 When two Schmidt pairs contribute significantly (r = 2), the wavefunction is a superposition of two VB-like structures. The Galerkin coupling between them is:
 
-$$H_{01} = \langle\alpha_0|\langle\beta_0|\hat{H}|\alpha_1\rangle|\beta_1\rangle$$
+$$
+H_{01} = \langle\alpha_0|\langle\beta_0|\hat{H}|\alpha_1\rangle|\beta_1\rangle
+$$
 
 This is the **Löwdin-orthogonalised** VB resonance integral. It connects to the experimental resonance energy via the **bridge formula**:
 

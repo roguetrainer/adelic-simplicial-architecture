@@ -40,7 +40,9 @@ This resolves a long-standing complaint about cost-benefit analysis: it implicit
 
 How long does a decision require? The answer depends on the energy gap $\Delta E(\beta)$ between the best and second-best option, and on how fast $\beta$ is rising. The **adiabatic condition** is:
 
-$$\left|\frac{d\beta}{dt}\right| \leq c \cdot \Delta E(\beta)^2$$
+$$
+\left|\frac{d\beta}{dt}\right| \leq c \cdot \Delta E(\beta)^2
+$$
 
 Rush the decision (ramp $\beta$ too fast) and the system undergoes a non-adiabatic quench — it gets trapped in the wrong state. This is not a new metaphor: it is the quantum adiabatic theorem applied to economic dynamics, with $\beta$ playing the role of inverse temperature in a spin glass.
 

@@ -45,7 +45,9 @@ The criterion is algebraically computable from the character table alone, in O(|
 
 The Frobenius-Schur indicator of an irrep V_λ of a finite group G is:
 
-$$\nu_2(V_\lambda) = \frac{1}{|G|}\sum_{g \in G} \chi_\lambda(g^2) \;\in\; \{-1, 0, +1\}$$
+$$
+\nu_2(V_\lambda) = \frac{1}{|G|}\sum_{g \in G} \chi_\lambda(g^2) \;\in\; \{-1, 0, +1\}
+$$
 
 - ν₂ = +1: representation is *real* — can be realised over ℝ
 - ν₂ = −1: representation is *quaternionic* — can be realised over ℍ  

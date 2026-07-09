@@ -27,7 +27,9 @@ The answer is yes. The **condensed-matter amplituhedron** is the convex hull of 
 
 A correlated many-electron wavefunction can be written as a matrix C, where rows index one set of electron configurations and columns index another. Applying SVD to C gives the Schmidt decomposition:
 
-$$|\Psi\rangle = \sigma_0\,|\alpha_0\rangle|\beta_0\rangle + \sigma_1\,|\alpha_1\rangle|\beta_1\rangle + \cdots$$
+$$
+|\Psi\rangle = \sigma_0\,|\alpha_0\rangle|\beta_0\rangle + \sigma_1\,|\alpha_1\rangle|\beta_1\rangle + \cdots
+$$
 
 with σ₀ ≥ σ₁ ≥ ... The first term is the Hartree-Fock reference. Subsequent terms are correlation corrections.
 
