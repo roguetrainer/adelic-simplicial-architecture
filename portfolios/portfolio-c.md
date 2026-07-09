@@ -41,6 +41,10 @@ The **$[[7,1,3]]$ Steane code** — the smallest topological quantum error corre
 
 **The Quaternionic Virtual Machine (Q-VM)** (Paper 199) is the rung below the RPU on the division-algebra ladder: a virtual machine whose registers are quaternions $\mathbb{H}$. The Q-VM provides a stepping stone from classical binary computation to the fully octonionic RPU, and its chirality-based instruction routing is the classical precursor to the RPU's Fano-gate set.
 
+### The ISA Trilogy
+
+**The Origami ISA** (Paper 258) is the β→∞ (tropical) compiler: the classical discrete ISA whose opcodes are Wigner recoupling coefficients. **The Forge ISA** (Paper 419) is the 0<β<∞ statistical compiler: it adds the snap event at β* and the vorton architecture for thermodynamic computation. **The Meld ISA** (Paper 454) is the β=it (Wick-rotated) quantum compiler: QFT as a SPLIT-TWIST cascade, T-gate as the BIND/octonion obstruction. **Eight Derivations** (Paper 455) proves all three share the same five opcodes by eight independent routes (Pachner moves, Wigner-Racah, Mac Lane Pentagon, compact closed categories, Frobenius algebras, Fisher information geometry, Hodge decomposition, quantum gate sets) forced by Shum's theorem (1994).
+
 ---
 
 ## Papers
@@ -60,6 +64,9 @@ The **$[[7,1,3]]$ Steane code** — the smallest topological quantum error corre
 | [218](../papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG |
 | [221](../papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem |
 | [258](../papers/10.5281-zenodo.19916429/) | The 731 Instruction Set Architecture (Origami ISA) |
+| [419](../papers/10.5281-zenodo.20694527/) | The Forge ISA: Snap Events, Vorton Architecture, and Thermodynamic Computation |
+| [454](../papers/10.5281-zenodo.20773563/) | The Meld ISA: Complex-MGE, Quantum Algorithm Discovery, and the T-Gate as Octonion Obstruction |
+| [455](../papers/10.5281-zenodo.20774076/) | Eight Derivations of a Universal Instruction Set |
 
 ---
 
