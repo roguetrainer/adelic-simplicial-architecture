@@ -59,6 +59,24 @@ Algebraic topology named them first. The ISA gives them opcodes (ORBIT / TWIST /
 Physics calls them vacuum / perturbative / non-perturbative. The convergence is not
 a coincidence — it is the same mathematical fact, re-derived independently in each field.
 
+### The boundaries between tiers are as important as the tiers themselves
+
+The transitions H⁰ → H¹ and H¹ → H² are not smooth crossovers — they are
+**snap events** at critical thresholds β*, where a Gibbs distribution crystallises
+from a warm exploration into a hard commitment. These boundaries are computable:
+in chemistry, the β* snap at Grassmannian angle θ_G ≈ 20° marks the point where
+single-reference MO theory fails and multi-reference CASSCF becomes mandatory; in
+MCMC, β* is the inverse temperature at which the acceptance rate transitions between
+the 0.234 (H⁰) and 0.574 (H¹) optima; in finance, the H¹/H² boundary is the
+threshold at which interbank cycle topology becomes globally inconsistent — a
+systemic crisis rather than a local stress event.
+
+The snap events are themselves a universal feature. Knowing which tier a system
+sits in is the coarse classification; knowing *where* it sits relative to β* is the
+fine-grained prediction. The ISA makes both computable from the same underlying
+object (the β-deformed partition function), which is why the same snap threshold
+appears in such different physical systems.
+
 ---
 
 ## A precision taxonomy
