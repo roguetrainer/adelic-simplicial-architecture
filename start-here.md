@@ -2,14 +2,37 @@
 layout: default
 title: Start Here
 nav_order: 2
-description: "Entry points into the ASA project by reader type — quantum computing, economics, mathematics, or general interest."
+description: "What this project is, why it matters, and the shortest path to the core ideas — by reader type."
 ---
 
 # Start Here
 {: .no_toc }
 
-The ASA project spans quantum computing, financial risk, spectroscopy, climate economics, and pure mathematics — all unified by the same five-opcode instruction set. This page maps the shortest path to the core ideas for each reader type.
+Every interaction — quantum, chemical, biological, economic, computational — is running the same five-opcode programme on different physical hardware.
 {: .fs-5 .fw-300 }
+
+---
+
+## What this project is
+
+Experts in quantum computing, spectroscopy, financial risk, molecular biology, and topology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. This project makes the common pattern explicit, computable, and transferable across domains.
+
+The core claims, in order of increasing strength:
+
+**1. Five opcodes are universal.**
+Any interaction that processes angular momentum, information, or value can be decomposed into five generators: ORBIT (H⁰, fixed point), TWIST (H¹, phase correction), BIND (H², non-Abelian holonomy), SPLIT and SPLAT (merge/split of channels). These are not analogies — they are the same categorical morphisms, the generators of the free ribbon pivotal category on one self-dual object (Shum 1994), running on different physical substrates.
+
+**2. β is the universal deformation parameter.**
+A single complex inverse temperature β connects tropical (classical, β→∞) computation to quantum (β→0) computation in one continuous family. Every phase transition, bond-breaking event, market crisis, and quantum speedup is a *snap event* at a critical β*, where a Gibbs distribution crystallises from warm exploration into a hard commitment. The Metropolis acceptance rate (0.234), the Grassmannian bond-breaking threshold (θ_G ≈ 20°), and the G₂ critical points (β = 1/7, 1/5, 1/3) are all instances of the same snap mechanism.
+
+**3. The H^k tiers form a chain complex.**
+The three tiers are not a grading — they are a genuine cohomology theory. The boundary map ∂: C^k → C^{k+1}, assembled from SPLIT and SPLAT via Koszul signs, satisfies ∂² = 0 as a consequence of the Frobenius algebra axiom. This is the same condition as the pentagon identity (Mac Lane coherence), the MIP*=RE self-test, and the Khovanov chain complex for knot invariants. The Euler characteristic of the complex is the ORBIT count; the full Poincaré polynomial is a strictly stronger invariant.
+
+**4. The Grassmannian is the correct geometric substrate.**
+The space of all k-dimensional subspaces of an n-dimensional space — the Grassmannian Gr(k,n) — is the common parent of quantum chemistry (CASSCF wavefunctions), scattering amplitudes (the amplituhedron of Arkani-Hamed and Trnka), and nuclear structure (NN wavefunctions). Following a geodesic on Gr(k,n) from the single-reference point to the correlated ground state is the geometric realisation of the original TRS programme: replace gradient descent with parallel transport on a Lie group quotient. The geodesic length θ_G = arccos σ₀ is a basis-independent, computable measure of correlation.
+
+**5. The same structure governs thirteen orders of magnitude.**
+The ISA opcodes appear at the chemical scale (~eV, molecular bonding), the nuclear scale (~MeV, tensor force and alpha clustering), and the particle physics scale (~GeV, scattering amplitudes and the amplituhedron) — with the same three tiers, the same β* snap, and G₂ appearing at H² in all three. The framework was discovered by recognising a pattern already partly unified by category theory, but not visible to any single expert community, and making it computable.
 
 ---
 
@@ -18,7 +41,7 @@ The ASA project spans quantum computing, financial risk, spectroscopy, climate e
 These papers require no specialist background. Start with one of them regardless of your field.
 
 **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443)
-Six famous equations from six different fields — Schrödinger, Black-Scholes, Sinkhorn optimal transport, Viterbi, Cole-Hopf, and quantum groups — are all the same equation, controlled by the same algebraic parameter. The ML engineer's softmax temperature, the physicist's Planck's constant, and the quant's volatility are all the same object. No prior knowledge of the TRS framework required; every reader will find their own field in the table.
+Six famous equations from six different fields — Schrödinger, Black-Scholes, Sinkhorn optimal transport, Viterbi, Cole-Hopf, and quantum groups — are all the same equation, controlled by the same algebraic parameter. The ML engineer's softmax temperature, the physicist's Planck's constant, and the quant's volatility are all the same object. No prior knowledge required; every reader will find their own field in the table.
 
 **[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386)
 The simplest possible non-trivial simplex — four objects, six edges, four faces — encodes the Ponzano–Regge amplitude, the 6j symbol, the Wigner tetrahedron, and the fundamental unit of the Origami ISA. This is the geometric seed from which everything else grows.
@@ -38,6 +61,9 @@ The simplest possible non-trivial simplex — four objects, six edges, four face
 3. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420)
    H⁰ = classical (PSPACE), H¹ = statistical (BPP), H² = quantum (BQP). A graded, computable alternative to the P=NP question. The β* snap threshold identifies where on the complexity dial any given algorithm sits.
 
+4. **[The ISA Chain Complex](https://doi.org/10.5281/zenodo.21278536)** (Paper 571)
+   The H^k ladder is not just a grading — it is a genuine chain complex with boundary map ∂ satisfying ∂² = 0. Proved from the Frobenius algebra axiom at exact integer-matrix precision. The ORBIT count is the Euler characteristic; the Poincaré polynomial is a strictly stronger knot invariant. Extends to G₂ (Paper 572) via the Kuperberg spider as the complete BIND calculus.
+
 **If you know ZX calculus:** four of the seven core opcodes (SPLIT, SPLAT, FLIP, LABEL) are ZX spiders; TWIST and FLOP are partial; BIND is the one opcode ZX cannot express — it requires the [731 Frog Calculus](https://doi.org/10.5281/zenodo.19713350), the non-associative extension developed here. The [opcodes page](opcodes.md) marks each opcode with 🕷️ (ZX) or 🐸 (Frog Calculus).
 
 **Then, for the ISA foundations:**
@@ -55,15 +81,40 @@ The simplest possible non-trivial simplex — four objects, six edges, four face
 
 ---
 
+## For chemists and physicists
+
+*Prerequisite: familiarity with molecular orbital theory, quantum chemistry, or nuclear physics. No prior knowledge of the ISA required.*
+
+The core claim: Lewis electron pairs, molecular orbital bond orders, and valence bond resonance energies are not three different theories of bonding. They are rank-1 and rank-2 approximations to the same geometric object — the Schmidt decomposition of the correlated wavefunction on the Grassmannian Gr(n_e, n_orb). Three computable ISA quantities replace all three classical theories, and the same mathematics governs nuclear bonds and scattering amplitudes.
+
+1. **[A Universal Theory of Chemical Bonding from the Grassmannian](https://doi.org/10.5281/zenodo.21277821)** (Paper 570)
+   The chemistry entry point. Three ISA descriptors — Grassmannian angle θ_G (polarity), NOON bond order n_bond (multiplicity), Galerkin coupling H₀₁ (resonance) — validated across nine systems. For benzene, the bridge formula ΔE_res = ½(E₁−E₀)(1−S) gives 54.5 mEh vs experimental 57.4 mEh (5% error). Lewis, MO, and VB theories unified as Schmidt approximations on a single geometric object. Start here.
+
+2. **[Schrödinger's Equation on the Grassmannian](https://doi.org/10.5281/zenodo.21277819)** (Paper 568)
+   The correct variational action principle for correlated wavefunctions: the Dirac-Frenkel principle formulated on Gr(n_e, n_orb). The Galerkin inter-channel coupling H₀₁ is the exact, basis-independent quantity that VB theory approximates with the Hückel β integral. The β* snap at θ_G ≈ 20° is a bifurcation of the Grassmannian geodesic flow — the ISA derivation of why DFT fails for strongly correlated systems.
+
+3. **[The Grassmannian as the Common Parent of Bonding and Scattering](https://doi.org/10.5281/zenodo.21279006)** (Paper 574)
+   The same Gr(k,n) that parametrises CASSCF wavefunctions in chemistry also parametrises scattering amplitudes in N=4 SYM (the amplituhedron). The ISA bonding descriptors have exact amplitude counterparts: θ_G ↔ momentum twistor coordinate, n_bond ↔ leading singularity, H₀₁ ↔ factorisation channel residue. The tropical limit identifies the Hartree-Fock reference with the leading Parke-Taylor factor. The β* snap is the spurious-pole degeneration at the amplituhedron boundary.
+
+4. **[Nuclear Bonding as H²](https://doi.org/10.5281/zenodo.21279217)** (Paper 575)
+   Chemical bonds span H⁰, H¹, and H² depending on correlation strength. Nuclear bonds are always H² (BIND-mandatory) because SU(3) colour is permanently non-Abelian. The tensor force S₁₂ is a trivalent BIND vertex; it arises as (TWIST)² = BIND from pion exchange at second order. The deuteron has θ_G ≈ 13°, n_bond = 1, H₀₁ ≈ −25 MeV — structurally identical to the benzene Kekulé coupling, ×13,000 in energy. The Hoyle state of ¹²C is an ORBIT of three BIND objects.
+
+**For the amplituhedron and tropical geometry connections:**
+
+- [The Condensed Matter Amplituhedron](https://doi.org/10.5281/zenodo.21277815) (Paper 563) — CASSCF wavefunctions trace geodesics on Gr(n_e, n_orb); θ_G from Schmidt SVD; universal β* snap at θ_G ≈ 20° across H₂, H₂O, N₂
+- [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538) (Paper 572) — BIND = G₂ trivalent vertex; Fano 3-form dictionary; Kuperberg relations verified numerically; BIND theorem complete
+
+---
+
 ## For economists and financial practitioners
 
 *Prerequisite: familiarity with credit exposure, derivatives, or macroeconomic models.*
 
 1. **[EconIAC: A Differentiable Economics Engine — Overview and Reading Guide](https://doi.org/10.5281/zenodo.20679006)** (Paper 409)
-   What EconIAC is, why the mathematics matters, and where to start. Maps all 19 published economics papers with hyperlinked DOIs. Read this first.
+   What EconIAC is, why the mathematics matters, and where to start. Maps all published economics papers with hyperlinked DOIs. Read this first.
 
 2. **[The Topology of Risk: A Primer on Cohomology for Financial Practitioners](https://doi.org/10.5281/zenodo.20642983)** (Paper 398)
-   Teaches H⁰/H¹/H² from scratch using the 2008 crisis as the running example. No mathematical prerequisites beyond knowing what a credit exposure is.
+   Teaches H⁰/H¹/H² from scratch using the 2008 crisis as the running example. No mathematical prerequisites beyond knowing what a credit exposure is. The key distinction: systemic risk accumulates in H¹ (interbank cycle topology); systemic crises are H² snap events (the moment when H¹ cycles become globally inconsistent). Both are present in 2008; they are different aspects of the same topological event.
 
 3. **[A Primer on Economic Gauge Theory](https://doi.org/10.5281/zenodo.20259505)** (Paper 301)
    Why double-entry accounting is a gauge theory; why arbitrage is curvature; why the Pacioli identity is a conservation law. For economists and policy audiences.
@@ -111,13 +162,19 @@ The core claim: every molecular machine that processes angular momentum — a ri
 1. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455)
    Eight independent routes — Pachner moves, Wigner-Racah, Mac Lane Pentagon, compact closed categories, Frobenius algebras, Fisher information geometry, Hodge decomposition, quantum gate sets — all forced to the same five generators. Shum's theorem (1994) explains why: the free ribbon pivotal category on one self-dual object has exactly five generators, forced by the topology of framed tangles. Closes an 80-year fragmentation between spectroscopy (Racah 1942), categorical QM (Abramsky-Coecke 2004), and quantum computing (Boykin 1999).
 
-2. **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349)
+2. **[The ISA Chain Complex](https://doi.org/10.5281/zenodo.21278536)** (Paper 571)
+   The H^k ladder is a genuine chain complex: boundary map ∂ assembled from SPLIT/SPLAT via Koszul signs, ∂² = 0 from the Frobenius axiom, ISA homology groups H^k_ISA recover Khovanov's categorification of the Jones polynomial at the sl(2)/H¹ level. Extends to G₂ (Paper 572): the three-term complex C⁰ → C¹ → C² has H²_ISA as a new invariant beyond the classical Khovanov polynomial.
+
+3. **[The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538)** (Paper 572)
+   Kuperberg's G₂ spider (CMP 1996) is the complete diagrammatic axiomatisation of the BIND opcode. BIND(eᵢ,eⱼ,eₖ) = φᵢⱼₖ (Fano incidence function). Relations R1–R3 verified at exact numerical precision. The BIND theorem (non-Abelian ↔ BIND present) now has its complete proof via Kuperberg's Theorem 6.1.
+
+4. **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349)
    A diagrammatic framework for the representation theory of compact groups, grounded in the Ponzano–Regge tetrahedron. The mathematical foundation for all ISA opcodes.
 
-3. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
+5. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
    Why d > 2 quantum systems are natural: the TriQ (d=3) and SevenQ (d=7) registers as the minimal hardware for qudit stabiliser learning and PSL(2,7) Fourier sampling.
 
-3. **[The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
+6. **[The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
    A financial risk is hedgeable with bilateral instruments iff its class is trivial in H¹ of the pricing sheaf over an interaction diagram. Convexity, basis risk, and XVA are all H¹ classes — proved directly from the Čech complex, no representation theory required.
 
 **Then, for the frontier:**
@@ -151,3 +208,4 @@ and organised by portfolio on the [Portfolios](/adelic-simplicial-architecture/p
 | [C — Hardware & AI](/adelic-simplicial-architecture/portfolios/portfolio-c) | Origami ISA, registers, QEC |
 | [F — Quantum Foundations](/adelic-simplicial-architecture/portfolios/portfolio-f) | Magic, self-tests, paradoxes |
 | [G — Finance & Economics](/adelic-simplicial-architecture/portfolios/portfolio-g) | EconIAC, gauge theory, risk |
+| [E — Chemistry & Physics](/adelic-simplicial-architecture/portfolios/portfolio-e) | Bonding, nuclear, amplituhedron |
