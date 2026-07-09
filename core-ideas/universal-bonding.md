@@ -85,9 +85,9 @@ $$\Delta E_{\mathrm{res}}^{\mathrm{adiab}} < \Delta E_{\mathrm{res}}^{\mathrm{BL
 
 | Paper | What it shows |
 |---|---|
-| [Paper 563](https://doi.org/10.5281/zenodo.XXXXXXX) | CASSCF wavefunctions trace geodesics on $\mathrm{Gr}(n_e, n_{\mathrm{orb}})$; $\theta_G$ from Schmidt SVD; universal β* snap at $\theta_G \approx 20°$ across H₂, H₂O, N₂ |
-| [Paper 568](https://doi.org/10.5281/zenodo.XXXXXXX) | Schrödinger's equation as a variational principle on the Grassmannian; Dirac–Frenkel action; Galerkin inter-channel coupling $H_{01}$ |
-| [Paper 570](https://doi.org/10.5281/zenodo.XXXXXXX) | Three ISA descriptors validated for 9 systems; bridge formula; benzene RE within 5%; Lewis/MO/VB unified as Schmidt approximations |
+| [Paper 563](https://doi.org/10.5281/zenodo.21277815) | CASSCF wavefunctions trace geodesics on $\mathrm{Gr}(n_e, n_{\mathrm{orb}})$; $\theta_G$ from Schmidt SVD; universal β* snap at $\theta_G \approx 20°$ across H₂, H₂O, N₂ |
+| [Paper 568](https://doi.org/10.5281/zenodo.21277819) | Schrödinger's equation as a variational principle on the Grassmannian; Dirac–Frenkel action; Galerkin inter-channel coupling $H_{01}$ |
+| [Paper 570](https://doi.org/10.5281/zenodo.21277821) | Three ISA descriptors validated for 9 systems; bridge formula; benzene RE within 5%; Lewis/MO/VB unified as Schmidt approximations |
 
 **Key results:**
 - NOON bond order within 0.15 of experiment across 9 systems (H₂, HF, LiF, CO, C₂H₄, N₂, C₂H₂, benzene, stretched H₂)
@@ -131,7 +131,7 @@ The three ISA bonding descriptors have nuclear counterparts:
 - $n_{\mathrm{bond}} = 1$ (one NN bond)
 - $H_{01}^{\mathrm{nuclear}} = \langle ^3D_1|V_T|^3S_1\rangle \approx -25$~MeV (tensor force matrix element, $\sim\!13000\times$ the chemical scale)
 
-See [Paper 575](https://doi.org/10.5281/zenodo.XXXXXXX) for a detailed treatment.
+See Paper 575 (in preparation) for a detailed treatment.
 
 ---
 
@@ -154,8 +154,7 @@ leading-singularity approximation to amplitudes — exactly as the HF reference
 
 This connection — which we are actively developing — suggests that quantum chemistry
 and particle physics are running the same ISA programme on different physical
-hardware, at energy scales separated by 13 orders of magnitude. See
-[Paper 574](https://doi.org/10.5281/zenodo.XXXXXXX) for the detailed dictionary.
+hardware, at energy scales separated by 13 orders of magnitude. See Paper 574 (in preparation) for the detailed dictionary.
 
 ---
 
@@ -201,5 +200,5 @@ hardware, at energy scales separated by 13 orders of magnitude. See
 *See also:*
 [Every molecule is running a programme](molecular-computation.md) ·
 [The H^k stratification is not an analogy](stratification-principle.md) ·
-[Paper 570 — Universal Bonding Theory](https://doi.org/10.5281/zenodo.XXXXXXX) ·
-[Paper 568 — Grassmannian Action](https://doi.org/10.5281/zenodo.XXXXXXX)
+[Paper 570 — Universal Bonding Theory](https://doi.org/10.5281/zenodo.21277821) ·
+[Paper 568 — Grassmannian Action](https://doi.org/10.5281/zenodo.21277819)
