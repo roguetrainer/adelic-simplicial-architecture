@@ -89,9 +89,9 @@ The snap at R\* is the point where the geodesic crosses the **Schubert variety**
 
 ## What Jaynes says
 
-The maximum-entropy state consistent with the NOONs (n_σ, n_σ\*) is the free-fermion Gibbs state:
+The maximum-entropy state consistent with the NOONs (n_σ, n_σ*) is the free-fermion Gibbs state:
 
-$$\rho_{\text{MaxEnt}} = \frac{e^{-\lambda_\sigma \hat{n}_\sigma - \lambda_{\sigma^*} \hat{n}_{\sigma^*}}}{Z}, \qquad \lambda_i = \log\!\left(\frac{2}{n_i} - 1\right)$$
+$$\rho_{\text{MaxEnt}} = \frac{e^{-\lambda_\sigma \hat{n}_\sigma - \lambda_{\sigma^\ast} \hat{n}_{\sigma^\ast}}}{Z}, \qquad \lambda_i = \log\!\left(\frac{2}{n_i} - 1\right)$$
 
 At equilibrium: λ_σ = −3.66, λ_σ\* = +3.66 (σ strongly favoured, σ\* strongly disfavoured). The MaxEnt state has 97.5% of its weight in |σσ⟩ — consistent with the Lewis diagram.
 
