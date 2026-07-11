@@ -15,6 +15,14 @@ Portfolio E applies the ISA chain complex and Grassmannian geometry to molecular
 
 ---
 
+### The C/T method: active space selection from first principles
+
+**[The Topological Active Space](https://doi.org/10.5281/zenodo.21300667)** (Paper 588) is the practical entry point for chemists. It introduces the C/T pre-screening method: orbitals with NOONs near 0 or 2 are C-boxes (frozen); orbitals with NOONs in the active band are T-arrows. The C/T skeleton identifies the CASSCF active space without chemical intuition. The Weak Lifting Theorem guarantees exponential wavefunction concentration in the active subspace (validated 10/10, Pearson r = −0.979). The method is upstream of autoCAS, AVAS, and DMET — a parameter-free H^k tier pre-diagnostic.
+
+**[Grassmannian Compression](https://doi.org/10.5281/zenodo.21309088)** (Paper 594) explains geometrically why this works. The C/T active space is a point in the Grassmannian Gr(n_active, n_AO); its selection follows from Jaynes' maximum-entropy principle (MaxEnt Lagrange multipliers reproduce FCI NOONs exactly). Stretching a bond traces a geodesic on this manifold; the CASSCF orbital gradient is the Fubini-Study covariant derivative (confirmed to six decimal places). NOON snaps are Schubert variety crossings; the Maslov index counts them and is proved independent of the Berry phase. The Maslov index = minimum BIND opcode count = minimum multi-reference correlation insertions required.
+
+---
+
 ### The Grassmannian and universal bonding theory
 
 **[A Universal Theory of Chemical Bonding from the Grassmannian](https://doi.org/10.5281/zenodo.21277821)** (Paper 570) is the entry point. Three ISA descriptors characterise any bond:
@@ -84,7 +92,7 @@ The BIND theorem (non-Abelian holonomy ↔ BIND present) now has its complete pr
 
 **[Spiders for Spectra](https://doi.org/10.5281/zenodo.20458996)** (Paper 347) and **[Spiders for Nuclei](https://doi.org/10.5281/zenodo.20490046)** (Paper 348) apply the ISA diagrammatic calculus to atomic and nuclear spectroscopy. Every spectroscopic transition is an Origami ISA circuit; the Pandya transform (connecting particle and hole spectroscopy) is the FLIP opcode. **[Spectroscopic Circuits Are Small](https://doi.org/10.5281/zenodo.20584560)** (Paper 374) shows that 3–21 qubits suffice to simulate all known spectra from H through Cf.
 
-**[Molecular Machines as Origami ISA Programmes](https://doi.org/10.5281/zenodo.20682101)** (Paper 413) covers the FMO photosynthetic complex (η = 0.1825 from crystal structure alone), the ribosomal decoding engine (6/7 Fano-line coverage), and the FeMoco nitrogen fixation centre (G₂ triality mechanism). **[Galois Chemistry](https://doi.org/10.5281/zenodo.21219720)** (Paper 488) gives the full orbit-theory treatment of transition metal chemistry: N₂ fixation as a 14-opcode Fano programme, spin-crossover compounds as TWIST gates, FeMoco as a 7-qubit Galois computer. **[Tropical DFT](https://doi.org/10.5281/zenodo.21219706)** (Paper 491) shows that level-crossing singularities in DFT are tropical varieties; the derivative discontinuity is a tropical singularity; MGE = DFT→Galois deformation.
+**[Molecular Machines as Origami ISA Programmes](https://doi.org/10.5281/zenodo.20682101)** (Paper 413) covers the FMO photosynthetic complex (η = 0.1825 from crystal structure alone), the ribosomal decoding engine (6/7 Fano-line coverage), and the FeMoco nitrogen fixation centre (G₂ triality mechanism). **[G-walk Chemistry](https://doi.org/10.5281/zenodo.21224107)** (Paper 488) gives the full orbit-theory treatment of transition metal chemistry: N₂ fixation as a 14-opcode Fano programme, spin-crossover compounds as TWIST gates, FeMoco as a 7-qubit Galois computer. **[G-walk Chemistry as the Tropical Degeneration of DFT](https://doi.org/10.5281/zenodo.21224113)** (Paper 491) shows that level-crossing singularities in DFT are tropical varieties; the derivative discontinuity is a tropical singularity; MGE = DFT→Galois deformation.
 
 ---
 
@@ -104,19 +112,21 @@ The following papers are more speculative — they identify structural correspon
 
 | # | Paper | Status |
 |---|-------|--------|
+| [588](../papers/10.5281-zenodo.21300668/) | The Topological Active Space (C/T pre-screening, Weak Lifting Theorem) | Published |
+| [594](../papers/10.5281-zenodo.21309089/) | Grassmannian Compression (MaxEnt → Gr(k,n); Maslov index; Berry phase) | Published |
 | [347](../papers/10.5281-zenodo.20458996/) | Spiders for Spectra | Published |
 | [348](../papers/10.5281-zenodo.20490046/) | Spiders for Nuclei | Published |
 | [374](../papers/10.5281-zenodo.20584560/) | Spectroscopic Circuits Are Small | Published |
 | [413](../papers/10.5281-zenodo.20682101/) | Molecular Machines as Origami ISA Programmes | Published |
-| [488](../papers/10.5281-zenodo.21219720/) | Galois Chemistry | Published |
-| [491](../papers/10.5281-zenodo.21219706/) | Tropical DFT | Published |
-| [563](../papers/10.5281-zenodo.21277815/) | The Condensed Matter Amplituhedron | Draft |
-| [568](../papers/10.5281-zenodo.21277819/) | Schrödinger's Equation on the Grassmannian | Draft |
-| [570](../papers/10.5281-zenodo.21277821/) | A Universal Theory of Chemical Bonding | Draft |
-| [571](../papers/10.5281-zenodo.21278536/) | The ISA Chain Complex | Draft |
-| [572](../papers/10.5281-zenodo.21278538/) | The Kuperberg G₂ Spider is the BIND Calculus | Draft |
-| [574](../papers/10.5281-zenodo.21279006/) | The Grassmannian as Common Parent of Bonding and Scattering | Draft |
-| [575](../papers/10.5281-zenodo.21279217/) | Nuclear Bonding as H² | Draft |
+| [488](../papers/10.5281-zenodo.21224107/) | G-walk Chemistry (Fe SCO benchmark, 90% accuracy) | Published |
+| [491](../papers/10.5281-zenodo.21224113/) | G-walk Chemistry as the Tropical Degeneration of DFT | Published |
+| [563](../papers/10.5281-zenodo.21277815/) | The Condensed Matter Amplituhedron | Published |
+| [568](../papers/10.5281-zenodo.21277819/) | Schrödinger's Equation on the Grassmannian | Published |
+| [570](../papers/10.5281-zenodo.21277821/) | A Universal Theory of Chemical Bonding | Published |
+| [571](../papers/10.5281-zenodo.21278536/) | The ISA Chain Complex | Published |
+| [572](../papers/10.5281-zenodo.21278538/) | The Kuperberg G₂ Spider is the BIND Calculus | Published |
+| [574](../papers/10.5281-zenodo.21279006/) | The Grassmannian as Common Parent of Bonding and Scattering | Published |
+| [575](../papers/10.5281-zenodo.21279217/) | Nuclear Bonding as H² | Published |
 | [245](../papers/10.5281-zenodo.19960385/) | Nuclear Magic Numbers and Exceptional Lie Algebras | Speculative |
 | [246](../papers/10.5281-zenodo.19964651/) | Electron Shell Structure and Exceptional Lie Algebras | Speculative |
 | [265](../papers/10.5281-zenodo.20029647/) | The ζ(21) Apéry Generalisation | Speculative |
