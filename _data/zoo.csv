@@ -35,3 +35,7 @@ FE04,Dieke diagram benchmark,f-Element Chemistry,12 Ln3+ ions,SU(2),H0,Origami,v
 C06,C/T skeleton active-space pre-screening,Chemistry,Any molecule with MP2 natural orbitals,U(n),H0,Forge,validated,ORBIT TWIST BIND LABEL,588 596,10.5281/zenodo.21300668,c06-ct-skeleton,true
 D01,Figure-eight 3-body choreography,Dynamical Systems,Equal-mass 3-body in R2,D6,H0,Origami,validated,ORBIT LABEL,552,,d01-figure-eight,true
 D02,G2 7-body choreography in R7,Dynamical Systems,Equal-mass 7-body in R7,G2,H2,Meld,conjectured,ORBIT TWIST BIND,552,,d02-g2-choreography,true
+D03,Kolmogorov turbulence cascade,Dynamical Systems,3D incompressible Navier-Stokes,SO(3),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT LABEL,512,,d03-kolmogorov-turbulence,true
+D04,Lorenz strange attractor,Dynamical Systems,Lorenz system sigma=10 rho=28,Z2,H1,Forge,validated,ORBIT TWIST LABEL,512,,d04-lorenz-attractor,true
+D05,KAM tori and chaos onset,Dynamical Systems,Nearly-integrable Hamiltonian,Tn,H0,Forge,validated,ORBIT TWIST BIND LABEL,512,,d05-kam-tori,true
+D06,Solitons and KdV inverse scattering,Dynamical Systems,KdV equation on R,R,H0,Origami,validated,ORBIT SPLIT SPLAT LABEL,512,,d06-solitons-kdv,true
