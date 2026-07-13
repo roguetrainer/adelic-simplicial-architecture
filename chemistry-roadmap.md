@@ -116,6 +116,37 @@ framework avoids approximating the kink by working in the algebraic
 
 ---
 
+### The routing is soft, not a decision tree
+
+The routing table above shows hard thresholds (H⁰/H¹/H²). That is the
+*β → ∞ limit* — useful as a practical summary, but not the fundamental
+mechanism. The actual router is the **Maslov-Gibbs Einsum (MGE)** at
+finite inverse temperature β_eff:
+
+β_eff = Δ_HL / (corr_scale · (2S+1))
+
+where Δ_HL is the HOMO-LUMO gap and (2S+1) is the spin multiplicity.
+
+At finite β_eff, the MGE assigns a *continuous Boltzmann weight* over
+methods — mostly DFT with a small CASSCF correction for a borderline pair,
+rather than a binary choice. The hard threshold table is recovered only
+at β_eff → ∞ (large gap, singlet). This is maximum-entropy inference in
+the sense of Jaynes: given the evidence (c₂, spin, gap), the MGE
+posterior over methods is a Boltzmann distribution, not a decision tree.
+
+**What this means practically.** A borderline pair with c₂ just above δ
+does not need full CASSCF — it needs an MGE-blended energy with β_eff
+chosen from the gap. This is systematically cheaper than hard-routing
+everything above the threshold to CASSCF, and more accurate than ignoring
+the correlation altogether. The optimal δ* = (π/4)√α, where α = β_eff · ε
+(ε = correlation energy per pair), follows from the MGE cost-accuracy
+tradeoff (experiment x596e).
+
+The routing table is for orientation. The MGE at finite β_eff is the
+engine.
+
+---
+
 ### Layer 3 — Mechanisms: Grassmannian geodesics
 
 **For reactions, not just static molecules.** A CASSCF wavefunction is a
