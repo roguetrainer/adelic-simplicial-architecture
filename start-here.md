@@ -19,8 +19,8 @@ Experts in quantum computing, spectroscopy, financial risk, molecular biology, a
 
 The core claims, in order of increasing strength:
 
-**1. Five opcodes are universal.**
-Any interaction that processes angular momentum, information, or value can be decomposed into five generators: ORBIT (H⁰, fixed point), TWIST (H¹, phase correction), BIND (H², non-Abelian holonomy), SPLIT and SPLAT (merge/split of channels). These are not analogies — they are the same categorical morphisms, the generators of the free ribbon pivotal category on one self-dual object (Shum 1994), running on different physical substrates.
+**1. Eight opcodes are universal.**
+Any interaction that processes angular momentum, information, or value can be decomposed into eight generators: ORBIT (H⁰, fixed point), TWIST (H¹, phase correction), BIND (H², non-Abelian holonomy), SPLIT and SPLAT (merge/split of channels), LABEL (eigenvalue assignment), FLIP and FLOP (particle-hole and time-reversal). These are not analogies — they are the same categorical morphisms, the generators of the free ribbon pivotal magmoidal category on one self-dual object (Shum 1994), running on different physical substrates.
 
 **2. β is the universal deformation parameter.**
 A single complex inverse temperature β connects tropical (classical, β→∞) computation to quantum (β→0) computation in one continuous family. Every phase transition, bond-breaking event, market crisis, and quantum speedup is a *snap event* at a critical β*, where a Gibbs distribution crystallises from warm exploration into a hard commitment. The Metropolis acceptance rate (0.234), the Grassmannian bond-breaking threshold (θ_G ≈ 20°), and the G₂ critical points (β = 1/7, 1/5, 1/3) are all instances of the same snap mechanism.
