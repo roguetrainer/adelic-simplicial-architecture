@@ -73,3 +73,9 @@ YM01,Yang-Mills mass gap,Millennium Problems,Pure SU(N) Yang-Mills in 4 dimensio
 Q05,Quantum teleportation,Quantum Computing,Bell pair + 2-qubit measurement + Pauli correction,SU(2) x SU(2),H1,Forge,validated,ORBIT TWIST BIND LABEL FLIP FLOP,421 325,,q05-quantum-teleportation,true
 Q06,Superdense coding,Quantum Computing,Shared Bell pair + single-qubit Pauli encoding,SU(2),H1,Forge,validated,ORBIT TWIST BIND LABEL FLIP FLOP,421 469,,q06-superdense-coding,true
 Q07,CHSH game and Bell inequality violation,Quantum Computing,Two-party cooperative game with shared entanglement,SU(2) x SU(2),H2,Meld,validated,ORBIT TWIST BIND LABEL,421 469 325,,q07-chsh-game,true
+B05,ATP synthase rotary motor,Biology,F0F1-ATPase in inner mitochondrial membrane,C3 (rotational symmetry),H0,Forge,validated,ORBIT LABEL SPLIT SPLAT,509,,b05-atp-synthase,false
+B06,Krebs cycle (TCA cycle),Biology,Citric acid cycle in mitochondrial matrix,C2 (acetyl-CoA),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT LABEL,509,,b06-krebs-cycle,false
+B07,RNA polymerase transcription and proofreading,Biology,RNAP II elongation complex on DNA template,SU(2),H1,Forge,validated,ORBIT TWIST LABEL,510 511,,b07-rna-polymerase,false
+B08,T-cell receptor activation and clonal selection,Biology,TCR-pMHC interface and downstream signalling,SU(2),H1,Forge,validated,ORBIT TWIST LABEL FLIP,,,b08-tcr-activation,false
+S06,LHCII plant antenna complex,Spectroscopy,14-chlorophyll LHCII in higher plants,G2,H1,Forge,validated,ORBIT TWIST BIND,319,,s06-lhcii-antenna,false
+B09,Glycolysis (Embden-Meyerhof-Parnas),Biology,Glucose to pyruvate in cytoplasm,Z2,H0,Origami,validated,ORBIT SPLIT SPLAT LABEL,509,,b09-glycolysis,false
