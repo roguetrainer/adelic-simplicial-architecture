@@ -185,6 +185,7 @@ experiment or established theory.
 
     var tbody = document.getElementById("zoo-body");
     var count = document.getElementById("zoo-count");
+    if (!tbody || !count) return;
     count.textContent = visible.length + " entr" + (visible.length !== 1 ? "ies" : "y");
 
     tbody.innerHTML = visible.map(function(e) {
@@ -203,34 +204,42 @@ experiment or established theory.
     }).join("");
   }
 
-  // Filter buttons
-  ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status"].forEach(function(barId) {
-    var bar = document.getElementById(barId);
-    if (!bar) return;
-    bar.addEventListener("click", function(e) {
-      var btn = e.target.closest(".zoo-btn");
-      if (!btn) return;
-      bar.querySelectorAll(".zoo-btn").forEach(function(b) { b.classList.remove("active"); });
-      btn.classList.add("active");
-      active[btn.dataset.filter] = btn.dataset.value;
-      render();
-    });
-  });
-
-  // Sortable column headers
-  document.querySelectorAll("th.zoo-sortable").forEach(function(th) {
-    th.addEventListener("click", function() {
-      var col = th.dataset.col;
-      if (sortCol === col) { sortDir = -sortDir; }
-      else { sortCol = col; sortDir = 1; }
-      document.querySelectorAll("th.zoo-sortable").forEach(function(h) {
-        h.classList.remove("sort-asc","sort-desc");
+  function init() {
+    // Filter buttons
+    ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status"].forEach(function(barId) {
+      var bar = document.getElementById(barId);
+      if (!bar) return;
+      bar.addEventListener("click", function(e) {
+        var btn = e.target.closest(".zoo-btn");
+        if (!btn) return;
+        bar.querySelectorAll(".zoo-btn").forEach(function(b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        active[btn.dataset.filter] = btn.dataset.value;
+        render();
       });
-      th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
-      render();
     });
-  });
 
-  render();
+    // Sortable column headers
+    document.querySelectorAll("th.zoo-sortable").forEach(function(th) {
+      th.addEventListener("click", function() {
+        var col = th.dataset.col;
+        if (sortCol === col) { sortDir = -sortDir; }
+        else { sortCol = col; sortDir = 1; }
+        document.querySelectorAll("th.zoo-sortable").forEach(function(h) {
+          h.classList.remove("sort-asc","sort-desc");
+        });
+        th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
+        render();
+      });
+    });
+
+    render();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
 })();
 </script>
