@@ -33,197 +33,155 @@ $$\vert\mathrm{GHZ}_n\rangle = \frac{1}{\sqrt{2}}\bigl(\vert 0\rangle^{\otimes n
 
 It is the canonical multipartite entangled state: every qubit is maximally
 correlated with every other, yet measuring any single qubit yields a random
-outcome. GHZ states are the resource for quantum secret sharing, multi-party
+outcome.  GHZ states are the resource for quantum secret sharing, multi-party
 Bell tests, and distributed quantum sensing.
-
-**Why GHZ is interesting for the ISA:** the standard linear-chain circuit
-uses n−1 BINDs in series (depth n−1). On trapped-ion hardware with all-to-all
-connectivity, the same ISA programme compiles to depth **1** — all n−1 BINDs
-execute in parallel. This is the clearest demonstration of the IonQ/Quantinuum
-architecture advantage quantified in Paper 604.
 
 ---
 
 ## ISA programme (hardware-independent)
 
 ```
-INIT:     ORBIT[|00…0⟩]              -- n qubits in ground state
-FLIP:     FLIP[qubit 0]              -- |0⟩ → (|0⟩+|1⟩)/√2 on control qubit
+INIT:       ORBIT[|00…0⟩]                    -- n qubits in ground state
+FLIP:       FLIP[qubit 0]                    -- |0⟩ → (|0⟩+|1⟩)/√2
 BIND^{n-1}: BIND[0→1] · BIND[0→2] · … · BIND[0→n-1]
-                                     -- propagate entanglement; can be parallel
-LABEL:    LABEL[all n qubits]        -- measure; outputs correlated 00…0 or 11…1
+                                             -- propagate entanglement
+LABEL:      LABEL[all n qubits]              -- always outputs 00…0 or 11…1
 ```
 
-**Programme length:** 1 FLIP + (n−1) BINDs. This is the minimum: you need at
-least one FLIP (to create superposition) and n−1 BINDs (to entangle all n qubits;
-each BIND can create at most one new entanglement edge).
+**Programme length:** 1 FLIP + (n−1) BINDs.  This is optimal: one FLIP
+to create superposition; n−1 BINDs because each BIND can entangle at most
+one new qubit, and GHZ requires all n qubits to be entangled.
 
-**Resource content:**
-- BIND count: **n−1**
-- Circuit depth (IonQ, all-to-all): **1 BIND layer** (all BINDs parallel, qubit 0 as hub)
-- Circuit depth (IBM, nearest-neighbour): **n−1 BIND layers** (CNOT chain)
-- Mana: **0** (GHZ states are stabiliser states; TV = 1 for all n)
-- H^k tier: **H²** — GHZ is an H² resource; no H¹ circuit can produce it
+**Resource accounting:**
+
+| Metric | Value | What it measures |
+| --- | --- | --- |
+| BIND count | n−1 | algorithm entanglement cost (hardware-independent) |
+| BIND depth (all-to-all) | **1** | sequential BIND layers on IonQ/Quantinuum |
+| BIND depth (nearest-neighbour) | **n−1** | sequential BIND layers on IBM |
+| Mana / TV | 0 / 1 | GHZ is a stabiliser state; no magic content |
+| H^k tier | H² | genuinely entangling; no H¹ circuit can produce GHZ |
+
+**The key distinction:** BIND *count* (n−1) is fixed by the algorithm.
+BIND *depth* (1 or n−1) is fixed by the hardware connectivity graph.
+The ISA separates these; a gate-count analysis conflates them.
 
 ---
 
-## Interpretation functor
+## What the ISA lens adds here
 
-| Opcode | Meaning in n-qubit Hilbert space |
-|--------|----------------------------------|
-| FLIP | Hadamard on qubit 0: creates uniform superposition on the control qubit; the H⁰→H¹ boundary |
-| BIND[0→k] | Controlled-NOT (or MS gate) between qubit 0 and qubit k: propagates the superposition to qubit k as entanglement; H² holonomy; these n−1 BINDs are **independent** and can execute simultaneously |
-| LABEL | Measure all n qubits in computational basis: always yields either all-0 or all-1 (perfect correlation) |
+The n−1 depth advantage of trapped ions for GHZ is real, but it comes
+from **all-to-all connectivity**, not from the ISA.  A textbook comparing
+CNOT chains on IBM vs MS gates on IonQ reaches the same conclusion without
+any ISA machinery.
+
+What the ISA contributes:
+
+1. **BIND count is the algorithm resource** — the irreducible entanglement
+   cost of GHZ is n−1, stated independently of gate set or connectivity.
+   This is the quantity that should appear in algorithm analyses, not
+   "CNOT count on device X."
+
+2. **BIND depth = fidelity-relevant cost** — since hardware fidelity
+   decays as F^{BIND\_depth} (sequential layers, not total count), BIND
+   depth is the metric that actually predicts circuit fidelity.  For GHZ,
+   BIND depth on all-to-all hardware = 1 because all n−1 BINDs are
+   *mutually independent* (qubit 0 is the only shared wire, but the BINDs
+   fan out in parallel).  The ISA programme graph makes this independence
+   explicit.
+
+3. **The same programme compiles to any backend** — the ISA separates
+   *what* the circuit computes from *how* hardware executes it.  The
+   depth difference is a compiler/topology fact, not an algorithmic one.
+
+The honest claim: the ISA gives a clean name (BIND depth) to the metric
+that the field already uses informally.  For GHZ, BIND depth = 1 on
+all-to-all is a topology statement.  The ISA makes it derivable from the
+programme graph rather than requiring hardware knowledge.
 
 ---
 
 ## Gate circuit translations
 
-### IonQ / Quantinuum (MS gate native) — depth 1
+### IonQ / Quantinuum (MS gate native)
 
-The key hardware advantage: all-to-all connectivity means every BIND[0→k]
-is a direct MS gate. All n−1 MS gates can run **simultaneously** (parallel
-BIND layer, depth 1). No SWAP overhead.
-
-```
-FLIP[q0]          →  R(π/2, 0) on ion 0          [single laser pulse]
-BIND[0→1]  ⎫
-BIND[0→2]  ⎬  simultaneous  → n−1 × U_MS(π/4)   [bichromatic field, all pairs]
-BIND[0→k]  ⎭              + virtual Z corrections on each ion
-```
-
-**Gate count:** 1 FLIP + (n−1) MS gates.
-**Circuit depth:** 2 layers (1 FLIP + 1 parallel BIND layer).
-**Fidelity at n=10:** F ≈ (0.999)^9 × 0.998 ≈ 0.990 (Quantinuum H2-1).
+All-to-all connectivity: every BIND[0→k] is a direct MS gate, and all
+n−1 are mutually independent, so the hardware executes them as a single
+parallel layer.
 
 ```python
-# IonQ circuit (Qiskit)
-from qiskit import QuantumCircuit
-n = 10
-qc = QuantumCircuit(n)
-qc.h(0)                         # FLIP
-for k in range(1, n):
-    qc.cx(0, k)                 # BIND[0→k]; IonQ executes as U_MS in parallel
-# Transpiler note: IonQ Forte executes all cx(0,k) in one MS layer (all-to-all)
+# PennyLane — device determines depth
+import pennylane as qml
+
+def ghz_isa(n):
+    qml.Hadamard(wires=0)           # FLIP
+    for k in range(1, n):
+        qml.CNOT(wires=[0, k])      # BIND[0→k] — all independent
+
+# IonQ Forte: executes all CNOT[0→k] as one parallel MS layer (depth 1)
+dev_ionq = qml.device("ionq.qpu", wires=10)
+
+# IBM: CNOT chain, depth grows with n
+dev_ibm = qml.device("qiskit.ibmq", wires=10, backend="ibm_brisbane")
+
+# Same ISA programme; depth difference is a hardware property
 ```
 
-### IBM (CZ / CR gate native) — depth n−1
+**IonQ fidelity at n=10:** F ≈ (0.999)^9 × 0.998 ≈ 0.990 (Quantinuum H2-1,
+one BIND layer).
 
-IBM's nearest-neighbour grid forces a linear CNOT chain. CNOT(0,k) for k > 1
-requires routing through intermediate qubits via SWAP gates, adding 3 BINDs
-per hop. For a linear chain layout (no SWAP needed):
+### IBM (CZ / CR gate native)
+
+Nearest-neighbour layout: propagation chain.  The CNOT chain is not an
+ISA requirement — it is one valid compilation of the ISA programme onto
+a linear topology.
 
 ```
 h q[0];
-cx q[0], q[1];    // BIND[0→1], depth 1
-cx q[1], q[2];    // BIND[1→2], depth 2  (qubit 1 now carries entanglement)
-cx q[2], q[3];    // depth 3
+cx q[0], q[1];     // depth 1
+cx q[1], q[2];     // depth 2
 …
 cx q[n-2], q[n-1]; // depth n-1
 ```
 
-Note: IBM uses a **propagation chain** rather than star topology — each CNOT
-propagates entanglement one step further. The result is the same GHZ state.
+**IBM fidelity at n=10:** F ≈ (0.995)^9 × 0.990 ≈ 0.856 (IBM Heron,
+no SWAP needed on linear layout, n−1 sequential BIND layers).
 
-**Gate count:** 1 H + (n−1) CNOT.
-**Circuit depth:** n layers.
-**Fidelity at n=10:** F ≈ (0.995)^9 × 0.990 ≈ 0.856 (IBM Heron, no SWAP).
+The fidelity gap (0.990 / 0.856 = 1.16× at n=10, growing to 1.49× at
+n=20) is a consequence of BIND depth difference, not BIND count difference.
+Both backends execute exactly n−1 BINDs.
 
-The IonQ vs IBM fidelity gap at n=10: **0.990 / 0.856 = 1.16×**, growing to
-**1.49×** at n=20. This is the all-to-all advantage quantified in Paper 604 §2.2.
+### Neutral atom / QuEra (Rydberg CZ)
 
-```python
-# IBM circuit (Qiskit) — linear chain, no SWAP needed on linear layout
-from qiskit import QuantumCircuit
-n = 10
-qc = QuantumCircuit(n)
-qc.h(0)
-for k in range(1, n):
-    qc.cx(k-1, k)               # chain; depth grows with n
-```
-
-### Neutral atom / QuEra (Rydberg CZ) — depth 1
-
-Neutral atom arrays (QuEra Aquila, Pasqal) have reconfigurable connectivity.
-With a hub layout (atom 0 at centre, atoms 1…n-1 at periphery):
-
-```
-Rx(π/2) on atom 0                        # FLIP
-CZ_Rydberg(0, k) for k=1…n-1            # n-1 parallel Rydberg BINDs
-+ local single-qubit phase corrections   # TWIST
-```
-
-**Depth:** 2 layers (same as IonQ). Connectivity is reconfigurable but not
-permanent — atom sorting adds latency overhead not counted in gate depth.
-
-### PennyLane (device-agnostic)
-
-```python
-import pennylane as qml
-
-def ghz_isa(n):
-    """ISA programme for GHZ_n — backend determined by device."""
-    qml.Hadamard(wires=0)               # FLIP
-    for k in range(1, n):
-        qml.CNOT(wires=[0, k])          # BIND[0→k]
-
-# IonQ: all CNOT[0→k] execute as parallel MS gates (depth 1)
-dev_ionq = qml.device("ionq.qpu", wires=10)
-
-# IBM: CNOT chain (depth n-1 on nearest-neighbour)
-dev_ibm = qml.device("qiskit.ibmq", wires=10, backend="ibm_brisbane")
-
-@qml.qnode(dev_ionq)
-def circuit():
-    ghz_isa(10)
-    return qml.probs(wires=range(10))
-```
-
-The ISA programme `ghz_isa` is **identical** for both devices. Only the
-device changes. The depth difference (1 vs 9) is a property of the hardware
-connectivity, not the programme.
+Reconfigurable connectivity: with hub layout, achieves depth 1 like IonQ.
+Atom sorting adds latency not counted in gate depth.
 
 ---
 
-## BIND depth comparison table
+## BIND count vs BIND depth
 
-| n qubits | BIND count | IonQ depth | IBM depth | Depth ratio |
-|----------|-----------|-----------|----------|-------------|
-| 2 | 1 | 1 | 1 | 1× |
-| 4 | 3 | 1 | 3 | 3× |
-| 8 | 7 | 1 | 7 | 7× |
-| 10 | 9 | 1 | 9 | 9× |
-| 20 | 19 | 1 | 19 | 19× |
-| n | n−1 | **1** | **n−1** | **n−1×** |
+| n | BIND count | BIND depth (all-to-all) | BIND depth (nearest-neighbour) |
+| --- | --- | --- | --- |
+| 2 | 1 | 1 | 1 |
+| 4 | 3 | 1 | 3 |
+| 8 | 7 | 1 | 7 |
+| 10 | 9 | 1 | 9 |
+| 20 | 19 | 1 | 19 |
+| n | n−1 | **1** | **n−1** |
 
-The depth advantage of trapped ions scales as **O(n)** for GHZ-type star
-circuits. For n=50 (a practical NISQ scale), trapped ions run in depth 1
-while IBM runs in depth 49. Since fidelity decays per BIND layer (not just
-per gate), this is a genuine n× fidelity advantage, not just a speed advantage.
-
----
-
-## Speedup classification
-
-GHZ preparation is H² (requires BINDs). But the **depth advantage** is
-an H⁰/H¹ property of the connectivity graph, not an H² effect:
-
-- The ISA programme has n−1 BINDs regardless of backend.
-- The BIND *depth* (number of sequential layers) is 1 on all-to-all vs n−1
-  on nearest-neighbour.
-- Fidelity scales as F^{depth}, not F^{count}, for parallel BINDs.
-
-This distinction — count vs depth — is the Paper 604 §4 result applied
-concretely. The ISA makes it explicit; a gate-count-only analysis misses it.
+BIND count is the same for both hardware families.  BIND depth diverges
+as O(n).  Fidelity scales with depth, not count.  This table is a
+**topology statement**, not an ISA statement — the ISA provides the
+vocabulary to express it cleanly.
 
 ---
 
 ## Zoo neighbours
 
-- **QT01** — Bell state (n=2 special case of GHZ)
-- **QT04** — QAOA (also uses BIND in parallel on all-to-all)
-- **QH01** — Trapped-ion MS gate (the physical BIND for IonQ backends)
-- **Q07** — CHSH game (2-qubit H² resource; generalises to GHZ tests)
+- **QT01** — Bell state (n=2 special case of GHZ; BIND count = 1)
+- **QT03** — QFT (H¹ circuit; BIND count = 0; no topology advantage to unlock)
+- **QT04** — QAOA (also uses parallel BINDs on all-to-all; depth analysis similar)
+- **Q07** — CHSH game (2-qubit H² resource; generalises to GHZ-based Bell tests)
 
 ---
 
