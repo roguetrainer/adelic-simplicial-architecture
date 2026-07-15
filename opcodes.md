@@ -16,20 +16,48 @@ full Meld.*
 
 ## The H^k tier summary
 
-Every opcode lives at a specific cohomological degree. The tier is the minimum
-requirement to describe a system exactly — and determines which tools will work:
+Every opcode lives at a specific **cohomological degree** — the superscript k in
+H^k is not a power but a degree in the de Rham / sheaf cohomology sequence.
+The technical names:
 
-| Tier | Opcodes | Meaning |
-| ---- | ------- | ------- |
-| **H⁰** — counting | ORBIT, SPLIT, SPLAT, LABEL | Classical; no phase; simulable by enumeration |
-| **H¹** — interference | TWIST, FLIP, FLOP | Berry phase; coherence but no entanglement |
-| **H²** — entanglement | BIND | Irreducible multi-body correlation |
+- **H⁰** — zeroth cohomology: global sections, conserved quantities, classical observables
+- **H¹** — first cohomology: connections, Berry phases, obstructions to global triviality
+- **H²** — second cohomology: characteristic classes, Chern numbers, genuine topological charges
 
-**H⁰ is counting, H¹ is interference, H² is entanglement.**
+The ladder H⁰ → H¹ → H² is literally the de Rham sequence with d∘d = 0.
+This is also why BIND∘TWIST ≠ 0 but BIND∘BIND = 0 in the ISA — the chain
+complex structure of the opcodes is the same object as the cohomology sequence.
+(See Theorem 3 below.)
 
-DFT and Clifford circuit simulation both fail at the H¹→H² boundary, for the
-same topological reason — see
-[Weyl Chamber Homology](papers/10.5281-zenodo.21345107/).
+The tier of a physical system is its **minimum opcode requirement** — the lowest
+H^k needed to describe it exactly:
+
+| Tier | Opcodes | One-word meaning | Technical meaning |
+| ---- | ------- | ---------------- | ----------------- |
+| **H⁰** | ORBIT, SPLIT, SPLAT, LABEL | Counting | Global sections; classical observables; no phase |
+| **H¹** | TWIST, FLIP, FLOP | Interference | Berry phase; connection; obstruction to triviality |
+| **H²** | BIND | Entanglement | Chern class; non-Abelian holonomy; topological charge |
+
+**In one sentence: H⁰ is counting, H¹ is interference, H² is entanglement.**
+
+### Why the tier matters: methods recommendation
+
+The cohomological degree is simultaneously a complexity classification and a
+methods recommendation — it tells you the minimum tier needed to describe a
+system, and therefore which computational tools are adequate:
+
+| Tier | Chemistry | Quantum computing |
+| ---- | --------- | ----------------- |
+| H⁰ only | DFT works fine | Clifford circuits; classically simulable |
+| H¹ enters | CCSD sufficient | Still Clifford + cheap corrections |
+| H² enters | DFT fails; need CASSCF | Gottesman-Knill breaks down; need magic states |
+
+The deeper point: DFT and Clifford simulation both fail at the H¹→H² boundary
+because they are both H⁰/H¹ approximations meeting the same H² obstruction.
+The cohomological degree is what makes that precise — see
+[Weyl Chamber Homology](papers/10.5281-zenodo.21345107/) for the proof that
+the chemistry Grassmannian and the quantum-computing Weyl chamber carry the
+same Bredon H² class (Euler characteristic 2).
 
 ---
 
