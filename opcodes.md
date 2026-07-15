@@ -14,6 +14,25 @@ portfolio: B
 computing, the geometric Langlands programme, and more — from classical Turing machines to the
 full Meld.*
 
+## The H^k tier summary
+
+Every opcode lives at a specific cohomological degree. The tier is the minimum
+requirement to describe a system exactly — and determines which tools will work:
+
+| Tier | Opcodes | Meaning |
+| ---- | ------- | ------- |
+| **H⁰** — counting | ORBIT, SPLIT, SPLAT, LABEL | Classical; no phase; simulable by enumeration |
+| **H¹** — interference | TWIST, FLIP, FLOP | Berry phase; coherence but no entanglement |
+| **H²** — entanglement | BIND | Irreducible multi-body correlation |
+
+**H⁰ is counting, H¹ is interference, H² is entanglement.**
+
+DFT and Clifford circuit simulation both fail at the H¹→H² boundary, for the
+same topological reason — see
+[Weyl Chamber Homology](papers/10.5281-zenodo.21345107/).
+
+---
+
 **Graphical calculus legend:** 🕷️ present in ZX calculus · 🕷️\* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
 
 **Opcode symbols** (used in the LaTeX papers): filled = creation, hollow = annihilation. The symbol *shape* encodes the abstract arity — how many wires in, how many out. The Pachner move counts (1→4, 3→1, etc.) are the *3-manifold incarnation* of this arity, not its definition; the same opcodes appear with different in/out counts in spectroscopy, finance, and quantum information. See the [incarnations table](#opcode-incarnations-across-domains) below.
