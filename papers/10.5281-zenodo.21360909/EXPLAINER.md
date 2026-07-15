@@ -53,7 +53,7 @@ The same ISA opcode compiles to different physical gates on different platforms:
 
 ## Tutorial 1: Bell state (Hello World)
 
-The Bell state |Φ⁺⟩ = (|00⟩ + |11⟩)/√2 is the simplest entangled state. Every quantum programming course starts here.
+The Bell state $$\lvert\Phi^+\rangle = (\lvert00\rangle + \lvert11\rangle)/\sqrt{2}$$ is the simplest entangled state. Every quantum programming course starts here.
 
 **ISA programme (hardware-independent):**
 ```
@@ -74,7 +74,7 @@ This 2-opcode programme (FLIP + BIND) is the canonical Bell state preparation. O
 
 ## Tutorial 2: GHZ state (n qubits)
 
-The n-qubit GHZ state (|00...0⟩ + |11...1⟩)/√2 generalises the Bell state to many qubits.
+The n-qubit GHZ state $$(\lvert00\ldots0\rangle + \lvert11\ldots1\rangle)/\sqrt{2}$$ generalises the Bell state to many qubits.
 
 **ISA programme:**
 ```
