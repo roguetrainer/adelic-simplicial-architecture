@@ -1,7 +1,34 @@
-var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all" };
+var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all", confidence: "all" };
 var sortCol = "id";
 var sortDir = 1;
 var BASEURL = "/adelic-simplicial-architecture";
+
+function serialiseFilters() {
+  var parts = [];
+  Object.keys(active).forEach(function(k) {
+    if (active[k] !== "all") parts.push(encodeURIComponent(k) + "=" + encodeURIComponent(active[k]));
+  });
+  if (sortCol !== "id") parts.push("sort=" + encodeURIComponent(sortCol) + "&dir=" + (sortDir === 1 ? "asc" : "desc"));
+  return parts.join("&");
+}
+
+function parseUrlFilters() {
+  var search = window.location.search.slice(1);
+  if (!search) return;
+  search.split("&").forEach(function(pair) {
+    var kv = pair.split("=");
+    if (kv.length !== 2) return;
+    var k = decodeURIComponent(kv[0]);
+    var v = decodeURIComponent(kv[1]);
+    if (k in active) {
+      active[k] = v;
+    } else if (k === "sort") {
+      sortCol = v;
+    } else if (k === "dir") {
+      sortDir = v === "desc" ? -1 : 1;
+    }
+  });
+}
 
 function tierLabel(t) {
   var map = { H0: "H⁰", H1: "H¹", H2: "H²" };
@@ -16,12 +43,15 @@ function zooRender() {
       || (e.tags || "").split(/[\s,]+/).indexOf(active.tags) !== -1;
     var backendsMatch = active.backends === "all"
       || (e.backends || "").split(/[\s,]+/).indexOf(active.backends) !== -1;
+    var confidenceMatch = active.confidence === "all"
+      || (e.confidence || "T1") === active.confidence;
     return (active.domain  === "all" || e.domain  === active.domain)
         && (active.tier    === "all" || e.tier    === active.tier)
         && (active.trilogy === "all" || e.trilogy === active.trilogy)
         && (active.status  === "all" || e.status  === active.status)
         && tagsMatch
-        && backendsMatch;
+        && backendsMatch
+        && confidenceMatch;
   });
   visible.sort(function(a, b) {
     var av = String(a[sortCol] || "").toLowerCase();
@@ -56,8 +86,18 @@ function zooRender() {
   tbody.innerHTML = rows;
 }
 
+function syncActiveButtons() {
+  Object.keys(active).forEach(function(key) {
+    var bar = document.querySelector("[id^='zoo-filters']");
+    document.querySelectorAll(".zoo-btn[data-filter='" + key + "']").forEach(function(btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-value") === active[key]);
+    });
+  });
+}
+
 function zooInit() {
-  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags","zoo-filters-backends"];
+  parseUrlFilters();
+  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags","zoo-filters-backends","zoo-filters-confidence"];
   bars.forEach(function(barId) {
     var bar = document.getElementById(barId);
     if (!bar) return;
@@ -68,6 +108,8 @@ function zooInit() {
       bar.querySelectorAll(".zoo-btn").forEach(function(b) { b.classList.remove("active"); });
       btn.classList.add("active");
       active[btn.getAttribute("data-filter")] = btn.getAttribute("data-value");
+      var qs = serialiseFilters();
+      history.replaceState(null, "", window.location.pathname + (qs ? "?" + qs : ""));
       zooRender();
     });
   });
@@ -80,9 +122,12 @@ function zooInit() {
         h.classList.remove("sort-asc","sort-desc");
       });
       th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
+      var qs = serialiseFilters();
+      history.replaceState(null, "", window.location.pathname + (qs ? "?" + qs : ""));
       zooRender();
     });
   });
+  syncActiveButtons();
   zooRender();
 }
 
