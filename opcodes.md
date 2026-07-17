@@ -734,6 +734,76 @@ adding BIND and SPIN. See [The Non-Associative Frontier](non-associative-frontie
 
 ---
 
+## The named ISAs
+
+The opcode set is fixed. What varies is the *regime* — which β-value, which
+physical domain, which specialisation of the abstract opcodes is in play.
+Each named ISA is a specific point (or arc) in the β-plane, with a characteristic
+physical content, a set of patron thinkers, and a distinct informal name chosen
+for what it *feels* like to work in that regime.
+
+| Informal name | Formal name | β location | H^k reach | Patron(s) | Hook |
+| --- | --- | --- | --- | --- | --- |
+| **Origami** | Origami ISA | β → ∞ (tropical) | H⁰–H² | Weyl, Racah | Crisp bonds; discrete symmetry; Racah algebra |
+| **Forge** | Forge ISA | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* |
+| **Raven** | Raven ISA | β ≈ β* (physiological) | H⁰–H² | Hopfield, Ninio | Biological proofreading; enzyme catalysis; kinetic QEC |
+| **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | ERASE = second law; PT exceptional point; five primitive opcodes |
+| **Hum** | Hum ISA | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as ORBIT |
+| **Rising Sea** | Rising Sea ISA | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) |
+| **Pentagon** | Pentagon ISA | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes |
+
+**Reading the table:**
+
+- **Motive ISA** is the abstract parent: its five opcodes {MARK, CROSS, IMAGINE, FLOW,
+  ERASE} are what remains when you strip every physical specialisation away.
+  Origami, Forge, and Raven are all restrictions of Motive to particular β-values and
+  opcode subsets. The name comes from Carnot's *puissance motrice* (motive power) —
+  the force that drives thermodynamic computation — and echoes Grothendieck's *motives*
+  (universal cohomological avatars), intentionally.
+
+- **Hum ISA** extends Motive by one opcode (EMIT) and rotates β to the imaginary
+  axis. Willis Lamb named the regime: he called the Lamb shift "the unmistakable hum
+  of empty space." EMIT is the vertex at which a particle couples to a field mode;
+  without it, the vacuum is silent.
+
+- **Rising Sea ISA** is the categorical envelope: it shows that every named ISA is
+  a *fibre* of a single Grothendieck fibration p: E → ℂ_β over the complex
+  β-plane. The phrase comes from Grothendieck's own description of his mathematical
+  style — patient, structural, letting the sea rise until the hard problems float.
+
+- **Pentagon ISA** is the coherence machine: it proves that the Motive PROP is
+  well-defined (confluent, terminating rewriting system) and that the pentagon
+  identity holds strictly. Five sides, five opcodes — an unexpected coincidence
+  that Baez would appreciate.
+
+### The containment diagram
+
+```
+                          Rising Sea ISA
+                    (full ℂ_β fibration; Grothendieck)
+                               │
+               ┌───────────────┼───────────────┐
+               │               │               │
+         Motive ISA        Pentagon ISA     (future ISAs)
+      (abstract parent;   (coherence proof)
+       Carnot / Bender)
+               │
+      ┌────────┼──────────┐
+      │        │          │
+  Forge ISA  Raven ISA  Hum ISA
+  (real β)  (physio β)  (β = it/ℏ)
+      │
+  Origami ISA
+  (β → ∞)
+```
+
+The horizontal axis inside each ISA is the H^k degree — opcodes at H⁰, H¹, H², H³.
+The vertical axis is the β-plane location.
+The three operative ISAs (Origami/Forge/Raven) live on the real β-axis;
+Hum lives on the imaginary axis; Rising Sea covers the whole plane.
+
+---
+
 ## Relationship to other graphical calculi
 
 The ISA opcodes did not emerge from nowhere. Two graphical calculi were the direct predecessors.
