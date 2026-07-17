@@ -61,7 +61,13 @@ same Bredon H² class (Euler characteristic 2).
 
 ---
 
-**Graphical calculus legend:** 🕷️ present in ZX calculus · 🕷️\* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
+**Graphical calculus legend:**
+🕷️ present in ZX calculus · 🕷️\* partial (related ZX construct, not full ISA semantics) ·
+🐸 present in 731 Frog Calculus · unmarked = ISA-native (no dedicated graphical symbol).
+
+**ORBIT is intentionally unmarked.** It is a closed scalar loop `𝟏 → 𝟏` — a trace, not a vertex.
+In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
+with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a loop rather than *opening* one.
 
 **Opcode symbols** (used in the LaTeX papers): filled = creation, hollow = annihilation. The symbol *shape* encodes the abstract arity — how many wires in, how many out. The Pachner move counts (1→4, 3→1, etc.) are the *3-manifold incarnation* of this arity, not its definition; the same opcodes appear with different in/out counts in spectroscopy, finance, and quantum information. See the [incarnations table](#opcode-incarnations-across-domains) below.
 
