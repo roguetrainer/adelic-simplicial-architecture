@@ -578,11 +578,11 @@ assignment is a LABEL.
 
 ---
 
-### BIND 🐸  ⋈ 🔗
+### BIND 🐸  ⋈ 💎
 
 **Three wires enter a vertex** (non-Abelian fusion; associator).
 
-**Symbols (Origami ISA):** formal ⋈ (natural join / bowtie — two registers fused into an entangled pair) · outreach 🔗
+**Symbols (Origami ISA):** formal ⋈ (natural join / bowtie — two registers fused into an entangled pair) · outreach 💎
 
 *A naming note:* BIND is the one opcode that lives exclusively in the 🐸 Frog
 Calculus — the trivalent vertex, the non-associative fusion, the G₂ structure
