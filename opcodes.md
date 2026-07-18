@@ -276,7 +276,7 @@ the ISA is the *programme*.
 
 | Semiring | Runtime name | Hardware |
 | -------- | ------------ | -------- |
-| $(\mathbb{R}\cup\{-\infty\}, \max, +)$ | Tropical / Origami ISA | CPU |
+| $(\mathbb{R}\cup\{-\infty\}, \max, +)$ | Tropical limit (Origami at β→∞) | CPU |
 | $(\mathbb{R}_{>0}, +, \times)$ | Gibbs / Forge ISA | GPU / TPU |
 | $(\mathbb{C}, +, \times)$ | Meld ISA | Quantum processor |
 | $(\mathbb{Z}_p, +, \times)$ | p-adic / U-MGE | PPU |
@@ -451,11 +451,11 @@ for the full treatment.
 
 ---
 
-### FLIP 🕷️  ⌁ 🎲
+### FLIP 🕷️  ⌁ 👁️
 
 **A wire reverses orientation** (arrow pointing down instead of up).
 
-**Symbols (Origami ISA):** formal ⌁ (lightning/discharge — irreversible collapse to classical outcome) · outreach 🎲
+**Symbols (Origami ISA):** formal ⌁ (lightning/discharge — irreversible collapse to classical outcome) · outreach 👁️
 
 ```
     ↑         ↓
@@ -758,7 +758,7 @@ for what it *feels* like to work in that regime.
 
 | Informal name | Formal name | β location | H^k reach | Patron(s) | Hook | IMAGINE count | Algebra | Graphical calculus |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Origami** | Origami ISA | β → ∞ (tropical) | H⁰–H² | Weyl, Racah | Crisp bonds; discrete symmetry; Racah algebra | 1 | ℂ | ZX (spiders, undirected) |
+| **Origami** | Origami ISA | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
 | **Forge** | Forge ISA | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
 | **Raven** | Raven ISA | β ≈ β* (physiological) | H⁰–H² | Hopfield, Ninio | Biological proofreading; enzyme catalysis; kinetic QEC | 1 | ℂ | ZX (weighted) |
 | **Knot** | Knot ISA | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |

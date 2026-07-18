@@ -236,7 +236,7 @@ arithmetic:
 
 | ISA | β | Semiring | Execution |
 | --- | --- | --- | --- |
-| Origami | β → ∞ | Tropical $(\max,+)$ | Argmax; discrete logic |
+| Origami | all β (umbrella) | all semirings | Five-opcode open standard; tropical limit at β→∞ |
 | Forge | $0 < \beta < \infty$ | Gibbs $(\mathbb{R}_{>0})$ | Boltzmann weighting; snap at β* |
 | Meld | β = it | Complex $(\mathbb{C})$ | Unitary evolution; interference |
 | p-adic | $\beta \in \mathbb{Q}_p$ | p-adic $(\mathbb{Z}_p)$ | NTT; Hensel lifting |

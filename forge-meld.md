@@ -41,7 +41,7 @@ has two natural extensions from the real positive axis:
 
 | β | Arithmetic | ISA | Regime |
 |---|-----------|-----|--------|
-| $\beta \to \infty$ | Tropical $(\max,+)$ | Origami | Frozen; classical; discrete logic |
+| $\beta \to \infty$ | Tropical $(\max,+)$ | Origami (tropical limit) | Frozen; classical; discrete logic |
 | $0 < \beta < \infty$ | Real Gibbs ($\mathbb{R}_{>0}$) | Forge | Statistical; thermodynamic; snap at $\beta^*$ |
 | $\beta = it$ | Complex ($\mathbb{C}$) | Meld | Quantum; interference; unitary |
 | $\beta \to 0$ | Uniform; smooth Hodge | *The Ambient* | Hodge decomposition; harmonic representatives |
@@ -52,7 +52,7 @@ the smooth manifold from which all three are carved.
 
 ---
 
-## The Origami ISA: β → ∞
+## The Tropical Limit: Origami at β → ∞
 
 As β → ∞ the Gibbs softmax collapses to the tropical argmax:
 
@@ -60,12 +60,16 @@ $$\lim_{\beta\to\infty} \frac{e^{-\beta E_k}}{\sum_j e^{-\beta E_j}} = \begin{ca
 
 This is the **tropical $(\max,+)$ semiring**: addition becomes max, multiplication
 becomes addition. Polynomial equations become piecewise-linear; algebraic varieties
-become polyhedral fans. The Origami ISA is deterministic, classical logic — the
-zero-temperature limit in which the system always picks the lowest-energy path.
+become polyhedral fans. In this limit the Origami ISA is deterministic, classical
+logic — the zero-temperature regime in which the system always picks the
+lowest-energy path.
 
-**The Origami ISA is the tropical crystal precipitated from the Ambient.** Every
+**The tropical limit is the crystal precipitated from the Ambient.** Every
 discrete opcode is what survives when the smooth Ambient is frozen to zero temperature.
 This is the direction of the relationship: smooth first, discrete as a limit.
+Note that Origami — as the five-opcode family — is not confined to this limit;
+the tropical regime is one instantiation of the Origami opcodes, evaluated over
+$(\max,+)$ rather than over $\mathbb{C}$ or the Gibbs semiring.
 
 ---
 
