@@ -1,9 +1,0 @@
-.DS_Store
-**/.DS_Store
-*.pyc
-__pycache__/
-.obsidian/workspace
-_site/
-.jekyll-cache/
-.jekyll-metadata
-Gemfile.lock
